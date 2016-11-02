@@ -1,0 +1,127 @@
+#sidebar-menu {
+  padding: 0;
+  margin: 0;
+  width: 180px;
+}
+.sidebar {
+  position: relative;
+    overflow-y: auto;
+    height: 100%;
+    font: 0.9rem 'isw-u';
+    overflow-x: hidden;
+}
+.header-title{
+  position: relative;
+  cursor: default;
+  display: inline-block;
+}
+.no-menu div[class=title-menu-main]{
+  border: none;
+}
+.menu-cast{
+  float: right;
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  margin: 0px -10px 0px -10px;
+}
+li [class*=mfd-]{
+  position: relative;
+  top: 5px;
+  padding: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.icon-align{
+  float: left;
+  display: inline-block;
+  position: relative;
+  top:-2px;
+  font-size: 30px;
+}
+.icon-align-head{
+  cursor: default;
+  display: inline-block;
+  position: relative;
+}
+li div[class="title-menu-main"] {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid;
+  border-color: rgba(255,255,255,0.1);
+  cursor: pointer;
+  color: rgb(78,218,192);
+}
+.title-menu-main:hover{
+  background: rgba(255,255,255,0.04);
+}
+.title-menu{
+  width: 125px;
+  max-height: 60px;
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  padding-top:15px;
+  padding-bottom:0px;
+  overflow: hidden;
+}
+.sidebar-submenu {
+    overflow: hidden;
+}
+.title-menu-main2{
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+  padding-left: 40px;
+}
+.title-menu-main2:hover{
+  background: rgba(255,255,255,0.02);
+}
+.sidebar-submenu-unaccording{
+  height: 0px;
+  border-color: rgba(255,255,255,0);
+}
+.rotat-area-1{
+transform: rotate(0deg);
+color: gray;
+}
+.rotat-area-2{
+transform: rotate(90deg);
+
+color: rgb(78,218,192);
+}
+li a {
+    color: rgb(94,129,151)!important;
+}
+.end-sidebar{
+  position: absolute;
+  bottom: 0xp;
+}
+ /* ///////////////////////////////////////////////// */
+@-moz-keyframes spinarea1 {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(90deg); }
+}
+@-webkit-keyframes spinarea1 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(90deg); }
+}
+@keyframes spinarea1 {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(90deg);}
+}
+ /* ///////////////////////////////////////////////// */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+ /* ///////////////////////////////////////////////// */

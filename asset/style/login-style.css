@@ -1,0 +1,139 @@
+.login-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(78,218,192);
+    background-image: url('../image/a4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.panellogin{
+    position: relative;
+    background: rgb(29,74,95);
+    padding-top: 30px;
+    margin: 10%;
+    width: 300px;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 2px 2px 20px rgb(0,0,0);
+    z-index: 100;
+}
+.logoholder{
+    color: rgb(78,218,192);
+    margin: auto;
+    text-align: center;
+    font-size: 200px;
+    margin-bottom: -70px;
+    cursor: default;
+}
+.login-iner{
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.inputbox{
+    background: rgb(14,45,63);
+    border: 1px solid rgba(78,218,192,0);
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    padding-left: 50px;
+    color: rgb(94,129,151);
+    font-size: 15px;
+}
+.inputbox:focus{
+    border: 1px solid rgb(78,218,192);
+}
+.inputholder{
+    position: relative;
+}
+.inputholder div[class*=mfd-]{
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    font-size: 30px;
+    color: rgb(94,129,151);
+}
+.btnlogin{
+    background: rgb(78,218,192);
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+    color: rgb(29,74,95);
+    border: 1px solid rgba(78,218,192,0);
+    cursor: pointer;
+}
+.btnlogin:hover{
+    background: rgba(78,218,192,0.3);
+    border: 1px solid rgb(78,218,192);
+    color: rgb(78,218,192);
+
+}
+.forgotpass{
+    text-align: center;
+    margin: 20px;
+}
+.forgotpass a{
+    color: rgb(94,129,151);
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+.forgotpass a:hover{
+    color: rgb(78,218,192);
+}
+.footer-login{
+    height: 23px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+    background: rgb(14,45,63);
+    cursor: default;
+}
+.footer-login div[class*=mfd-]{
+    float: left;
+    font-size: 154px;
+    position: relative;
+    top: -80px;
+    color: rgb(94,129,151);
+}
+.underfooter{
+    height: 1px;
+    background: rgb(94,129,151);
+}
+.copyright-login{
+    float: right;
+    color: rgb(94,129,151);
+    margin: 3px;
+    font-size: 13px;
+}
+.shape-1{
+    cursor: default;
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    margin-bottom: 1px;
+    margin: 0px -20px -20px 0px;
+    font-size: 300px;
+    color: rgba(0,0,0,.4);
+    z-index: 99;
+}
+.logo-footer-4{
+    cursor: default;
+    position: absolute;
+    bottom: 0px;
+    left:20px;
+    margin-bottom: 1px;
+    font-size: 400px;
+    color: rgba(0,0,0,.4);
+    z-index: 99;
+    margin-bottom: -130px;
+
+}
