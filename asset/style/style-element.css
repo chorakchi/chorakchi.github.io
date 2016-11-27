@@ -1,0 +1,111 @@
+.smallblock{
+    position: relative;
+    font-family: 'isw';
+    background: rgba(78,218,192,0.1);
+    height: 120px;
+    text-align: center;
+    margin: -10px;
+}
+.smallbloc-title{
+    font-family: 'isw-l';
+    color: rgba(78,218,192,1);
+}
+.smallbloc-icon{
+    font-size: 50px;
+    color: rgba(78,218,192,1);
+    cursor: default;
+}
+.smallblock-value{
+    color: rgba(255,255,255,1);
+    font-size: 20px;
+}
+.smallblock-percent{
+    float: right;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 111, 255, 0.14);
+    color: rgba(180, 218, 78,1);
+}
+.panelscrollvertical{
+    position: relative;
+}
+.panelscrollvertical-btn{
+    color: rgba(255,255,255,0.5);
+    display: inline-block;
+    padding-top: 25px;
+    line-height: 100%;
+    height: 100%;
+    font-size: 70px;
+    cursor: pointer;
+    top: 0;
+}
+.panelscrollvertical-btn-g-r{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,1d4a5f+45&0+0,1+45 */
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(29,74,95,1) 45%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(29,74,95,1) 45%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(29,74,95,1) 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1d4a5f',GradientType=1 ); /* IE6-9 */
+}
+.panelscrollvertical-btn-g-l{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d4a5f+45,ffffff+100&1+45,0+100 */
+background: -moz-linear-gradient(left, rgba(29,74,95,1) 45%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(29,74,95,1) 45%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(29,74,95,1) 45%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4a5f', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+.panelscrollvertical-btn:hover{
+    color: rgba(78,218,192,0.5);
+}
+.panelscrollvertical-middle{
+    position: relative;
+    padding: 0 50px 0 50px;
+    position: relative;
+    white-space:nowrap;
+    background: rgba(255,255,255,0.02);
+}
+.panelscrollvertical-middle-holder{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.blockofpanelscrollvertical{
+    text-align: center;
+    position: relative;
+    border-right: 3px solid rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    height: 80px;
+    width: 120px;
+}
+.blockofpanelscrollvertical-title{
+    margin: 10px;
+    font-size: 25px;
+    color: rgba(78,218,192,1);
+}
+.blockofpanelscrollvertical-value{
+    font-size: 15px;
+}
+.blockofpanelscrollvertical-change{
+    padding: 5px;
+    font-size: 10px;
+    color: rgba(78,218,192,0.5);
+}
+table {
+    font-family: 'isw';
+    margin: 3px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    text-align: right;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0,0,0,0.1);
+}

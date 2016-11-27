@@ -463,14 +463,14 @@ function DatePickerCtrl($scope, $mdDialog, $mdMedia, $timeout, currentDate, opti
     this.date = moment(currentDate);
     this.minDate = options.minDate && moment(options.minDate).isValid() ? moment(options.minDate) : null;
     this.maxDate = options.maxDate && moment(options.maxDate).isValid() ? moment(options.maxDate) : null;
-    this.displayFormat = options.displayFormat || "jddd, jMMM jDD";
+    this.displayFormat = options.displayFormat || "ddd, MMM DD";
     this.dateFilter = angular.isFunction(options.dateFilter) ? options.dateFilter : null;
     this.selectingYear = false;
     
     // validate min and max date
 	if (this.minDate && this.maxDate) {
 		if (this.maxDate.isBefore(this.minDate)) {
-			this.maxDate = moment(this.minDate).add(1, 'jdays');
+			this.maxDate = moment(this.minDate).add(1, 'days');
 		}
 	}
 	
@@ -489,7 +489,7 @@ function DatePickerCtrl($scope, $mdDialog, $mdMedia, $timeout, currentDate, opti
 	this.yearItems = {
         currentIndex_: 0,
         PAGE_SIZE: 5,
-        START: (self.minDate ? self.minDate.year() : 1300),
+        START: (self.minDate ? self.minDate.year() : 1900),
         END: (self.maxDate ? self.maxDate.year() : 0),
         getItemAtIndex: function(index) {
         	if(this.currentIndex_ < index)
@@ -508,9 +508,9 @@ function DatePickerCtrl($scope, $mdDialog, $mdMedia, $timeout, currentDate, opti
     $scope.$mdMedia = $mdMedia;
     $scope.year = this.date.year();
 
-	this.selectYear = function(jyear) {
-        self.date.year(jyear);
-        $scope.year = jyear;
+	this.selectYear = function(year) {
+        self.date.year(year);
+        $scope.year = year;
         self.selectingYear = false;
         self.animate();
     };
@@ -554,10 +554,10 @@ function DatePickerCtrl($scope, $mdDialog, $mdMedia, $timeout, currentDate, opti
 module.provider("$mdpDatePicker", function() {
     var LABEL_OK = "OK",
         LABEL_CANCEL = "Cancel",
-        DISPLAY_FORMAT = "ddd, jMMM jDD";
+        DISPLAY_FORMAT = "ddd, MMM DD";
         
     this.setDisplayFormat = function(format) {
-        DISPLAY_FORMAT = format('jYYYY/jM/jD');    
+        DISPLAY_FORMAT = format;    
     };
         
     this.setOKButtonLabel = function(label) {
@@ -583,7 +583,7 @@ module.provider("$mdpDatePicker", function() {
                             '<md-dialog-content layout="row" layout-wrap>' +
                                 '<div layout="column" layout-align="start center">' +
                                     '<md-toolbar layout-align="start start" flex class="mdp-datepicker-date-wrapper md-hue-1 md-primary" layout="column">' +
-                                        '<span class="mdp-datepicker-year" ng-click="datepicker.showYear()" ng-class="{ \'active\': datepicker.selectingYear }">{{ datepicker.date.format(\'jYYYY\') }}</span>' +
+                                        '<span class="mdp-datepicker-year" ng-click="datepicker.showYear()" ng-class="{ \'active\': datepicker.selectingYear }">{{ datepicker.date.format(\'YYYY\') }}</span>' +
                                         '<span class="mdp-datepicker-date" ng-click="datepicker.showCalendar()" ng-class="{ \'active\': !datepicker.selectingYear }">{{ datepicker.date.format(datepicker.displayFormat) }}</span> ' +
                                     '</md-toolbar>' + 
                                 '</div>' +  
@@ -697,15 +697,15 @@ module.directive("mdpCalendar", ["$animate", function($animate) {
         template: '<div class="mdp-calendar">' +
                     '<div layout="row" layout-align="space-between center">' +
                         '<md-button aria-label="previous month" class="md-icon-button" ng-click="calendar.prevMonth()"><md-icon md-svg-icon="mdp-chevron-left"></md-icon></md-button>' +
-                        '<div class="mdp-calendar-monthyear" ng-show="!calendar.animating">{{ calendar.date.format("jMMMM jYYYY") }}</div>' +
+                        '<div class="mdp-calendar-monthyear" ng-show="!calendar.animating">{{ calendar.date.format("MMMM YYYY") }}</div>' +
                         '<md-button aria-label="next month" class="md-icon-button" ng-click="calendar.nextMonth()"><md-icon md-svg-icon="mdp-chevron-right"></md-icon></md-button>' +
                     '</div>' +
                     '<div layout="row" layout-align="space-around center" class="mdp-calendar-week-days" ng-show="!calendar.animating">' +
-                        '<div layout layout-align="center center" ng-repeat="d in calendar.weekDays track by $index">{{ jd }}</div>' +
+                        '<div layout layout-align="center center" ng-repeat="d in calendar.weekDays track by $index">{{ d }}</div>' +
                     '</div>' +
                     '<div layout="row" layout-align="start center" layout-wrap class="mdp-calendar-days" ng-class="{ \'mdp-animate-next\': calendar.animating }" ng-show="!calendar.animating" md-swipe-left="calendar.nextMonth()" md-swipe-right="calendar.prevMonth()">' +
                         '<div layout layout-align="center center" ng-repeat-start="day in calendar.daysInMonth track by $index" ng-class="{ \'mdp-day-placeholder\': !day }">' +
-                            '<md-button class="md-icon-button md-raised" aria-label="Select day" ng-if="day" ng-class="{ \'md-accent\': calendar.date.jdate() == day.value }" ng-click="calendar.selectDate(day.value)" ng-disabled="!day.enabled">{{ day.value }}</md-button>' +
+                            '<md-button class="md-icon-button md-raised" aria-label="Select day" ng-if="day" ng-class="{ \'md-accent\': calendar.date.date() == day.value }" ng-click="calendar.selectDate(day.value)" ng-disabled="!day.enabled">{{ day.value }}</md-button>' +
                         '</div>' +
                         '<div flex="100" ng-if="($index + 1) % 7 == 0" ng-repeat-end></div>' +
                     '</div>' +
@@ -721,7 +721,7 @@ module.directive("mdpCalendar", ["$animate", function($animate) {
                return angular.element(a); 
             });
                 
-            scope.$watch(function() { return  ctrl.date.format("jYYYYMM") }, function(newValue, oldValue) {
+            scope.$watch(function() { return  ctrl.date.format("YYYYMM") }, function(newValue, oldValue) {
                 var direction = null;
                 
                 if(newValue > oldValue)
@@ -745,7 +745,7 @@ function formatValidator(value, format) {
 }
 
 function minDateValidator(value, format, minDate) {
-    var minDate = moment(minDate, "jYYYY-jMM-jDD", true);
+    var minDate = moment(minDate, "YYYY-MM-DD", true);
     var date = angular.isDate(value) ? moment(value) :  moment(value, format, true);
     
     return !value || 
@@ -755,7 +755,7 @@ function minDateValidator(value, format, minDate) {
 }
 
 function maxDateValidator(value, format, maxDate) {
-    var maxDate = moment(maxDate, "jYYYY-jMM-jDD", true);
+    var maxDate = moment(maxDate, "YYYY-MM-DD", true);
     var date = angular.isDate(value) ? moment(value) :  moment(value, format, true);
     
     return !value || 
@@ -822,7 +822,7 @@ module.directive("mdpDatePicker", ["$mdpDatePicker", "$timeout", function($mdpDa
                 var messages = angular.element(inputContainer[0].querySelector("[ng-messages]"));
                 
                 scope.type = scope.dateFormat ? "text" : "date"
-                scope.dateFormat = scope.dateFormat || "jYYYY-jMM-jDD";
+                scope.dateFormat = scope.dateFormat || "YYYY-MM-DD";
                 scope.model = ngModel;
                 
                 scope.isError = function() {
@@ -935,7 +935,7 @@ module.directive("mdpDatePicker", ["$mdpDatePicker", "$timeout", function($mdpDa
             "dateFormat": "@mdpFormat",
         },
         link: function(scope, element, attrs, ngModel, $transclude) {
-            scope.dateFormat = scope.dateFormat || "jYYYY-jMM-jDD";
+            scope.dateFormat = scope.dateFormat || "YYYY-MM-DD";
             
             ngModel.$validators.format = function(modelValue, viewValue) {
                 return formatValidator(viewValue, scope.format);

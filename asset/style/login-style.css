@@ -30,7 +30,7 @@
     margin: auto;
     text-align: center;
     font-size: 200px;
-    margin-bottom: -70px;
+    margin-bottom: -60px;
     cursor: default;
 }
 .login-iner{
@@ -38,6 +38,7 @@
     margin-bottom: 100px;
 }
 .inputbox{
+    font-family: 'isw-u';
     background: rgb(14,45,63);
     border: 1px solid rgba(78,218,192,0);
     width: 100%;
@@ -61,6 +62,7 @@
     color: rgb(94,129,151);
 }
 .btnlogin{
+    font-family: 'isw';
     background: rgb(78,218,192);
     padding: 10px;
     text-align: center;
@@ -77,6 +79,7 @@
 
 }
 .forgotpass{
+    font-family: 'isw-u';
     text-align: center;
     margin: 20px;
 }
@@ -109,6 +112,7 @@
     background: rgb(94,129,151);
 }
 .copyright-login{
+    font-family: 'isw-u';
     float: right;
     color: rgb(94,129,151);
     margin: 3px;
