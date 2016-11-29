@@ -14,7 +14,7 @@
         targetEvent: ev
       }).then(function(selectedDate) {
         $scope.currentDate = selectedDate;
-      });;
+      });
     };
     
     this.filterDate = function(date) {

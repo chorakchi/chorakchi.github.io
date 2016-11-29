@@ -89,6 +89,21 @@ function scrollingHead(){
 }
 function fonclick(){
     $(".btn-down-force").click(function() { $('html,body').animate({scrollTop: $("body").select().offset().top + $(window).height()}, 1000);});
+    $(".btn-minimazer").click(function() { 
+        if($('.main-admin').hasClass('main-admin-maximaz')){
+            $('.main-admin').removeClass('main-admin-maximaz');
+            setTimeout(function() {
+                
+            $('.resizechat').highcharts().reflow();
+            }, 500);
+        }else{
+            $('.main-admin').addClass('main-admin-maximaz');
+            setTimeout(function() {
+                
+            $('.resizechat').highcharts().reflow();
+            }, 500);
+        }
+    });
 }
 function fillsize(){
     // $('.panel-bg').animate({'height': $(window).height()-2},100);
