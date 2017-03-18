@@ -2289,13 +2289,13 @@ span.k-colorpicker {
     border-radius: 50%
 }
 .k-grid .k-alt {
-    background-color: rgba(54,54,128,0.1);
+    background-color: rgba(0, 0, 0, 0.1)
 }
 .k-grouping-row td,
 .k-resize-handle-inner,
 td.k-group-cell {
     color: #d5d5d5;
-    background-color: #5a5a5a
+    background-color: rgba(242, 243, 0, 0.06);
 }
 .k-grouping-header .k-group-indicator,
 .k-pivot-toolbar .k-button {
@@ -2342,7 +2342,7 @@ td.k-group-cell {
 .k-footer-template td,
 .k-group-footer td {
     color: #d5d5d5;
-    background-color: #5a5a5a
+    background-color: rgba(150,150,150,0.1);
 }
 .k-grid .k-grouping-header {
     color: rgba(255, 255, 255, .5)
@@ -2367,7 +2367,7 @@ td.k-group-cell {
 .k-scheduler .k-today.k-state-selected,
 .k-scheduler-layout .k-state-selected,
 .k-state-selected.k-line {
-    background-color: rgb(78,218,192)
+    background-color: rgba(78, 218, 192, 0.17)
 }
 .k-state-selected.k-line {
     color: rgb(78,218,192)
@@ -2391,7 +2391,7 @@ td.k-group-cell {
 }
 .k-grid td.k-state-selected:hover,
 .k-grid tr.k-state-selected:hover td {
-    background-color: #00a2eb
+    background-color: rgba(0, 162, 235, 0.13)
 }
 .k-grid-header .k-header,
 .k-grid-header .k-header .k-link,

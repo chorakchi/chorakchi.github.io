@@ -124,6 +124,16 @@
 .mfd-down:before {
 	content: "\e940";
 }
+.mfdtop {
+}
+.mfddown {
+}
+.mfdtop:before {
+	content: "\e9c4";
+}
+.mfddown:before {
+	content: "\e9c3";
+}
 .mfd-hamrahe-aval:before {
 	content: "\e942";
 }
@@ -315,4 +325,31 @@
 }
 .mfd-shape1:before {
 	content: "\e9b9";
+}
+.mfd-maximaiz:before {
+	content: "\e9ba";
+}
+.mfd-minimaiz:before {
+	content: "\e9bb";
+}
+.mfd-oneeye:before {
+	content: "\e9be";
+}
+.mfd-piechart:before {
+	content: "\e9bd";
+}
+.mfd-transaction:before {
+	content: "\e9bc";
+}
+.mfd-bag:before {
+	content: "\e9bf";
+}
+.mfd-casel:before {
+	content: "\e9c0";
+}
+.mfd-linechart:before {
+	content: "\e9c1";
+}
+.mfd-newspaper:before {
+	content: "\e9c2";
 }

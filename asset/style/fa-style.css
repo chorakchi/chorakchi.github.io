@@ -1,20 +1,65 @@
+﻿@font-face {
+  font-family: 'isw';
+  src:url('../fonts/iransans/IRANSansWeb(FaNum).woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-b';
+  src:url('../fonts/iransans/IRANSansWeb(FaNum)_Bold.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-l';
+  src:url('../fonts/iransans/IRANSansWeb(FaNum)_Light.woff'),
+  url('../fonts/iransans/IRANSansWeb(FaNum)_Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-m';
+  src:url('../fonts/iransans/IRANSansWeb(FaNum)_Medium.woff'),
+  url('../fonts/iransans/IRANSansWeb(FaNum)_Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-u';
+  src:url('../fonts/iransans/IRANSansWeb(FaNum)_UltraLight.woff'),
+  url('../fonts/iransans/IRANSansWeb(FaNum)_UltraLight.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  font-family: 'isw-u';
+}
 .al-sidebar{
     right: 0;
-}
-.al-main-uncollapsing{
-    margin-left: 0px;
-    margin-right: 240px;
-    direction: rtl;
 }
 .al-main-collapsing {
     margin-right: 55px;
     margin-left: 0px;
     direction: rtl;
 }
-.al-main-uncollapsing *{
+@media (min-width: 992px) {
+.al-main-uncollapsing {
+    margin-left: 0px;
+    margin-right: 240px;
+    direction: rtl;
+}
+}
+@media (max-width: 992px) {
+.al-main-uncollapsing {
+    margin-left: 0px;
+    margin-right: 55px;
+    direction: rtl;
+}
+}
+.al-main-uncollapsing {
     direction: ltr;
 }
-.al-main-collapsing *{
+.al-main-collapsing {
     direction: ltr;
 }
 .al-logo{
@@ -38,6 +83,7 @@
 .title-menu{
     direction: rtl;
     text-align: right;
+    float: right;
 }
 .slimscrolldiv{
     float: right;
@@ -47,4 +93,73 @@
 }
 .btn-minimazer{
     float: left;
+}
+
+.btn-feed{
+    right: inherit;
+    left: 40px;
+}
+.btn-feed::before{
+    content: 'بازخورد';
+}
+.block-feed{
+    right: inherit;
+    left: 0;
+}
+.footer-main {
+    right: 0;
+}
+
+/*aaaaanimation*/
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
+.k-grid-excel {
+    right: inherit!important;
+    left: 200px!important;
+}
+span .k-select{
+    pointer-events:none;
+}
+.ng-jalaali-flat-datepicker-wrapper{
+    position: absolute;
+}
+.pageselectedrebon{
+    left: initial;
+    right: 0;
+}
+table.md-table td.md-cell,
+table.md-table th.md-column {
+  text-align: right;
+}
+table.md-table {
+  direction: rtl;
+}
+.marketvaluetopblock{
+    direction: rtl;
+}
+table.md-table td.md-cell.md-numeric, table.md-table th.md-column.md-numeric{
+    direction: ltr;
 }

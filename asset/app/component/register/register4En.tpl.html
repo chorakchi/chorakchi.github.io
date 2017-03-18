@@ -1,0 +1,29 @@
+<div class="login-bg animation-g" ng-controller="register4EnCtrl">
+        <div class="logo-footer-4"><div class="mfd-logo4-m"></div></div>
+        <div class="panellogin">
+    <div class="login-iner">
+        <div class="back-to" ui-sref="loginEn">Login</div>
+        <div class="logoholder"><span class="mfd-entekhab1-m"></span></div>
+        <form name="Form">
+            <div class="inputholder">
+                <div class="mfd-user2"></div>
+                <input name="singupUserName" class="inputbox" ng-model="singupUserName" placeholder="Username" required/>
+            </div>
+            <div class="inputholder">
+                <div class="mfd-key"></div>
+                <input name="singupPassWord" class="inputbox" type="password" ng-model="singupPassWord" placeholder="Password" required/>
+            </div>
+            <div class="inputholder">
+                <div class="mfd-key"></div>
+                <input name="ConfirmPassWord" class="inputbox" type="password" ng-model="ConfirmPassWord" placeholder="Confirm Password" required/>
+            </div>
+            <button ng-click="singUpFn()" class="btnlogin">SING UP</button>    
+        </form>
+</div>
+    <div class="forgotpass" >After registration you will be automatically transferred to the login page</div>
+  
+    <div class="footer-login"><div class="mfd-logo6-m"></div>
+    <div class="copyright-login">© 2017</div></div>
+    
+    </div>
+</div>

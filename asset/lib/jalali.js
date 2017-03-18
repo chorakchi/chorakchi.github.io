@@ -1,6 +1,16 @@
+/*
+ * JalaliJSCalendar - Jalali Extension for Date Object 
+ * Copyright (c) 2008 Ali Farhadi (http://farhadi.ir/)
+ * Released under the terms of the GNU General Public License.
+ * See the GPL for details (http://www.gnu.org/licenses/gpl.html).
+ * 
+ * Based on code from http://farsiweb.info
+ */
+
 JalaliDate = {
 	g_days_in_month: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
-	j_days_in_month: [31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29]
+	j_days_in_month: [31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29],
+
 };
 
 JalaliDate.jalaliToGregorian = function(j_y, j_m, j_d)
@@ -127,12 +137,8 @@ Date.prototype.setJalaliMonth = function(m, d) {
 	var gy = this.getFullYear();
 	var j = JalaliDate.gregorianToJalali(gy, gm+1, gd);
 	if (m > 11) {
-		j[0] += Math.floor(m / 12);
+		j[0] += math.floor(m / 12);
 		m = m % 12;
-	}
-	else if(m < 0){
-		j[0] = j[0] - 1;
-		m = 11;
 	}
 	j[1] = m+1;
 	if (d != undefined) j[2] = d;
@@ -176,6 +182,85 @@ Date.prototype.getJalaliDate = function() {
 
 Date.prototype.getJalaliDay = function() {
 	var day = this.getDay();
+	day = (day + 1) % 7;
+	return day;
+}
+
+
+/**
+ * Jalali UTC functions 
+ */
+
+Date.prototype.setJalaliUTCFullYear = function(y, m, d) {
+	var gd = this.getUTCDate();
+	var gm = this.getUTCMonth();
+	var gy = this.getUTCFullYear();
+	var j = JalaliDate.gregorianToJalali(gy, gm+1, gd);
+	if (y < 100) y += 1300;
+	j[0] = y;
+	if (m != undefined) {
+		if (m > 11) {
+			j[0] += Math.floor(m / 12);
+			m = m % 12;
+		}
+		j[1] = m + 1;
+	}
+	if (d != undefined) j[2] = d;
+	var g = JalaliDate.jalaliToGregorian(j[0], j[1], j[2]);
+	return this.setUTCFullYear(g[0], g[1]-1, g[2]);
+}
+
+Date.prototype.setJalaliUTCMonth = function(m, d) {
+	var gd = this.getUTCDate();
+	var gm = this.getUTCMonth();
+	var gy = this.getUTCFullYear();
+	var j = JalaliDate.gregorianToJalali(gy, gm+1, gd);
+	if (m > 11) {
+		j[0] += math.floor(m / 12);
+		m = m % 12;
+	}
+	j[1] = m+1;
+	if (d != undefined) j[2] = d;
+	var g = JalaliDate.jalaliToGregorian(j[0], j[1], j[2]);
+	return this.setUTCFullYear(g[0], g[1]-1, g[2]);
+}
+
+Date.prototype.setJalaliUTCDate = function(d) {
+	var gd = this.getUTCDate();
+	var gm = this.getUTCMonth();
+	var gy = this.getUTCFullYear();
+	var j = JalaliDate.gregorianToJalali(gy, gm+1, gd);
+	j[2] = d;
+	var g = JalaliDate.jalaliToGregorian(j[0], j[1], j[2]);
+	return this.setUTCFullYear(g[0], g[1]-1, g[2]);
+}
+
+Date.prototype.getJalaliUTCFullYear = function() {
+	var gd = this.getUTCDate();
+	var gm = this.getUTCMonth();
+	var gy = this.getUTCFullYear();
+	var j = JalaliDate.gregorianToJalali(gy, gm+1, gd);
+	return j[0];
+}
+
+Date.prototype.getJalaliUTCMonth = function() {
+	var gd = this.getUTCDate();
+	var gm = this.getUTCMonth();
+	var gy = this.getUTCFullYear();
+	var j = JalaliDate.gregorianToJalali(gy, gm+1, gd);
+	return j[1]-1;
+}
+
+Date.prototype.getJalaliUTCDate = function() {
+	var gd = this.getUTCDate();
+	var gm = this.getUTCMonth();
+	var gy = this.getUTCFullYear();
+	var j = JalaliDate.gregorianToJalali(gy, gm+1, gd);
+	return j[2];
+}
+
+Date.prototype.getJalaliUTCDay = function() {
+	var day = this.getUTCDay();
 	day = (day + 1) % 7;
 	return day;
 }

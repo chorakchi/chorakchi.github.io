@@ -1,0 +1,40 @@
+<!--<script src='https://www.google.com/recaptcha/api.js?hl=fa'></script>
+<script>
+    function onSubmit(token) {
+        console.log('onsubmit');
+        console.log(token);
+        debugger;
+        //alert('thanks ' + document.getElementById('field').value);
+    }
+</script>-->
+<div class="login-bg animation-g" ng-controller="loginFaCtrl">
+    <div class="logo-footer-4"><div class="mfd-logo3-m"></div></div>
+    <div class="panellogin">
+        <div class="login-iner">
+            <div class="logoholder"><span class="mfd-entekhab2-m"></span></div>
+            <form name="Form">
+                <div class="inputholder">
+                    <div class="mfd-user2"></div>
+                    <input name="userName" class="inputbox" ng-model="userName" placeholder="کلمه عبور" required />
+                </div>
+                <div class="inputholder">
+                    <div class="mfd-key"></div>
+                    <input name="passWord" class="inputbox" type="password" ng-model="passWord" placeholder="گذر واژه" required />
+                </div>
+                <button ng-click="loginFn()" class="btnlogin">ورود</button>
+            </form>
+            
+            <!--<div ng-click="loginFn()" class="btnlogin g-recaptcha" id='recaptcha' data-sitekey="6LeBhxgUAAAAAF-85vIeu1IWgctBqrFaYeYl3qyJ" data-callback="onSubmit" data-size="invisible">ورود</div>-->
+        </div>
+        <div class="forgotpass"><a ui-sref="forgotpasswordFa">فراموشی رمز عبور</a></div>
+        <div class="forgotpass"><a ui-sref="registerFa">ثبت نام</a></div>
+        <div class="back-to"ui-sref="loginEn">English</div>
+
+        <div class="footer-login">
+            <div class="mfd-logo5-m"></div>
+            <div class="copyright-login">© Powered by mofidentekhab</div>
+        </div>
+
+    </div>
+</div>
+

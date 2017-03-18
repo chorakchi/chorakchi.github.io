@@ -1,113 +1,381 @@
-<div>
+﻿<div>
     <div class="panel-bg">
-        <div class="footer-main"><div class="mfd-logo4"></div></div>
+        <div class="footer-main">
+            <div class="mfd-logo3"></div>
+        </div>
         <div class="main-admin animation-p">
             <aside class="al-sidebar .al-sidebar-uncollapsing animation-g">
                 <div class="slimscrolldiv">
                     <div class="sidebar">
-                        <ul id="sidebar-menu t-rtl">
+                        <ul id="sidebar-menu">
                             <li>
                                 <div class="title-menu-main">
-                                    <div class="icon-align t-float-r"><i class="mfd-dashboard"></i></div>
-                                    <div class="title-menu t-float-r">منوی اصلی</div>
-                                    <div class="menu-cast t-float-l"><i class="mfd-right icon-area"></i></div>
+                                    <div class="icon-align t-float-r">
+                                        <i class="mfd-oneeye"></i>
+                                    </div>
+                                    <div class="title-menu t-float-r">{{content.Overview}}</div>
+                                    <div class="menu-cast t-float-l">
+                                        <i class="mfd-right icon-area"></i>
+                                    </div>
                                 </div>
                                 <div class="sidebar-submenu sidebar-submenu-unaccording">
                                     <ul>
-                                        <li ui-sref="panel_fa.home"><div class="title-menu-main2"><div class="title-menu">صفحه نخست</div></div></li>
-                                        <li ui-sref="panel_fa.page1"><div class="title-menu-main2"><div class="title-menu">صفحه اول</div></div></li>
+                                        <li ui-sref="panel_fa.home" ng-click="routedSelected = 'home'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'home'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.Home}}</div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
                                 <div class="title-menu-main">
-                                    <div class="icon-align t-float-r"><i class="mfd-roket"></i></div>
-                                    <div class="title-menu t-float-r">تم اصلی</div>
-                                    <div class="menu-cast .t-float-l"><i class="mfd-right icon-area"></i></div>
+                                    <div class="icon-align t-float-r">
+                                        <i class="mfd-piechart"></i>
+                                    </div>
+                                    <div class="title-menu t-float-r">{{content.Allocation}}</div>
+                                    <div class="menu-cast t-float-l">
+                                        <i class="mfd-right icon-area"></i>
+                                    </div>
                                 </div>
                                 <div class="sidebar-submenu sidebar-submenu-unaccording">
                                     <ul>
-                                        <li ui-sref="panel_en.sample_button"><div class="title-menu-main2"><div class="title-menu">دکمه </div></div></li>
-                                        <li ui-sref="panel_en.sample_input"><div class="title-menu-main2"><div class="title-menu">ورودی داده</div></div></li>
-                                        <li ui-sref="panel_en.sample_alert"><div class="title-menu-main2"><div class="title-menu">پیغام</div></div></li>
-                                        <li ui-sref="panel_en.sample_icon"><div class="title-menu-main2"><div class="title-menu">ایکون</div></div></li>
-                                        <li ui-sref="panel_en.sample_grid"><div class="title-menu-main2"><div class="title-menu">گرید</div></div></li>
+                                        <li ui-sref="panel_fa.assetAllocation" ng-click="routedSelected = 'assetAllocation'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'assetAllocation'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.AssetAllocation}}</div>
+                                            </div>
+                                        </li>
+                                        <li ui-sref="panel_fa.industryAllocation" ng-click="routedSelected = 'industryAllocation'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'industryAllocation'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.IndustryAllocation}}</div>
+                                            </div>
+                                        </li>
+                                        <li ui-sref="panel_fa.historicalAllocation" ng-click="routedSelected = 'historicalAllocation'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'historicalAllocation'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.HistoricalAllocation}}</div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
                                 <div class="title-menu-main">
-                                    <div class="icon-align t-float-r"><i class="mfd-cubes"></i></div>
-                                    <div class="title-menu t-float-r">متریال دیزاین</div>
-                                    <div class="menu-cast .t-float-l"><i class="mfd-right icon-area"></i></div>
+                                    <div class="icon-align t-float-r">
+                                        <i class="mfd-casel"></i>
+                                    </div>
+                                    <div class="title-menu t-float-r">{{content.Holding}}</div>
+                                    <div class="menu-cast t-float-l">
+                                        <i class="mfd-right icon-area"></i>
+                                    </div>
                                 </div>
                                 <div class="sidebar-submenu sidebar-submenu-unaccording">
                                     <ul>
-                                        <li ui-sref="panel_en.mdesign_button"><div class="title-menu-main2"><div class="title-menu">دکمه</div></div></li>
-                                        <li ui-sref="panel_en.mdesign_checkbox"><div class="title-menu-main2"><div class="title-menu">چک باکس</div></div></li>
-                                        <li ui-sref="panel_en.mdesign_autocomplate"><div class="title-menu-main2"><div class="title-menu">آیتو کامپلیت</div></div></li>
-                                     
+                                        <li ui-sref="panel_fa.holdingSummary" ng-click="routedSelected = 'holdingSummary'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'holdingSummary'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.HoldingSummary}}</div>
+                                            </div>
+                                        </li>
+                                        <li ui-sref="panel_fa.balances" ng-click="routedSelected = 'balances'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'balances'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.Balances}}</div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
                                 <div class="title-menu-main">
-                                    <div class="icon-align t-float-r"><i class="mfd-cubes"></i></div>
-                                    <div class="title-menu t-float-r">کندو یو آی</div>
-                                    <div class="menu-cast .t-float-l"><i class="mfd-right icon-area"></i></div>
+                                    <div class="icon-align t-float-r">
+                                        <i class="mfd-transaction"></i>
+                                    </div>
+                                    <div class="title-menu t-float-r">{{content.Transaction}}</div>
+                                    <div class="menu-cast t-float-l">
+                                        <i class="mfd-right icon-area"></i>
+                                    </div>
                                 </div>
                                 <div class="sidebar-submenu sidebar-submenu-unaccording">
                                     <ul>
-                                        <li ui-sref="panel_en.sample-kendo-grid"><div class="title-menu-main2"><div class="title-menu">گرید ویو</div></div></li>
+                                        <li ui-sref="panel_fa.securityTransaction" ng-click="routedSelected = 'securityTransaction'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'securityTransaction'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.SecurityTransaction}}</div>
+                                            </div>
+                                        </li>
+                                        <li ui-sref="panel_fa.cashTransaction" ng-click="routedSelected = 'cashTransaction'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'cashTransaction'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.CashTransaction}}</div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
                                 <div class="title-menu-main">
-                                    <div class="icon-align t-float-r"><i class="mfd-chart"></i></div>
-                                    <div class="title-menu t-float-r">های چارت</div>
-                                    <div class="menu-cast .t-float-l"><i class="mfd-right icon-area"></i></div>
+                                    <div class="icon-align t-float-r">
+                                        <i class="mfd-bag"></i>
+                                    </div>
+                                    <div class="title-menu t-float-r">{{content.MutualFunds}}</div>
+                                    <div class="menu-cast t-float-l">
+                                        <i class="mfd-right icon-area"></i>
+                                    </div>
                                 </div>
                                 <div class="sidebar-submenu sidebar-submenu-unaccording">
                                     <ul>
-                                        <li ui-sref="panel_en.highchart_bar"><div class="title-menu-main2"><div class="title-menu">بار چارت</div></div></li>
-                                        <li ui-sref="panel_en.highchart_line"><div class="title-menu-main2"><div class="title-menu"> لاین چارت</div></div></li>
-                                        <li ui-sref="panel_en.highchart_pie"><div class="title-menu-main2"><div class="title-menu">پای چارت</div></div></li>
-                                        <li ui-sref="panel_en.highchart_heat"><div class="title-menu-main2"><div class="title-menu">هیت چارت</div></div></li>
-                                        <li ui-sref="panel_en.stockchart"><div class="title-menu-main2"><div class="title-menu">استوک چارت</div></div></li>
-                                        <li ui-sref="panel_en.highmap"><div class="title-menu-main2"><div class="title-menu">نقشه</div></div></li>
+                                        <li ui-sref="panel_fa.fundPosition" ng-click="routedSelected = 'fundPosition'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'fundPosition'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.HoldingSummary}}</div>
+                                            </div>
+                                        </li>
+                                        <li ui-sref="panel_fa.contributionsWithdrawals" ng-click="routedSelected = 'contributionsWithdrawals'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'contributionsWithdrawals'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.ContributionsWithdrawals}}</div>
+                                            </div>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </li>
+                            <li>
+                                <div class="title-menu-main">
+                                    <div class="icon-align t-float-r">
+                                        <i class="mfd-money"></i>
+                                    </div>
+                                    <div class="title-menu t-float-r">{{content.Dividends}}</div>
+                                    <div class="menu-cast t-float-l">
+                                        <i class="mfd-right icon-area"></i>
+                                    </div>
+                                </div>
+                                <div class="sidebar-submenu sidebar-submenu-unaccording">
+                                    <ul>
+                                        <li ui-sref="panel_fa.receivableDividends" ng-click="routedSelected = 'receivableDividends'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'receivableDividends'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.ReceivableDividends}}</div>
+                                            </div>
+                                        </li>
+                                        <li ui-sref="panel_fa.stockDividends" ng-click="routedSelected = 'stockDividends'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'stockDividends'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.StockDividends}}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-menu-main">
+                                    <div class="icon-align t-float-r">
+                                        <i class="mfd-linechart"></i>
+                                    </div>
+                                    <div class="title-menu t-float-r">{{content.Performance}}</div>
+                                    <div class="menu-cast t-float-l">
+                                        <i class="mfd-right icon-area"></i>
+                                    </div>
+                                </div>
+                                <div class="sidebar-submenu sidebar-submenu-unaccording">
+                                    <ul>
+                                        <li ui-sref="panel_fa.performance" ng-click="routedSelected = 'performance'">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'performance'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.Performance}}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--<li>
+                                <div class="title-menu-main">
+                                    <div class="icon-align t-float-r">
+                                        <i class="mfd-newspaper"></i>
+                                    </div>
+                                    <div class="title-menu t-float-r">{{content.Reports}}</div>
+                                    <div class="menu-cast t-float-l">
+                                        <i class="mfd-right icon-area"></i>
+                                    </div>
+                                </div>
+                                <div class="sidebar-submenu sidebar-submenu-unaccording">
+                                    <ul>
+                                        <li ui-sref="panel_fa.reports">
+                                            <div class="title-menu-main2">
+                                                <div class="pageselcted" ng-class="{'pageselctedshow': routedSelected == 'reports'}">
+                                                    <div class="pageselectedrebon"></div>
+                                                </div>
+                                                <div class="title-menu">{{content.Reports}}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>-->
                         </ul>
 
-                    </div>
-                    <div class="end-sidebar">
-                        <div class="title-menu-main">
-                            <div class="icon-align "><i class="mfd-roket"></i></div>
-                            <div class="title-menu ">secend</div>
-                            <div class="menu-cast ."><i class="mfd-right icon-area"></i></div>
-                        </div>
                     </div>
                 </div>
                 <div class="sidebar-hover-elem"></div>
             </aside>
             <div class="page-top">
-                <div class="al-logo"><div class="mfd-entekhab4-m"></div></div>
-                <div class="collapse-menu animation-g"><i class="mfd-menu2"></i></div>
-                <div class="user-profile"><div class="mfd-user"></div></div>
-                <a ui-sref="login_fa"><div class="btn-head "><div>خروج</div></div></a>
-                <div class="btn-minimazer mfd-menu2"></div>
-
+                <div class="al-logo">
+                    <div class="mfd-entekhab4-m"></div>
+                </div>
+                <div class="collapse-menu animation-g">
+                    <i class="mfd-menu2"></i>
+                </div>
+                <div class="user-profile">
+                    <div class="mfd-user"></div>
+                </div>
+                <div class="btn-head " style="float: left;">
+                    <div>{{name}}</div>
+                </div>
+                <a ng-click="singOutFn('fa')">
+                    <div class="btn-head ">
+                        <div>{{content.SignOut}}</div>
+                    </div>
+                </a>
+                
+                <div class="btn-minimazer mfd-maximaiz"></div>
 
             </div>
             <div class="al-holder ">
-                <div class="al-main al-main-uncollapsing animation-p">
-                    <div class="al-content ">
-                        <ui-view></ui-view>
-                    </div>
-                </div>
+                <ui-view class="fade"></ui-view>
             </div>
         </div>
     </div>
 </div>
+<div class="block-feed animation-g">
+    <div style="margin:25px; margin-left:55px; background-color: rgba(0, 0, 0,.2);">
+        <md-input-container class="md-block">
+            <label>{{content.Youcomment}}</label>
+            <textarea ng-model="feedBackText" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+        </md-input-container>
+        <div class="medium-panel" style="padding: 13px; padding-bottom: 0; background-color: rgba(0, 0, 0, 0);">
+            <md-radio-group ng-model="feedbackType" md-theme="docs-dark">
+                <div layout-gt-md="row">
+                    <md-radio-button value="1" class="md-primary">{{content.Request}}</md-radio-button> &nbsp &nbsp
+                    <md-radio-button value="2" class="md-primary">{{content.Suggest}}</md-radio-button> &nbsp &nbsp
+                    <md-radio-button value="3" class="md-primary">{{content.Critique}}</md-radio-button> &nbsp &nbsp
+                </div>
+            </md-radio-group>
+        </div>
+        <md-button class="md-raised md-primary md-button-custome" style="width: 100%; height: 43px; margin: 0;" ng-click="feedbackBTN()">{{content.Send}}</md-button>
+    </div>
+</div>
+<div class="btn-feed animation-g"></div>
+
+<md-button ng-click="showAdvanced($event)" class="md-accent md-fab md-fab-bottom-left">
+    <md-icon md-svg-src="asset/image/ic_help_outline_black_24px.svg"></md-icon>
+    <md-tooltip md-direction="left">Help</md-tooltip>
+</md-button>
+
+<script type="text/ng-template" id="dialog1.tmpl.html">
+    <md-dialog aria-label="Mango (Fruit)">
+        <form ng-cloak>
+            <md-toolbar style="background:rgb(95, 160, 154);">
+                <div class="md-toolbar-tools">
+                    <h2>help</h2>
+                    <span flex></span>
+                    <md-button class="md-icon-button" ng-click="cancel()">
+                        <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                    </md-button>
+                </div>
+            </md-toolbar>
+
+            <md-dialog-content style="background: #4f6361; color: white;">
+                <div class="md-dialog-content">
+                    <h2> Overview</h2>
+                    <p>داشبورد صفحه اصلی تمامی اطلاعات مرتبط با دارایی های مالی شما در گروه کارگزاری مفید به همراه اطلاعات آخرین وضعیت بازار را بصورت یکپارچه نمایش می¬دهد</p>
+                    <table class="">
+                        <tr class="">
+                            <td class="marketvalue ">Net Asset Value:</td>
+                            <td class="marketvalue " style="width: 160px;">خالص ارزش دارایی ها </td>
+                            <td class="marketvalue ">خالص ارزش روز دارایی¬ها شما در گروه کارگزاری مفید در ابتدای روز جاری</td>
+                        </tr>
+                        <tr class="">
+                            <td class="marketvalue ">Cash Balance:</td>
+                            <td class="marketvalue ">مانده نقد کارگزاری</td>
+                            <td class="marketvalue ">مانده وجه نقد شما نزد کارگزاری مفید در ابتدای روز که پس از کسر مانده شما نزد صندوق حامی نمایش داده شده است. شایان ذکر است قدرت خرید واقعی شما جهت انجام معاملات برابر مجموع مانده نقد کارگزاری و صندوق حامی می باشد</td>
+                        </tr>
+                        <tr class="">
+                            <td class="marketvalue ">Discretionary Private Portfolio:</td>
+                            <td class="marketvalue ">سبد اختصاصی</td>
+                            <td class="marketvalue ">خالص ارزش سبد اختصاصی شما تحت مدیریت گروه کارگزاری مفید در قالب قرارداد سبدگردانی</td>
+                        </tr>
+                        <tr class="">
+                            <td class="marketvalue ">Hami Fund:</td>
+                            <td class="marketvalue ">صندوق با درآمدثابت حامی</td>
+                            <td class="marketvalue ">خالص ارزش دارایی های شما نزد صندوق با درآمد ثابت حامی</td>
+                        </tr>
+                        <tr class="">
+                            <td class="marketvalue ">Mutual Funds:</td>
+                            <td class="marketvalue ">صندوقهای مشترک سهامی</td>
+                            <td class="marketvalue ">خالص ارزش دارایی های شما نزد صندق های سهامی مشترک تحت مدیریت گروه کارگزاری مفید</td>
+                        </tr>
+                        <tr class="">
+                            <td class="marketvalue ">Non-Discretionary Portfolio:</td>
+                            <td class="marketvalue ">ارزش پرتفوی</td>
+                            <td class="marketvalue ">خالص ارزش موجودی اوراق بهادار پرتفوی شما نزد کارگزاری مفید در ابتدای روز که از سپرده گذاری دریافت می¬شود</td>
+                        </tr>
+                        <tr class="">
+                            <td class="marketvalue ">Consolidate Portfolio:</td>
+                            <td class="marketvalue ">پرتفوی تجمعی</td>
+                            <td class="marketvalue ">گزارش تجمعی دارایی های شما در بخش¬های مختلف گروه کارگزاری مفید</td>
+                        </tr>
+                        <tr class="">
+                            <td class="marketvalue">Asset Allocation:</td>
+                            <td class="marketvalue">ترکیب دارایی-ها</td>
+                            <td class="marketvalue ">این صفحه یک مرور کلی بالا به پائین از تخصیص اوزان پرتفوی شما در طبقات اصلی دارایی و صنایع پذیرفته شده در بازار سرمایه ایران نشان می¬دهد</td>
+                        </tr>
+                        <tr class="">
+                            <td class="marketvalue ">Gainers and Losers:</td>
+                            <td class="marketvalue ">سهام پیشرو پرتفوی شما</td>
+                            <td class="marketvalue ">این قسمت یک مرور کلی از موجودی سهام پرتفوی شما در مقایسه با بازار نمایش می دهد</td>
+                        </tr>
+                    </table>
+
+
+
+                </div>
+            </md-dialog-content>
+
+            <md-dialog-actions layout="row" style="background: #4f6361; color: white;">
+                <md-button href="https://fa.wikipedia.org/wiki/%D8%AF%D8%A7%D9%86%D8%B4_%D9%85%D8%A7%D9%84%DB%8C" target="_blank" md-autofocus>
+                    بیشتر در ویکیپدیا
+                </md-button>
+                <span flex></span>
+            </md-dialog-actions>
+        </form>
+    </md-dialog>
+</script>

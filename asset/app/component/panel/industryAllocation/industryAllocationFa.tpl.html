@@ -1,0 +1,53 @@
+<perfect-scrollbar class="al-main al-main-uncollapsing animation-p">
+    <div class="al-content " ng-controller="industryAllocationFaCtrl">
+        <div class="content-top">
+            <!--<div>{{content.IndustryAllocation}} / {{content.Allocation}}</div>-->
+        </div>
+    <div class="scope-panel">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="medium-panel k-aaa panel-blur">
+                    <div class="panel-body">
+                        <form name="Form">
+                            <div class="row">
+                                <div class="col-sm-6 pull-right">
+                                    <div class="row">
+                                        <div class="col-sm-6 pull-right" style="margin-bottom: 5px; direction: rtl;">
+                                            <label>{{content.PortfolioType}}:</label>
+                                            <select name="managementTypeCode" kendo-drop-down-list k-options="dropOptionsManagementTypeCode" ng-model="ManagementTypeCode" style="width: 130px;" required></select>
+                                            
+                                        </div>
+                                        <div class="col-sm-6 pull-right" style="margin-bottom: 5px; direction: rtl;">
+                                            <label>{{content.Date}}:</label>
+                                            <span class="k-widget k-datepicker k-header ng-pristine ng-valid ng-not-empty ng-valid-required ng-touched" style="width: 120px; direction: ltr;">
+                                                <span class="k-picker-wrap k-state-default">
+                                                    <input class="ng-pristine ng-valid k-input ng-not-empty ng-valid-required ng-touched" type="text" name="date" ng-jalaali-flat-datepicker datepicker-config="datepickerConfig" gregorian-formatted-picked-date="gfdate" gregorian-picked-date="gdate" ng-model="industryAllocationDate">
+                                                    <span class="k-select"><span class="k-icon k-i-calendar"></span></span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 pull-right">
+                                    <div class="row">
+                                        <div class="col-sm-12 pull-right">
+                                            <md-button class="md-raised md-primary md-button-custome" style="width: 100%; margin: 0;" ng-click="industryAllocationReportEnGenerate()">{{content.Report}}</md-button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="medium-panel k-aaa panel-blur">
+                    <div class="panel-body">
+                        <div id="industryAllocationGrid1" class="k-rtl" style="direction: rtl!important;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        </perfect-scrollbar>

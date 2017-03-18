@@ -1,37 +1,76 @@
 @font-face {
   font-family: 'isw';
-  src:url('../fonts/IRANSansWeb.woff');
+  src:url('../fonts/Roboto/Roboto-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'isw-b';
-  src:url('../fonts/IRANSansWeb_Bold.woff');
+  src:url('../fonts/Roboto/Roboto-Bold.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'isw-l';
-  src:url('../fonts/IRANSansWeb_Light.woff'),
-  url('../fonts/IRANSansWeb_Light.ttf');
+  src:url('../fonts/Roboto/Roboto-Light.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'isw-m';
-  src:url('../fonts/IRANSansWeb_Medium.woff'),
-  url('../fonts/IRANSansWeb_Medium.ttf');
+  src:url('../fonts/Roboto/Roboto-Medium.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'isw-u';
-  src:url('../fonts/IRANSansWeb_UltraLight.woff'),
-  url('../fonts/IRANSansWeb_UltraLight.woff');
+  src:url('../fonts/Roboto/Roboto-Thin.ttf');
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'isw-i';
+  src:url('../fonts/Roboto/Roboto-Italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-b-i';
+  src:url('../fonts/Roboto/Roboto-BoldItalic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-l-i';
+  src:url('../fonts/Roboto/Roboto-LightItalic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-m-i';
+  src:url('../fonts/Roboto/Roboto-MediumItalic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-u-i';
+  src:url('../fonts/Roboto/Roboto-ThinItalic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'isw-o';
+  src:url('../fonts/iransans/IRANSansWeb(FaNum).woff'),
+  url('../fonts/iransans/IRANSansWeb(FaNum).woff');
+  font-weight: normal;
+  font-style: normal;
+}
+::selection {
+  background: rgba(94,129,151,0.5); 
+}
+::-moz-selection {
+  background: rgba(94,129,151,0.5);
+}
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -65,13 +104,15 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 }
+ .animatiom-none{
+     animation: none;
+ }
 .animatiom-none *{
     -o-transition-property: none !important;
     -moz-transition-property: none !important;
     -ms-transition-property: none !important;
     -webkit-transition-property: none !important;
     transition-property: none !important;
-
 }
 
 *, *::before, *::after {
@@ -121,6 +162,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#102236', end
 .hide{
     opacity: 0;
 }
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
 .abs-r{
     position: absolute;
     right: 0;
@@ -128,6 +186,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#102236', end
 .abs-l{
     position: absolute;
     left: 0;
+}
+.txtr {
+    text-align: right;
+}
+.txtl {
+    text-align: left;
+}
+.txtc {
+    text-align: center;
 }
 .no-padding{
 
@@ -223,7 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#102236', end
     padding-top: 10%;
     width: 100%;
     margin-top: -100px;
-    height: 400px;
+    height: 430px;
     overflow: hidden;
     font-size: 550px;
     text-align: center;
@@ -399,13 +466,13 @@ background-repeat: no-repeat;
 .main-admin{
     position: absolute;
     top: 0px;
-    background: rgb(29,74,95);
+    background: rgb(30, 56, 68);
     background-image: url('../image/1.png'); 
     margin: auto;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.35);
-    border: 1px solid rgba(78,218,192,.4);
+    box-shadow: 0 2px 44px 15px rgba(0,0,0,.35);
+    /*border: 1px solid rgba(78,218,192,.4);*/
 }
 @media (min-width: 992px) {
 .main-admin{
@@ -431,6 +498,9 @@ background-repeat: no-repeat;
 
     color: rgba(255,255,255,0.4);
 }
+.al-main-uncollapsing {
+    margin-left: 240px;
+}
 }
 @media (max-width: 992px) {
 .main-admin{
@@ -441,9 +511,12 @@ background-repeat: no-repeat;
 .btn-minimazer{
     display: none;
 }
+.al-main-uncollapsing {
+    margin-left: 55px;
+}
 }
 .al-sidebar {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(9, 27, 36);
     display: block;
     height: 100%;
     min-height: 100%;
@@ -451,7 +524,7 @@ background-repeat: no-repeat;
     padding-top: 66px;
     top: 0px;
     width: 240px;
-    z-index: 904;
+    z-index: 80;
     overflow: hidden;
     overflow-x: hidden;
 }
@@ -487,7 +560,7 @@ background-repeat: no-repeat;
 }
 
 .page-top {
-    background-color: rgba(12, 64, 75,0.3);
+    background-color: rgba(12, 64, 75,1);
     font-family: 'isw';
     box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
     height: 66px;
@@ -495,7 +568,7 @@ background-repeat: no-repeat;
     padding: 0 0px 0 0px;
     position: absolute;
     width: 100%;
-    z-index: 904;
+    z-index: 80;
     overflow-y: hidden;
 }
 .al-logo {
@@ -525,8 +598,8 @@ background-repeat: no-repeat;
     text-decoration: none;
 }
 .collapse-menu:hover {
-    background: rgba(255,255,255,0.05);
-	color:rgba(250,103,96,1);
+    background: rgba(255, 0, 22, 0.48);
+	/*color:rgba(250,103,96,1);*/
 }
 .al-search {
     color: rgb(78,218,192);
@@ -574,24 +647,19 @@ background-repeat: no-repeat;
     padding: 22px;
     text-align: center;
     font-size: 18px;
-    color: rgba(94,129,151,0.5);
-    background: rgba(0,0,0,0.1);
+    color: rgba(94,129,151,0.8);
+    background: rgba(0,0,0,0.2);
     height: 100%;
     margin: auto;
 }
 .btn-head div:hover{
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5);
 }
 .al-main {
-
+    position: relative;
     height: 100%;
-
     min-height: 500px;
-    padding-bottom: 34px;
-    overflow-y: auto;
-}
- .al-main-uncollapsing {
-    margin-left: 240px;
+    overflow-y: hidden;
 }
  .al-main-collapsing {
     margin-left: 55px;
@@ -611,12 +679,12 @@ background-repeat: no-repeat;
     padding-top: 66px;
 }
  .al-content {
-    padding: 8px 32px 8px 40px;
+    padding: 77px 32px 8px 40px;
 }
 .content-top {
     padding-bottom: 13px;
     padding-top: 13px;
-	font: 1rem 'isw-u';
+	font: 1rem 'isw-l';
     text-align: right;
     color: rgb(94,129,151);
 }
@@ -643,9 +711,8 @@ background-repeat: no-repeat;
 }
 .panel-body {
 	border-top: 1px solid rgba(255,255,255,0.1);
-    min-height: 100px;
     padding: 15px;
-	font: 1.0rem 'isw-l';
+	font: 0.8rem 'isw-l';
 }
 .pt-page-scaleUp-init {
     -webkit-animation: scaleUp .5s ease both;
@@ -662,6 +729,19 @@ background-repeat: no-repeat;
     from {
         transform: scale(.0);
         opacity: 0;
+    }
+}
+@-moz-keyframes scaleY {
+    from {
+        -moz-transform: scale(1,.0);
+        //opacity: 0;
+    }
+}
+@keyframes scaleY {
+    from {
+        transform: scale(1,.0);
+        
+        //opacity: 0;
     }
 }
 button.btn.btn-default {
@@ -967,4 +1047,7 @@ textarea.form-control {
 .setisw-b{
     font-family: 'isw-b';
 }
-
+.displaynone{
+    display: none;
+}
+/*animation change state*/

@@ -1,0 +1,416 @@
+<perfect-scrollbar class="al-main al-main-uncollapsing animation-p">
+<div class="al-content " ng-controller="homeEnCtrl">
+<br/>
+<div class="scope-panel">
+<div class="row">
+<div class="col-lg-4 col-md-12 col-sm-12 animation-g">
+    <div class="medium-panel k-aaa panel-blur " style="padding: 5px 15px;">
+        <div class="row">
+            <div class="col-lg-12 col-md-6 col-sm-12 no-padding">
+                <div class="smallblock smallblock-color1">
+                    <div class="smallblock-percent" style="display: inline-block">
+                        <div easypiechart options="optionspie" percent="itemNetAsasetValuePercent">
+                            <span class="percent"></span>
+                        </div>
+                    </div>
+                    <div class="smallblock-inerholder">
+                        <div class="smallbloc-title">{{content.NetAsasetValue}}</div>
+                        <div class="smallblock-value" id="homeitemNetAsasetValue">{{itemNetAsasetValue}} {{content.IRR}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+                <div class="smallblock smallblock-color2">
+                    <div class="smallblock-percent" style="display: inline-block">
+                        <div easypiechart options="optionspie" percent="itemCashBalanaceValuePercent">
+                            <span class="percent"></span>
+                        </div>
+                    </div>
+                    <div class="smallblock-inerholder">
+                        <div class="smallbloc-title">{{content.CashBalanace}}</div>
+                        <div class="smallblock-value"> {{itemCashBalanaceValue}} {{content.IRR}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+                <div class="smallblock smallblock-color3">
+                    <div class="smallblock-percent" style="display: inline-block">
+                        <div easypiechart options="optionspie" percent="itemDiscretionaryPrivatePortfolioValuePercent">
+                            <span class="percent"></span>
+                        </div>
+                    </div>
+                    <div class="smallblock-inerholder">
+                        <div class="smallbloc-title">{{content.DiscretionaryPrivatePortfolio}}</div>
+                        <div class="smallblock-value"> {{itemDiscretionaryPrivatePortfolioValue}} <span ng-style="itemDiscretionaryPrivatePortfolioValue >= 0 && {'opacity':'0'} || itemDiscretionaryPrivatePortfolioValue > 0 && {'opacity':'1'}">{{content.IRR}}</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+                <div class="smallblock smallblock-color4">
+                    <div class="smallblock-percent" style="display: inline-block">
+                        <div easypiechart options="optionspie" percent="itemHamiFundPercent">
+                            <span class="percent"></span>
+                        </div>
+                    </div>
+                    <div class="smallblock-inerholder">
+                        <div class="smallbloc-title">{{content.HamiFund}}</div>
+                        <div class="smallblock-value">{{itemHamiFund}} {{content.IRR}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+                <div class="smallblock smallblock-color5">
+                    <div class="smallblock-percent" style="display: inline-block">
+                        <div easypiechart options="optionspie" percent="itemMutualFundsPercent">
+                            <span class="percent"></span>
+                        </div>
+                    </div>
+                    <div class="smallblock-inerholder">
+                        <div class="smallbloc-title">{{content.MutualFunds}}</div>
+                        <div class="smallblock-value">{{itemMutualFunds}} {{content.IRR}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+                <div class="smallblock smallblock-color6">
+                    <div class="smallblock-percent" style="display: inline-block">
+                        <div easypiechart options="optionspie" percent="itemNonDiscretionaryPortfolioPercent">
+                            <span class="percent"></span>
+                        </div>
+                    </div>
+                    <div class="smallblock-inerholder">
+                        <div class="smallbloc-title">{{content.NonDiscretionaryPortfolio}}</div>
+                        <div class="smallblock-value">{{itemNonDiscretionaryPortfolioValue}} {{content.IRR}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+
+                <div class="smallblock smallblock-color7">
+                    <div class="smallblock-percent" style="display: inline-block; opacity: 0;">
+                        <div easypiechart options="optionspie" percent="itemAdvisoryPortfolioPercent">
+                            <span class="percent"></span>
+                        </div>
+                    </div>
+                    <div class="smallblock-inerholder">
+                        <div class="smallbloc-title">{{content.AdvisoryPortfolio}}</div>
+                        <div class="smallblock-value">0.0 {{content.IRR}}</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-8 col-md-12 col-sm-12">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="medium-panel k-aaa panel-blur">
+                <div class="panel-body">
+                   <div class="row">
+                       <div class="col-lg-8 col-md-12">
+                           <div class="row">
+                               <div class=" k-aaa panel-blur">
+                                   <div class="row">
+                                       <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+                                           <div class="marketvaluetopblock" style="background-color: rgba(78, 0, 54, 0.3);">
+                                               <div class="marketvaluetopblock-title">{{users[0].IndexTitleEn}}</div>
+                                               <div class="marketvaluetopblock-value">{{users[0].ClosePrice}}</div>
+                                               <div class="marketvaluetopblock-change" style="font-size:25px; display:none; height:0; text-align:right; position: relative; top: -30px; font-size: 15px; padding: 2px 7px; border-radius: 5px;" ng-style="users[0].PriceVariation >= 0 && {'color': 'rgba(118,255,118,0.7)','display':'block'} || users[0].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'block'}">{{users[0].PriceVariation}}({{users[0].PriceVariationPercentage | number : 2}}%)</div>
+                                               <div class="marketvaluetopblock-change">{{content.TradesVolume}} : {{TSCTotalTradesValue}}</div>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+                                           <div class="marketvaluetopblock" style="background-color: rgba(42, 1, 80, 0.34);">
+                                               <div class="marketvaluetopblock-title">{{users[1].IndexTitleEn}}</div>
+                                               <div class="marketvaluetopblock-value">{{users[1].ClosePrice}}</div>
+                                               <div class="marketvaluetopblock-change" style="font-size:25px; display:none; height:0; text-align:right; position: relative; top: -30px; font-size: 15px; padding: 2px 7px; border-radius: 5px;" ng-style="users[1].PriceVariation >= 0 && {'color': 'rgba(118,255,118,0.7)','display':'block'} || users[4].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'block'}">{{users[4].PriceVariation}}({{users[4].PriceVariationPercentage | number : 2}}%)</div>
+                                               <div class="marketvaluetopblock-change">{{content.TradesVolume}} : {{IFBTotalTradesValue}}</div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-12 col-md-12 col-sm-12">
+                                   <div ng-cloak="" class="tabsdemoDynamicHeight" md-theme="docs-dark">
+                                       <md-content style="background: rgba(0, 0, 0, 0.1) !important;">
+                                           <md-tabs md-dynamic-height="" md-border-bottom="" md-stretch-tabs="always">
+                                               <md-tab label="{{content.TSEIntraday}}">
+                                                   <md-content class="md-padding" style="background: rgba(0, 0, 0, 0.05) !important; overflow: hidden!important;">
+                                                       <div id="stockchart-home" class="animation-p resizechat" style="height: 426px; min-width: 310px">
+                                                           <div class="alignerflex">
+                                                               <div class="loading-1">
+                                                                   <div class="midelclassblockloader" style="position:relative; top:0;">
+                                                                       <span class="mfd-logo-s loader-logo"></span>
+                                                                       <div class="iner-class-block-loader">
+                                                                           <md-progress-circular class="md-accent" md-diameter="40" style="padding: 10px" md-mode="indeterminate"></md-progress-circular>
+                                                                       </div>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                       </div>
+                                                       <div class="blockofcharthomerange">
+                                                           <span>{{content.Timeframe}} : </span>
+                                                           <button class="btn btn-default" style="border: none;" ng-click="datastockcharthomefn(15)" ng-style="datastockcharthometemp === 15 && {'color': 'rgba(255,255,255,1)'}">15 {{content.Minute}}</button>
+                                                           <button class="btn btn-default" style="border: none;" ng-click="datastockcharthomefn(30)" ng-style="datastockcharthometemp === 30 && {'color': 'rgba(255,255,255,1)'}">30 {{content.Minute}}</button>
+                                                       </div>
+                                                   </md-content>
+                                               </md-tab>
+                                               <md-tab label="{{content.TSEDaily}}">
+                                                   <md-content class="md-padding" style="background: rgba(0, 0, 0, 0.05) !important;">
+                                                       <div id="stockchart-home2" class="animation-g resizechat animatiom-none" style="height: 426px; min-width: 310px">
+                                                           <div class="alignerflex">
+                                                               <div class="loading-1">
+                                                                   <svg class="cls" viewBox="-25 -25 100 100" preserveAspectRatio>
+                                                                       <defs>
+                                                                           <linearGradient id="gr-simple" x1="0" y1="0" x2="100%" y2="100%">
+                                                                               <stop stop-color="rgba(255,255,255,.2)" offset="10%" />
+                                                                               <stop stop-color="rgba(255,255,255,.7)" offset="90%" />
+                                                                           </linearGradient>
+                                                                       </defs>
+                                                                       <circle class="cls-1" cx="26" cy="27" r="26" stroke="url(#gr-simple)" />
+                                                                       <path class="cls-2" d="M25,0A24.92,24.92,0,0,1,42.68,7.32" transform="translate(1 2)">
+                                                                           <animateTransform attributeName="transform" type="rotate" dur="1s" from="0 26 27" to="360 26 27" repeatCount="indefinite" />
+                                                                       </path>
+                                                                   </svg>
+                                                               </div>
+                                                           </div>
+                                                       </div>
+                                                   </md-content>
+                                               </md-tab>
+                                           </md-tabs>
+                                       </md-content>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-lg-4 col-md-12">
+                           <div class="row">
+                               <div class="marketvaluetopblock">
+                                   <table class="marketvalue" style="background: rgb(1, 54, 74);">
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[1].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock1[1].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock1[1].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock1[1].PriceVariation}} ({{tempMarketBlock1[1].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[1].ClosePrice}}</td>
+                                       </tr>
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[2].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock1[2].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock1[2].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock1[2].PriceVariation}} ({{tempMarketBlock1[2].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[2].ClosePrice}}</td>
+                                       </tr>
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[3].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock1[3].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock1[3].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock1[3].PriceVariation}} ({{tempMarketBlock1[3].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[3].ClosePrice}}</td>
+                                       </tr>
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[4].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock1[4].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock1[4].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock1[4].PriceVariation}} ({{tempMarketBlock1[4].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[4].ClosePrice}}</td>
+                                       </tr>
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[5].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock1[5].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock1[5].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock1[5].PriceVariation}} ({{tempMarketBlock1[5].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock1[5].ClosePrice}}</td>
+                                       </tr>
+                                   </table>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="marketvaluetopblock">
+                                   <table class="marketvalue" style="background: rgb(1, 54, 74);">
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[1].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock2[1].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock2[1].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock2[1].PriceVariation}} ({{tempMarketBlock2[1].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[1].ClosePrice}}</td>
+                                       </tr>
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[2].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" style="display:none;" ng-style="tempMarketBlock2[2].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock2[2].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock2[2].PriceVariation}} ({{tempMarketBlock2[2].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[2].ClosePrice}}</td>
+                                       </tr>
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[3].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock2[3].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock2[3].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock2[3].PriceVariation}} ({{tempMarketBlock2[3].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[3].ClosePrice}}</td>
+                                       </tr>
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[4].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock2[4].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock2[4].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock2[4].PriceVariation}} ({{tempMarketBlock2[4].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[4].ClosePrice}}</td>
+                                       </tr>
+                                       <tr class="marketvalue">
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[5].IndexTitleEn}}</td>
+                                           <td class="marketvalue txtc" style="display:none;" ng-style="tempMarketBlock2[5].PriceVariation >= 0 && {'color': 'rgba(118,255,118,1)','display':'table-cell'} || tempMarketBlock2[5].PriceVariation < 0 && {'color': 'rgba(255,118,118,1)','display':'table-cell'}">{{tempMarketBlock2[5].PriceVariation}} ({{tempMarketBlock2[5].PriceVariationPercentage | number : 2}}%)</td>
+                                           <td class="marketvalue txtc">{{tempMarketBlock2[5].ClosePrice}}</td>
+                                       </tr>
+                                   </table>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="medium-panel k-aaa panel-blur">
+            <div class="panel-body">
+                <div ng-cloak="" class="tabsdemoDynamicHeight" md-theme="docs-dark">
+                    <md-content style="background: rgba(0, 0, 0, 0.1) !important;">
+                        <md-tabs md-dynamic-height="" md-border-bottom="" md-stretch-tabs="always">
+                            <md-tab label="{{content.Consolidate}}">
+                                <md-content class="md-padding" style="background: rgba(0, 0, 0, 0.05) !important;">
+                                    <div class="row">
+                                        <div class="col-lg-7 col-md-12 col-sm-12">
+                                            <div id="homeTabPie1" class="resizechat animation-p" style="height:400px;">
+                                                <div class="alignerflex">
+                                                    <div class="loading-1">
+                                                        <div class="midelclassblockloader" style="position:relative; top:0;">
+                                                            <span class="mfd-logo-s loader-logo"></span>
+                                                            <div class="iner-class-block-loader">
+                                                                <md-progress-circular class="md-accent" md-diameter="40" style="padding: 10px" md-mode="indeterminate"></md-progress-circular>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-12 col-sm-12">
+                                            <md-content laout="column" flex style="background: rgba(0, 0, 0, 0.05) !important;">
+                                                <md-table-container>
+                                                    <table md-table md-row-select="options.rowSelection" multiple="{{options.multiSelect}}" ng-model="selected" md-progress="promise" style="background: rgba(0, 0, 0, 0.05) !important;">
+                                                        <thead ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
+                                                        <tr md-row md-theme="docs-dark">
+                                                            <th md-column md-order-by="ProductNameEn"><span>{{content.ProductName}}</span></th>
+                                                            <th md-column md-numeric md-order-by="SymbolEn" md-desc><span>{{content.Symbol}}</span></th>
+                                                            <th md-column md-numeric md-order-by="LastTradePrice"><span>{{content.LastPrice}}</span></th>
+                                                            <th md-column md-numeric md-order-by="LastTradePriceChangePercent"><span>{{content.Change}}</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody md-body>
+                                                        <tr md-row md-select="itemGetLoserAndGainsValue" md-on-select="logItem" md-auto-select="options.autoSelect" ng-repeat="itemGetLoserAndGainsValueConsolidate in itemGetLoserAndGainsValueConsolidate.data | filter: filter.search | orderBy: query.order | limitTo: query.limit : (query.page -1) * query.limit">
+                                                            <td md-cell>{{itemGetLoserAndGainsValueConsolidate.ProductNameEn}}</td>
+                                                            <td md-cell>{{itemGetLoserAndGainsValueConsolidate.SymbolEn}}</td>
+                                                            <td md-cell>{{itemGetLoserAndGainsValueConsolidate.LastTradePrice}}</td>
+                                                            <td md-cell ng-style="itemGetLoserAndGainsValueConsolidate.LastTradePriceChangeValue >= 0 && {'color': 'rgba(118,255,118,1)'} || itemGetLoserAndGainsValueConsolidate.LastTradePriceChangeValue < 0 && {'color': 'rgba(255,118,118,1)'}">{{itemGetLoserAndGainsValueConsolidate.LastTradePriceChangeValue}}({{itemGetLoserAndGainsValueConsolidate.LastTradePriceChangePercent}}%)
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </md-table-container>
+                                                <!--<md-table-pagination md-limit="query.limit" md-limit-options="limitOptions" md-page="query.page" md-total="{{itemGetLoserAndGainsValueConsolidate.count}}" md-page-select="options.pageSelect" md-boundary-links="options.boundaryLinks" md-on-paginate="logPagination"></md-table-pagination>-->
+
+                                            </md-content>
+                                        </div>
+                                    </div>
+                                </md-content>
+                            </md-tab>
+                            <md-tab label="{{content.Executiononly}}">
+                                <md-content class="md-padding" style="background: rgba(0, 0, 0, 0.05) !important;">
+                                    <div class="row">
+                                        <div class="col-lg-7 col-md-12 col-sm-12">
+                                            <div id="homeTabPie2" class="resizechat animation-p" style="height:400px;">
+                                                <div class="alignerflex">
+                                                    <div class="loading-1">
+                                                        <div class="midelclassblockloader" style="position:relative; top:0;">
+                                                            <span class="mfd-logo-s loader-logo"></span>
+                                                            <div class="iner-class-block-loader">
+                                                                <md-progress-circular class="md-accent" md-diameter="40" style="padding: 10px" md-mode="indeterminate"></md-progress-circular>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-12 col-sm-12">
+                                            <md-content laout="column" flex style="background: rgba(0, 0, 0, 0.05) !important;">
+                                                <md-table-container>
+                                                    <table md-table md-row-select="options.rowSelection" multiple="{{options.multiSelect}}" ng-model="selected" md-progress="promise" style="background: rgba(0, 0, 0, 0.05) !important;">
+                                                        <thead ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
+                                                            <tr md-row md-theme="docs-dark">
+                                                                <th md-column md-order-by="ProductNameEn"><span>{{content.ProductName}}</span></th>
+                                                                <th md-column md-numeric md-order-by="SymbolEn" md-desc><span>{{content.Symbol}}</span></th>
+                                                                <th md-column md-numeric md-order-by="LastTradePrice"><span>{{content.LastPrice}}</span></th>
+                                                                <th md-column md-numeric md-order-by="LastTradePriceChangePercent"><span>{{content.Change}}</span></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody md-body>
+                                                            <tr md-row md-select="itemGetLoserAndGainsValue" md-on-select="logItem" md-auto-select="options.autoSelect" ng-repeat="itemGetLoserAndGainsValueExecutionOnly in itemGetLoserAndGainsValueExecutionOnly.data | filter: filter.search | orderBy: query.order | limitTo: query.limit : (query.page -1) * query.limit">
+                                                                <td md-cell>{{itemGetLoserAndGainsValueExecutionOnly.ProductNameEn}}</td>
+                                                                <td md-cell>{{itemGetLoserAndGainsValueExecutionOnly.SymbolEn}}</td>
+                                                                <td md-cell>{{itemGetLoserAndGainsValueExecutionOnly.LastTradePrice}}</td>
+                                                                <td md-cell ng-style="itemGetLoserAndGainsValueExecutionOnly.LastTradePriceChangeValue >= 0 && {'color': 'rgba(118,255,118,1)'} || itemGetLoserAndGainsValueExecutionOnly.LastTradePriceChangeValue < 0 && {'color': 'rgba(255,118,118,1)'}">
+                                                                    {{itemGetLoserAndGainsValueExecutionOnly.LastTradePriceChangeValue}}({{itemGetLoserAndGainsValueExecutionOnly.LastTradePriceChangePercent}}%)
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </md-table-container>
+                                                <!--<md-table-pagination md-limit="query.limit" md-limit-options="limitOptions" md-page="query.page" md-total="{{itemGetLoserAndGainsValueExecutionOnly.count}}" md-page-select="options.pageSelect" md-boundary-links="options.boundaryLinks" md-on-paginate="logPagination"></md-table-pagination>-->
+
+                                            </md-content>
+                                        </div>
+                                    </div>
+                                </md-content>
+                            </md-tab>
+                            <md-tab label="{{content.Discretionary}}">
+                                <md-content class="md-padding" style="background: rgba(0, 0, 0, 0.05) !important;">
+                                    <div class="row">
+                                        <div class="col-lg-7 col-md-12 col-sm-12">
+                                            <div id="homeTabPie0" class="resizechat animation-p" style="400px;">
+                                                <div class="alignerflex">
+                                                    <div class="loading-1">
+                                                        <div class="midelclassblockloader" style="position:relative; top:0;">
+                                                            <span class="mfd-logo-s loader-logo"></span>
+                                                            <div class="iner-class-block-loader">
+                                                                <md-progress-circular class="md-accent" md-diameter="40" style="padding: 10px" md-mode="indeterminate"></md-progress-circular>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-12 col-sm-12">
+                                            <md-content laout="column" flex style="background: rgba(0, 0, 0, 0.05) !important;">
+                                                <md-table-container>
+                                                    <table md-table md-row-select="options.rowSelection" multiple="{{options.multiSelect}}" ng-model="selected" md-progress="promise" style="background: rgba(0, 0, 0, 0.05) !important;">
+                                                        <thead ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
+                                                        <tr md-row md-theme="docs-dark">
+                                                            <th md-column md-order-by="ProductNameEn"><span>{{content.ProductName}}</span></th>
+                                                            <th md-column md-order-by="SymbolEn" md-desc><span>{{content.Symbol}}</span></th>
+                                                            <th md-column md-numeric md-order-by="LastTradePrice"><span>{{content.LastPrice}}</span></th>
+                                                            <th md-column md-numeric md-order-by="LastTradePriceChangePercent"><span>{{content.Change}}</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody md-body>
+                                                        <tr md-row md-select="itemGetLoserAndGainsValue" md-on-select="logItem" md-auto-select="options.autoSelect" ng-repeat="itemGetLoserAndGainsValueDiscretionary in itemGetLoserAndGainsValueDiscretionary.data | filter: filter.search | orderBy: query.order | limitTo: query.limit : (query.page -1) * query.limit">
+                                                            <td md-cell>{{itemGetLoserAndGainsValueDiscretionary.ProductNameEn}}</td>
+                                                            <td md-cell>{{itemGetLoserAndGainsValueDiscretionary.SymbolEn}}</td>
+                                                            <td md-cell>{{itemGetLoserAndGainsValueDiscretionary.LastTradePrice}}</td>
+                                                            <td md-cell ng-style="itemGetLoserAndGainsValueDiscretionary.LastTradePriceChangeValue >= 0 && {'color': 'rgba(118,255,118,1)'} || itemGetLoserAndGainsValueDiscretionary.LastTradePriceChangeValue < 0 && {'color': 'rgba(255,118,118,1)'}">{{itemGetLoserAndGainsValueDiscretionary.LastTradePriceChangeValue}}({{itemGetLoserAndGainsValueDiscretionary.LastTradePriceChangePercent}}%)
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </md-table-container>
+                                                <!--<md-table-pagination md-limit="query.limit" md-limit-options="limitOptions" md-page="query.page" md-total="{{itemGetLoserAndGainsValueExecutionOnly.count}}" md-page-select="options.pageSelect" md-boundary-links="options.boundaryLinks" md-on-paginate="logPagination"></md-table-pagination>-->
+                                            </md-content>
+                                        </div>
+                                    </div>
+                                </md-content>
+                            </md-tab>
+                        </md-tabs>
+                    </md-content>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</perfect-scrollbar>

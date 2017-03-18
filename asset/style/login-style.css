@@ -1,7 +1,7 @@
 @media (min-width: 892px) {
     .panellogin {
         position: relative;
-        width: 300px;
+        width: 350px;
         margin-top: 10%;
     }
 }
@@ -27,14 +27,15 @@
     font-family: sans-serif;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .panellogin{
     background: rgb(29,74,95);
     padding-top: 30px;
-    margin: 10%;
-    margin: auto;
-    margin-top: 10%;
+    margin: 0;
     box-shadow: 2px 2px 20px rgb(0,0,0);
     z-index: 100;
 }
@@ -51,7 +52,7 @@
     margin-bottom: 100px;
 }
 .inputbox{
-    font-family: 'isw-u';
+    font-family: 'isw';
     background: rgb(14,45,63);
     border: 1px solid rgba(78,218,192,0);
     width: 100%;
@@ -84,6 +85,7 @@
     color: rgb(29,74,95);
     border: 1px solid rgba(78,218,192,0);
     cursor: pointer;
+    width: 100%;
 }
 .btnlogin:hover{
     background: rgba(78,218,192,0.3);
@@ -94,7 +96,7 @@
 .forgotpass{
     position: relative;
     bottom: 100px;
-    font-family: 'isw-u';
+    font-family: 'isw-l';
     text-align: center;
     margin: 20px;
 }
@@ -130,7 +132,7 @@
     background: rgb(94,129,151);
 }
 .copyright-login{
-    font-family: 'isw-u';
+    font-family: 'isw-l';
     float: right;
     color: rgb(94,129,151);
     margin: 3px;
@@ -157,5 +159,22 @@
     color: rgba(0,0,0,.4);
     z-index: 99;
     margin-bottom: -130px;
-
+}
+.back-to{
+    position: absolute;
+    right: 23px;
+    padding: 1px 8px;
+    bottom: 39px;
+    background: rgb(78,218,192);
+    color: rgb(29, 74, 95);
+    border-radius: 25px;
+    font-family: 'isw';
+    font-size: 14px;
+    border: 1px solid ;
+    cursor:pointer;
+}
+.back-to:hover{
+    background: rgb(29, 74, 95);
+    color : rgb(78,218,192);
+    border: 1px solid ;
 }

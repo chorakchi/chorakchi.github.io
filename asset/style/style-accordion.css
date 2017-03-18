@@ -1,14 +1,16 @@
 #sidebar-menu {
   padding: 0;
   margin: 0;
-  width: 180px;
 }
 .sidebar {
   position: relative;
     overflow-y: auto;
     height: 100%;
-    font: 0.9rem 'isw-u';
+    font: 0.9rem 'isw';
+    overflow-y: auto;
     overflow-x: hidden;
+}
+.slimscrolldiv {
 }
 .header-title{
   position: relative;
@@ -36,7 +38,6 @@ li [class*=mfd-]{
   float: left;
   display: inline-block;
   position: relative;
-  top:-2px;
   font-size: 30px;
 }
 .icon-align-head{
@@ -47,8 +48,8 @@ li [class*=mfd-]{
 li div[class="title-menu-main"] {
   display: inline-block;
   width: 100%;
-  border-bottom: 1px solid;
-  border-color: rgba(255,255,255,0.1);
+  /*border-bottom: 1px solid;
+  border-color: rgba(255,255,255,0.1);*/
   cursor: pointer;
   color: rgb(78,218,192);
 }
@@ -56,24 +57,26 @@ li div[class="title-menu-main"] {
   background: rgba(255,255,255,0.04);
 }
 .title-menu{
-  width: 125px;
   max-height: 60px;
   display: inline-block;
   position: relative;
-  padding: 5px;
   padding-top:15px;
   padding-bottom:0px;
   overflow: hidden;
+    float: left;
+    height: 48px;
 }
 .sidebar-submenu {
     overflow: hidden;
 }
 .title-menu-main2{
+  position: relative;
   display: inline-block;
   cursor: pointer;
   width: 100%;
   background-color: rgba(0,0,0,0.2);
   padding-left: 40px;
+  font-family:'isw-l';
 }
 .title-menu-main2:hover{
   background: rgba(255,255,255,0.02);
@@ -125,3 +128,23 @@ li a {
     to {opacity: 1;}
 }
  /* ///////////////////////////////////////////////// */
+ .pageselcted{
+    opacity: 0;
+    background: rgb(30, 56, 68);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+ }
+  .pageselectedrebon{
+    background: rgba(13, 107, 90, 0.8);
+    width: 215px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+ }
+  .pageselctedshow{
+      opacity: 1;
+  }

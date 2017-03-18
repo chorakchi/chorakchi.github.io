@@ -1,0 +1,81 @@
+<perfect-scrollbar class="al-main al-main-uncollapsing animation-p">
+    <div class="al-content ">
+        <div class="content-top">
+           <!-- <div>{{content.AssetAllocation}} / {{content.Allocation}}</div>-->
+        </div>
+        <div class="scope-panel" ng-controller="assetAllocationFaCtrl">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="medium-panel k-aaa panel-blur">
+                        <div class="panel-body">
+                            <form name="Form">
+                                <div class="row">
+                                    <div class="col-md-6 pull-right">
+                                        <div class="row">
+                                            <div class="col-sm-6 pull-right" style="margin-bottom: 5px; direction: rtl;">
+                                                <label>{{content.PortfolioType}}:</label>
+                                                <select value="2" name="managementTypeCode" kendo-drop-down-list k-options="dropOptionsManagementTypeCode" ng-model="ManagementTypeCode" style="width: 130px;" required></select>
+                                                
+                                            </div>
+                                            <div class="col-sm-6 pull-right" style="margin-bottom: 5px; direction: rtl;">
+                                                <label>{{content.Date}}:</label>
+                                                <span class="k-widget k-datepicker k-header ng-pristine ng-valid ng-not-empty ng-valid-required ng-touched" style="width: 120px; direction: ltr;">
+                                                    <span class="k-picker-wrap k-state-default">
+                                                        <input class="ng-pristine ng-valid k-input ng-not-empty ng-valid-required ng-touched" type="text" name="date" ng-jalaali-flat-datepicker datepicker-config="datepickerConfig" gregorian-formatted-picked-date="gfdate" gregorian-picked-date="gdate" ng-model="assetAllocationDatePickerDate">
+                                                        <span class="k-select"><span class="k-icon k-i-calendar aaaa"></span></span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pull-right">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <md-button class="md-raised md-primary md-button-custome" style="width: 100%; margin: 0;" ng-click="assetAllocationReportGenerate()">{{content.Report}}</md-button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="medium-panel k-aaa panel-blur">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div id="pie2" class="resizechat animation-p"></div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <md-content laout="column" flex style="background: rgba(0, 0, 0, 0.05) !important;">
+                                        <md-table-container>
+                                            <table md-table md-row-select="options.rowSelection" multiple="{{options.multiSelect}}" ng-model="selected" md-progress="promise" style="background: rgba(0, 0, 0, 0.05) !important;">
+                                                <thead ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
+                                                    <tr md-row md-theme="docs-dark">
+                                                        <th md-column md-order-by="name"><span>{{content.Asset}}</span></th>
+                                                        <th md-column md-order-by="y" md-desc><span>{{content.NetAssetValue}}</span></th>
+                                                        <th md-column md-numeric md-order-by="percent"><span>{{content.Percent}} </span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody md-body>
+                                                    <tr md-row md-select="y" md-on-select="logItem" md-auto-select="options.autoSelect" ng-repeat="assetAllocationTable in assetAllocationTable.data | filter: filter.search | orderBy: query.order | limitTo: query.limit : (query.page -1) * query.limit">
+                                                        <td md-cell>{{assetAllocationTable.name}}</td>
+                                                        <td md-cell ng-class="{'redcolorbracket': assetAllocationTable.percent < 0 }">{{assetAllocationTable.y | abs | number : 0}}</td>
+                                                    <td md-cell ng-style="assetAllocationTable.percent >= 0 && {'color': 'rgba(118,255,118,1)'} || assetAllocationTable.percent < 0 && {'color': 'rgba(255,118,118,1)'}">
+                                                    <div style=" position: relative; border: 1px solid rgba(255,255,255,0.3); text-align: center; height: 24px;"> <span style="position: absolute; right: 0; background-color: rgba(255,255,255,0.3);    height: 100%; line-height: 21px;" ng-style="{width: assetAllocationTable.percent  + '%'}" ng-class="{'redcolorbracket': assetAllocationTable.percent < 0 }"></span>{{assetAllocationTable.percent | number : 2 | abs}}%</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </md-table-container>
+                                    </md-content>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</perfect-scrollbar>
