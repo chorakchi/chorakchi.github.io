@@ -71,17 +71,14 @@ a{
 .headermainblock .wrapper h2 {
     width: 100%;
     text-align: left;
-    
     font-weight: 500;
-    font-size: 40px;
-    padding-left: 20px;
+    font-size: 45px;
 }
 .headermainblock .wrapper h2 span {
     width: 100%;
     text-align: left;
     font-weight: 500;
     font-size: 40px;
-    padding-left: 20px;
     font-weight: 900;
 }
 .headermainblock .wrapper span {
@@ -100,16 +97,39 @@ a{
 }
 .blockbox .wrapper .features{
     padding: 20px;
-        width: 100%;
+    width: 100%;
     padding: 36px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-.blockbox .wrapper .features article{
-    text-align: center;
 }
 .blockbox .wrapper .features article img{
     width: 80px;
+}
+.blockboxinercolor1{
+    background: rgba(0,0,0,0.1);
+}
+.blockboxinercolor2{
+    background: white
+}
+.blockboxinercolor3{
+    background: rgba(0,0,0,0.1);
+}
+.blockboxinercolorfooter{
+    background: rgb(72, 100, 107);
+}
+.headermainblockbtnholder{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.headermainblockbtn{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fffefe;
+    width: 200px;
+    padding: 9px;
+    margin: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+.headermainblockbtn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
