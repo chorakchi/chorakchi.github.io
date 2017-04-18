@@ -27709,11 +27709,6 @@
 	                    'h3',
 	                    null,
 	                    'Short personal biography'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'I was born in the city of dorud in the province of Lorestan in iran, I attended high school there and for University, went to Arak. After I got married for better working conditions in Tehran. And now I\'m planning to immigrate to Germany'
 	                  )
 	                ),
 	                _react2.default.createElement(
