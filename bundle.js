@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -56,15 +56,15 @@
 
 	var _router = __webpack_require__(175);
 
-	var _grid = __webpack_require__(299);
+	var _grid = __webpack_require__(302);
 
 	var _grid2 = _interopRequireDefault(_grid);
 
-	var _style = __webpack_require__(300);
+	var _style = __webpack_require__(303);
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _jquery = __webpack_require__(301);
+	var _jquery = __webpack_require__(304);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -85,7 +85,7 @@
 	  init();
 	});
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "main.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "main.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 1 */
@@ -21527,7 +21527,7 @@
 /* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -21543,6 +21543,22 @@
 
 	var _index2 = _interopRequireDefault(_index);
 
+	var _main = __webpack_require__(298);
+
+	var _main2 = _interopRequireDefault(_main);
+
+	var _page = __webpack_require__(299);
+
+	var _page2 = _interopRequireDefault(_page);
+
+	var _cv = __webpack_require__(300);
+
+	var _cv2 = _interopRequireDefault(_cv);
+
+	var _notfound = __webpack_require__(301);
+
+	var _notfound2 = _interopRequireDefault(_notfound);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _reactDom.render)(_react2.default.createElement(
@@ -21550,10 +21566,17 @@
 	  { history: _reactRouter.hashHistory },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _index2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/index', component: _index2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '*', component: _index2.default })
+	  _react2.default.createElement(
+	    _reactRouter.Route,
+	    { path: '/main', component: _main2.default },
+	    _react2.default.createElement(_reactRouter.Route, { path: '/main/cv', component: _cv2.default })
+	  ),
+	  _react2.default.createElement(_reactRouter.Route, { path: 'index', component: _index2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: 'page1', component: _page2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notfound2.default })
 	), document.getElementById('app'));
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "router.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "router.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 176 */
@@ -27211,7 +27234,7 @@
 /* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -27227,83 +27250,79 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _mypicture = __webpack_require__(279);
+	var _lamp = __webpack_require__(279);
 
-	var _mypicture2 = _interopRequireDefault(_mypicture);
+	var _lamp2 = _interopRequireDefault(_lamp);
 
 	var _mylogo = __webpack_require__(280);
 
 	var _mylogo2 = _interopRequireDefault(_mylogo);
 
-	var _lamp = __webpack_require__(281);
-
-	var _lamp2 = _interopRequireDefault(_lamp);
-
-	var _rulerPen = __webpack_require__(282);
+	var _rulerPen = __webpack_require__(281);
 
 	var _rulerPen2 = _interopRequireDefault(_rulerPen);
 
-	var _phone = __webpack_require__(283);
+	var _phone = __webpack_require__(282);
 
 	var _phone2 = _interopRequireDefault(_phone);
 
-	var _rocket = __webpack_require__(284);
+	var _rocket = __webpack_require__(283);
 
 	var _rocket2 = _interopRequireDefault(_rocket);
 
-	var _terminal = __webpack_require__(285);
+	var _terminal = __webpack_require__(284);
 
 	var _terminal2 = _interopRequireDefault(_terminal);
 
-	var _graph = __webpack_require__(286);
+	var _graph = __webpack_require__(285);
 
 	var _graph2 = _interopRequireDefault(_graph);
 
-	var _js = __webpack_require__(287);
+	var _js = __webpack_require__(286);
 
 	var _js2 = _interopRequireDefault(_js);
 
-	var _reactHexagon = __webpack_require__(288);
+	var _reactHexagon = __webpack_require__(287);
 
 	var _reactHexagon2 = _interopRequireDefault(_reactHexagon);
 
-	var _angularIcon = __webpack_require__(289);
+	var _angularIcon = __webpack_require__(288);
 
 	var _angularIcon2 = _interopRequireDefault(_angularIcon);
 
-	var _jQurery = __webpack_require__(290);
+	var _jQurery = __webpack_require__(289);
 
 	var _jQurery2 = _interopRequireDefault(_jQurery);
 
-	var _HTML = __webpack_require__(291);
+	var _HTML = __webpack_require__(290);
 
 	var _HTML2 = _interopRequireDefault(_HTML);
 
-	var _CSS = __webpack_require__(292);
+	var _CSS = __webpack_require__(291);
 
 	var _CSS2 = _interopRequireDefault(_CSS);
 
-	var _webpack = __webpack_require__(293);
+	var _webpack = __webpack_require__(292);
 
 	var _webpack2 = _interopRequireDefault(_webpack);
 
-	var _nodejsIcon = __webpack_require__(294);
+	var _nodejsIcon = __webpack_require__(293);
 
 	var _nodejsIcon2 = _interopRequireDefault(_nodejsIcon);
 
-	var _graphql = __webpack_require__(295);
+	var _graphql = __webpack_require__(294);
 
 	var _graphql2 = _interopRequireDefault(_graphql);
 
-	var _electron = __webpack_require__(296);
+	var _electron = __webpack_require__(295);
 
 	var _electron2 = _interopRequireDefault(_electron);
 
-	var _nativescript = __webpack_require__(297);
+	var _nativescript = __webpack_require__(296);
 
 	var _nativescript2 = _interopRequireDefault(_nativescript);
 
-	var _mytrand = __webpack_require__(298);
+	var _mytrand = __webpack_require__(297);
 
 	var _mytrand2 = _interopRequireDefault(_mytrand);
 
@@ -27311,7 +27330,6 @@
 
 	//import $ from 'jquery'
 
-	// import picture_mypicture from '../image/lamp.svg'
 	exports.default = _react2.default.createClass({
 	  displayName: 'modules',
 	  render: function render() {
@@ -27320,7 +27338,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'headermainblock' },
+	        { className: 'headermainblock', style: { position: 'absolute', left: '0', right: '0', height: '100%' } },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'wrapper' },
@@ -27345,486 +27363,16 @@
 	            _react2.default.createElement('br', null),
 	            ' researching and implementing new UI technologies, and exploring future trends'
 	          ),
-	          _react2.default.createElement('img', { src: _mypicture2.default, style: { borderRadius: 10, float: 'right' }, alt: 'Pacman' }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'headermainblockbtnholder animation-g' },
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'headermainblockbtn' },
-	              'Video Resume'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'headermainblockbtn' },
-	              'Printable CV'
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'blockbox' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'wrapper' },
-	          _react2.default.createElement(
-	            'section',
-	            { className: 'features' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'row' },
-	              _react2.default.createElement(
-	                'article',
-	                { className: 'col-md-4' },
-	                _react2.default.createElement('img', { src: _lamp2.default, alt: 'Cloud' }),
-	                _react2.default.createElement(
-	                  'h3',
-	                  null,
-	                  'Middleware '
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Create modern web apps, sites, and APIs using HTTP or real-time apps using MEAN stack.'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Familiar with MEAN stack (MongoDB, Express, Angular.JS, Node.JS) and GraphQL'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'article',
-	                { className: 'col-md-4' },
-	                _react2.default.createElement('img', { src: _rulerPen2.default, alt: 'Rocket' }),
-	                _react2.default.createElement(
-	                  'h3',
-	                  null,
-	                  'UI/UX'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Design and use popular UI libraries such as Bootstrap, Foundation, google material design , Material-UI and Semantic-UI to build semantic and responsive web pages'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'article',
-	                { className: 'col-md-4' },
-	                _react2.default.createElement('img', { src: _phone2.default, alt: 'Lock' }),
-	                _react2.default.createElement(
-	                  'h3',
-	                  null,
-	                  'Quality code'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Postman, Fiddler or other in-browser developer tools to debug cross-browser/platform issues and solutions ,tests and code review'
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'row' },
-	              _react2.default.createElement(
-	                'article',
-	                { className: 'col-md-4' },
-	                _react2.default.createElement('img', { src: _rocket2.default, alt: 'Graph' }),
-	                _react2.default.createElement(
-	                  'h3',
-	                  null,
-	                  'Expressive'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Work with Electron , Nativescript, PhantomJS,  and Use D3.js, highchart, amchart, kendu-UI, in all modern framework'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'article',
-	                { className: 'col-md-4' },
-	                _react2.default.createElement('img', { src: _terminal2.default, alt: 'Terminal' }),
-	                _react2.default.createElement(
-	                  'h3',
-	                  null,
-	                  'Extensible'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'working with build processes and using tools like Webpack, Grunt or Gulp and package managers such as NPM or Bower'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'article',
-	                { className: 'col-md-4' },
-	                _react2.default.createElement('img', { src: _graph2.default, alt: 'Pacman' }),
-	                _react2.default.createElement(
-	                  'h3',
-	                  null,
-	                  'Middleware '
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Create modern web apps, sites, and APIs using HTTP or real-time apps using MEAN stack.',
-	                  _react2.default.createElement('br', null),
-	                  'Familiar with MEAN stack (MongoDB, Express, Angular.JS, Node.JS) and GraphQL'
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'blockboxinercolor1' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'wrapper' },
-	            _react2.default.createElement(
-	              'section',
-	              { className: 'features' },
+	              _NavLink2.default,
+	              { to: '/main/cv' },
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'row' },
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-12' },
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'more about my skills'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Aspiration to constantly improve yourself and learn new technologies and concepts'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'In writing high-performance, reusable code and using source control systems(g.e Git, TFS).'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Knowledge on design and consumption of REST-based APIs'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'I’m trying good English communication level'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Knowledge of German is elementary, but I will stay to complete it'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'I have at least 2+ years of experience in frontend development'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'I\' m trying an effective communicator, love working in a team, pay a lot of attention to detail and love to learn new things'
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'blockboxinercolor2' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'wrapper' },
-	            _react2.default.createElement(
-	              'section',
-	              { className: 'features' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'row' },
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-4' },
-	                  _react2.default.createElement('img', { src: _js2.default, style: { width: 134 }, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'JavaScript'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _reactHexagon2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'React'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _angularIcon2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Angular'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _jQurery2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    ' jQuery'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _HTML2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'HTML5'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _CSS2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'CSS3'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _webpack2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Webpack'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _nodejsIcon2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'node.js'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _graphql2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'GraphQL'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _electron2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Electron'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-2 col-sm-6' },
-	                  _react2.default.createElement('img', { src: _nativescript2.default, alt: 'Pacman' }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Nativescript'
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'blockboxinercolor3' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'wrapper' },
-	            _react2.default.createElement(
-	              'section',
-	              { className: 'features' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'row' },
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-12' },
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Experience and Education'
-	                  ),
-	                  _react2.default.createElement('img', { src: _mytrand2.default, style: { width: '100%' }, alt: 'Pacman' })
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'blockboxinercolorfooter textfooter' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'wrapper' },
-	            _react2.default.createElement(
-	              'section',
-	              { className: 'features' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'row' },
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-4' },
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Short personal biography'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-4' },
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Contacts'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Mohammad Chorakchi'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Email: m.chorakchi@gmail.com'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'tell: +98-930-32-32-903'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'telegram: @chorakchi'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'article',
-	                  { className: 'col-md-4' },
-	                  _react2.default.createElement('img', { className: 'headermylogo', src: _mylogo2.default }),
-	                  _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Social Network'
-	                  ),
-	                  _react2.default.createElement('div', { className: 'icon-sotial icon-sotial4' }),
-	                  _react2.default.createElement('div', { className: 'icon-sotial icon-sotial1' }),
-	                  _react2.default.createElement('div', { className: 'icon-sotial icon-sotial2' }),
-	                  _react2.default.createElement('div', { className: 'icon-sotial icon-sotial3' })
-	                )
-	              )
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'headerblock animation-g' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'wrapper' },
-	          _react2.default.createElement(
-	            'nav',
-	            { className: 'headermainblockiner' },
-	            _react2.default.createElement(
-	              'div',
-	              null,
-	              _react2.default.createElement('img', { className: 'headermylogo', src: _mylogo2.default }),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'headermainblocklogo' },
-	                '.Chorakchi'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'ul',
-	              { className: 'ulinnavheader' },
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'headermainblocklink' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/chorakchi' },
-	                  'GitHub'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'headermainblocklink' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://chorakchi.github.io/mofid' },
-	                  'Demo'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'headermainblocklink' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://chorakchi.github.io/' },
-	                  'Blog'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'headermainblocklink' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://mofid.team' },
-	                  'Slack'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'headermainblocklink' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://chorakchi.github.io/' },
-	                  'Home'
-	                )
+	                { className: 'headermainblockbtn' },
+	                'Resume'
 	              )
 	            )
 	          )
@@ -27833,71 +27381,15 @@
 	    );
 	  }
 	});
+	// import picture_mypicture from '../image/mypicture.jpg'
 
-	scrollingHead();
-	function scrollingHead() {
-	  $(window).scroll(function () {
-	    if ($(window).scrollTop() >= 300) {
-
-	      $(".headerblock").css({
-	        'background': 'rgb(247, 202, 201)',
-	        'height': '60'
-	      });
-	      $(".headermainblocklogo").css({
-	        'font-size': '20px'
-	      });
-	      $('.headermainblockiner').css({
-	        'padding': '0px'
-	      });
-	      $('.ulinnavheader').css({
-	        'padding': '0px'
-	      });
-	    }
-	    if ($(window).scrollTop() <= 30) {
-
-	      $(".headerblock").css({
-	        'background': 'rgba(255,255,255,0.2)',
-	        'height': '100'
-	      });
-	      $(".headermainblocklogo").css({
-	        'font-size': '30px'
-	      });
-	      $('.headermainblockiner').css({
-	        'padding': '20px'
-	      });
-	      $('.ulinnavheader').css({
-	        'padding': '25px'
-	      });
-	    }
-	    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-	      $(".headerblock").css({
-	        'height': '0'
-	      });
-	    }
-	    if ($(window).scrollTop() + $(window).height() != $(document).height() && $(window).scrollTop() >= 300) {
-	      $(".headerblock").css({
-	        'height': '60'
-	      });
-	      $(".headermainblocklogo").css({
-	        'font-size': '20px'
-	      });
-	      $('.headermainblockiner').css({
-	        'padding': '0px'
-	      });
-	      $('.ulinnavheader').css({
-	        'padding': '0px'
-	      });
-	    }
-	  });
-	}
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -27925,7 +27417,7 @@
 	  }
 	});
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "NavLink.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "NavLink.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 241 */
@@ -28464,7 +27956,7 @@
 /* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "d48e2fc6dae6520e2c28fc4028df3a1a.jpg";
+	module.exports = __webpack_require__.p + "ea106291f6af7e30b632092626480d53.svg";
 
 /***/ },
 /* 280 */
@@ -28476,124 +27968,1537 @@
 /* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "ea106291f6af7e30b632092626480d53.svg";
+	module.exports = __webpack_require__.p + "aecf676289cfad7d16dcfa8f65bf15a6.svg";
 
 /***/ },
 /* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "aecf676289cfad7d16dcfa8f65bf15a6.svg";
+	module.exports = __webpack_require__.p + "2aedce80cf0e041107e237ce9b8a50de.svg";
 
 /***/ },
 /* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "2aedce80cf0e041107e237ce9b8a50de.svg";
+	module.exports = __webpack_require__.p + "813e229d02a0f29077681a11a98d7f45.svg";
 
 /***/ },
 /* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "813e229d02a0f29077681a11a98d7f45.svg";
+	module.exports = __webpack_require__.p + "6fc533ac507f9f0c593d2c59607f8cd3.svg";
 
 /***/ },
 /* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "6fc533ac507f9f0c593d2c59607f8cd3.svg";
+	module.exports = __webpack_require__.p + "13bbf241a16e9e483882292c9b391df1.svg";
 
 /***/ },
 /* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "13bbf241a16e9e483882292c9b391df1.svg";
+	module.exports = __webpack_require__.p + "14f102e692d6b074b9340ee0ba19a560.svg";
 
 /***/ },
 /* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "14f102e692d6b074b9340ee0ba19a560.svg";
+	module.exports = __webpack_require__.p + "433dd0f971f6972b5893872e9a762fdf.svg";
 
 /***/ },
 /* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "433dd0f971f6972b5893872e9a762fdf.svg";
+	module.exports = __webpack_require__.p + "abfc3b93baa0cb512723b5517b79e695.svg";
 
 /***/ },
 /* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "abfc3b93baa0cb512723b5517b79e695.svg";
+	module.exports = __webpack_require__.p + "ad121bd413f18b5cf41dda13755ad52a.svg";
 
 /***/ },
 /* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "ad121bd413f18b5cf41dda13755ad52a.svg";
+	module.exports = __webpack_require__.p + "3f7d10df442c93e38c1bdbd69daf841a.svg";
 
 /***/ },
 /* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "3f7d10df442c93e38c1bdbd69daf841a.svg";
+	module.exports = __webpack_require__.p + "2f7b3bf1a2019a16af7b4402a2664a88.svg";
 
 /***/ },
 /* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "2f7b3bf1a2019a16af7b4402a2664a88.svg";
+	module.exports = __webpack_require__.p + "1501d04195cf0f45b3805b3545c08c07.svg";
 
 /***/ },
 /* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "1501d04195cf0f45b3805b3545c08c07.svg";
+	module.exports = __webpack_require__.p + "b337a2fb0b1289e6757e632dc766ff6b.svg";
 
 /***/ },
 /* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "b337a2fb0b1289e6757e632dc766ff6b.svg";
+	module.exports = __webpack_require__.p + "953f6f040e06903e17dbc1e6ef4d7ba6.svg";
 
 /***/ },
 /* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "953f6f040e06903e17dbc1e6ef4d7ba6.svg";
+	module.exports = __webpack_require__.p + "84d448f81cbb1501a9c98aa7f0547e79.svg";
 
 /***/ },
 /* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "84d448f81cbb1501a9c98aa7f0547e79.svg";
+	module.exports = __webpack_require__.p + "7fa36a89d5c75d0333dff90c5918ee89.svg";
 
 /***/ },
 /* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "7fa36a89d5c75d0333dff90c5918ee89.svg";
+	module.exports = __webpack_require__.p + "81ab939cb038cb141f50a444f9f2d646.svg";
 
 /***/ },
 /* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "81ab939cb038cb141f50a444f9f2d646.svg";
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _NavLink = __webpack_require__(240);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
+	var _lamp = __webpack_require__(279);
+
+	var _lamp2 = _interopRequireDefault(_lamp);
+
+	var _mylogo = __webpack_require__(280);
+
+	var _mylogo2 = _interopRequireDefault(_mylogo);
+
+	var _rulerPen = __webpack_require__(281);
+
+	var _rulerPen2 = _interopRequireDefault(_rulerPen);
+
+	var _phone = __webpack_require__(282);
+
+	var _phone2 = _interopRequireDefault(_phone);
+
+	var _rocket = __webpack_require__(283);
+
+	var _rocket2 = _interopRequireDefault(_rocket);
+
+	var _terminal = __webpack_require__(284);
+
+	var _terminal2 = _interopRequireDefault(_terminal);
+
+	var _graph = __webpack_require__(285);
+
+	var _graph2 = _interopRequireDefault(_graph);
+
+	var _js = __webpack_require__(286);
+
+	var _js2 = _interopRequireDefault(_js);
+
+	var _reactHexagon = __webpack_require__(287);
+
+	var _reactHexagon2 = _interopRequireDefault(_reactHexagon);
+
+	var _angularIcon = __webpack_require__(288);
+
+	var _angularIcon2 = _interopRequireDefault(_angularIcon);
+
+	var _jQurery = __webpack_require__(289);
+
+	var _jQurery2 = _interopRequireDefault(_jQurery);
+
+	var _HTML = __webpack_require__(290);
+
+	var _HTML2 = _interopRequireDefault(_HTML);
+
+	var _CSS = __webpack_require__(291);
+
+	var _CSS2 = _interopRequireDefault(_CSS);
+
+	var _webpack = __webpack_require__(292);
+
+	var _webpack2 = _interopRequireDefault(_webpack);
+
+	var _nodejsIcon = __webpack_require__(293);
+
+	var _nodejsIcon2 = _interopRequireDefault(_nodejsIcon);
+
+	var _graphql = __webpack_require__(294);
+
+	var _graphql2 = _interopRequireDefault(_graphql);
+
+	var _electron = __webpack_require__(295);
+
+	var _electron2 = _interopRequireDefault(_electron);
+
+	var _nativescript = __webpack_require__(296);
+
+	var _nativescript2 = _interopRequireDefault(_nativescript);
+
+	var _mytrand = __webpack_require__(297);
+
+	var _mytrand2 = _interopRequireDefault(_mytrand);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	//import $ from 'jquery'
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'main',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      this.props.children,
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'blockboxinercolorfooter textfooter' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'wrapper' },
+	          _react2.default.createElement(
+	            'section',
+	            { className: 'features' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Short personal biography'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Contacts'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Mohammad Chorakchi'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Email: m.chorakchi@gmail.com'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'tell: +98-930-32-32-903'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'telegram: @chorakchi'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { className: 'headermylogo', src: _mylogo2.default }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Social Network'
+	                ),
+	                _react2.default.createElement('div', { className: 'icon-sotial icon-sotial4' }),
+	                _react2.default.createElement('div', { className: 'icon-sotial icon-sotial1' }),
+	                _react2.default.createElement('div', { className: 'icon-sotial icon-sotial2' }),
+	                _react2.default.createElement('div', { className: 'icon-sotial icon-sotial3' })
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'headerblock animation-g' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'wrapper' },
+	          _react2.default.createElement(
+	            'nav',
+	            { className: 'headermainblockiner' },
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement('img', { className: 'headermylogo', src: _mylogo2.default }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'headermainblocklogo' },
+	                '.Chorakchi'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'ulinnavheader' },
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'headermainblocklink' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://github.com/chorakchi' },
+	                  'GitHub'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'headermainblocklink' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://chorakchi.github.io/mofid' },
+	                  'Demo'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'headermainblocklink' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://chorakchi.github.io/' },
+	                  'Blog'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'headermainblocklink' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'http://mofid.team' },
+	                  'Slack'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'headermainblocklink' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://chorakchi.github.io/' },
+	                  'Home'
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	// import picture_mypicture from '../image/mypicture.jpg'
+
+	scrollingHead();
+	function scrollingHead() {
+	  $(window).scroll(function () {
+	    if ($(window).scrollTop() >= 300) {
+
+	      $(".headerblock").css({
+	        'background': 'rgb(247, 202, 201)',
+	        'height': '60'
+	      });
+	      $(".headermainblocklogo").css({
+	        'font-size': '20px'
+	      });
+	      $('.headermainblockiner').css({
+	        'padding': '0px'
+	      });
+	      $('.ulinnavheader').css({
+	        'padding': '0px'
+	      });
+	    }
+	    if ($(window).scrollTop() <= 30) {
+
+	      $(".headerblock").css({
+	        'background': 'rgba(255,255,255,0.2)',
+	        'height': '100'
+	      });
+	      $(".headermainblocklogo").css({
+	        'font-size': '30px'
+	      });
+	      $('.headermainblockiner').css({
+	        'padding': '20px'
+	      });
+	      $('.ulinnavheader').css({
+	        'padding': '25px'
+	      });
+	    }
+	    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+	      $(".headerblock").css({
+	        'height': '0'
+	      });
+	    }
+	    if ($(window).scrollTop() + $(window).height() != $(document).height() && $(window).scrollTop() >= 300) {
+	      $(".headerblock").css({
+	        'height': '60'
+	      });
+	      $(".headermainblocklogo").css({
+	        'font-size': '20px'
+	      });
+	      $('.headermainblockiner').css({
+	        'padding': '0px'
+	      });
+	      $('.ulinnavheader').css({
+	        'padding': '0px'
+	      });
+	    }
+	  });
+	}
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "main.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 299 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _lamp = __webpack_require__(279);
+
+	var _lamp2 = _interopRequireDefault(_lamp);
+
+	var _mylogo = __webpack_require__(280);
+
+	var _mylogo2 = _interopRequireDefault(_mylogo);
+
+	var _rulerPen = __webpack_require__(281);
+
+	var _rulerPen2 = _interopRequireDefault(_rulerPen);
+
+	var _phone = __webpack_require__(282);
+
+	var _phone2 = _interopRequireDefault(_phone);
+
+	var _rocket = __webpack_require__(283);
+
+	var _rocket2 = _interopRequireDefault(_rocket);
+
+	var _terminal = __webpack_require__(284);
+
+	var _terminal2 = _interopRequireDefault(_terminal);
+
+	var _graph = __webpack_require__(285);
+
+	var _graph2 = _interopRequireDefault(_graph);
+
+	var _js = __webpack_require__(286);
+
+	var _js2 = _interopRequireDefault(_js);
+
+	var _reactHexagon = __webpack_require__(287);
+
+	var _reactHexagon2 = _interopRequireDefault(_reactHexagon);
+
+	var _angularIcon = __webpack_require__(288);
+
+	var _angularIcon2 = _interopRequireDefault(_angularIcon);
+
+	var _jQurery = __webpack_require__(289);
+
+	var _jQurery2 = _interopRequireDefault(_jQurery);
+
+	var _HTML = __webpack_require__(290);
+
+	var _HTML2 = _interopRequireDefault(_HTML);
+
+	var _CSS = __webpack_require__(291);
+
+	var _CSS2 = _interopRequireDefault(_CSS);
+
+	var _webpack = __webpack_require__(292);
+
+	var _webpack2 = _interopRequireDefault(_webpack);
+
+	var _nodejsIcon = __webpack_require__(293);
+
+	var _nodejsIcon2 = _interopRequireDefault(_nodejsIcon);
+
+	var _graphql = __webpack_require__(294);
+
+	var _graphql2 = _interopRequireDefault(_graphql);
+
+	var _electron = __webpack_require__(295);
+
+	var _electron2 = _interopRequireDefault(_electron);
+
+	var _nativescript = __webpack_require__(296);
+
+	var _nativescript2 = _interopRequireDefault(_nativescript);
+
+	var _mytrand = __webpack_require__(297);
+
+	var _mytrand2 = _interopRequireDefault(_mytrand);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'page1',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'headermainblock' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'wrapper' },
+	          _react2.default.createElement(
+	            'h2',
+	            { style: { 'margin-top': 134 } },
+	            'Front-end Developer JavaScript Full-Staker'
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            '(React.js, Angular.js, NodeJS, ES6, HTML5, CSS3)'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Implement a modular and scalable web application in JavaScript',
+	            _react2.default.createElement('br', null),
+	            'Front-end DevOps mindset and experience with building of big single page applications.',
+	            _react2.default.createElement('br', null),
+	            'Self-motivation, evolving and improving the tools in use,',
+	            _react2.default.createElement('br', null),
+	            ' researching and implementing new UI technologies, and exploring future trends'
+	          ),
+	          _react2.default.createElement('img', { src: _lamp2.default, style: { borderRadius: 10, float: 'right' }, alt: 'Pacman' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'headermainblockbtnholder animation-g' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'headermainblockbtn' },
+	              'Video Resume'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'headermainblockbtn' },
+	              'Printable CV'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'blockbox' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'wrapper' },
+	          _react2.default.createElement(
+	            'section',
+	            { className: 'features' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _lamp2.default, alt: 'Cloud' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Middleware '
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Create modern web apps, sites, and APIs using HTTP or real-time apps using MEAN stack.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Familiar with MEAN stack (MongoDB, Express, Angular.JS, Node.JS) and GraphQL'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _rulerPen2.default, alt: 'Rocket' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'UI/UX'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Design and use popular UI libraries such as Bootstrap, Foundation, google material design , Material-UI and Semantic-UI to build semantic and responsive web pages'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _phone2.default, alt: 'Lock' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Quality code'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Postman, Fiddler or other in-browser developer tools to debug cross-browser/platform issues and solutions ,tests and code review'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _rocket2.default, alt: 'Graph' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Expressive'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Work with Electron , Nativescript, PhantomJS,  and Use D3.js, highchart, amchart, kendu-UI, in all modern framework'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _terminal2.default, alt: 'Terminal' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Extensible'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'working with build processes and using tools like Webpack, Grunt or Gulp and package managers such as NPM or Bower'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _graph2.default, alt: 'Pacman' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Middleware '
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Create modern web apps, sites, and APIs using HTTP or real-time apps using MEAN stack.',
+	                  _react2.default.createElement('br', null),
+	                  'Familiar with MEAN stack (MongoDB, Express, Angular.JS, Node.JS) and GraphQL'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'blockboxinercolor1' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'wrapper' },
+	            _react2.default.createElement(
+	              'section',
+	              { className: 'features' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-12' },
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'more about my skills'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Aspiration to constantly improve yourself and learn new technologies and concepts'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'In writing high-performance, reusable code and using source control systems(g.e Git, TFS).'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Knowledge on design and consumption of REST-based APIs'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'I’m trying good English communication level'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Knowledge of German is elementary, but I will stay to complete it'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'I have at least 2+ years of experience in frontend development'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'I\' m trying an effective communicator, love working in a team, pay a lot of attention to detail and love to learn new things'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'blockboxinercolor2' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'wrapper' },
+	            _react2.default.createElement(
+	              'section',
+	              { className: 'features' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-4' },
+	                  _react2.default.createElement('img', { src: _js2.default, style: { width: 134 }, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'JavaScript'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _reactHexagon2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'React'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _angularIcon2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Angular'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _jQurery2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    ' jQuery'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _HTML2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'HTML5'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _CSS2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'CSS3'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _webpack2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Webpack'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _nodejsIcon2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'node.js'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _graphql2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'GraphQL'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _electron2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Electron'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _nativescript2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Nativescript'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'blockboxinercolor3' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'wrapper' },
+	            _react2.default.createElement(
+	              'section',
+	              { className: 'features' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-12' },
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Experience and Education'
+	                  ),
+	                  _react2.default.createElement('img', { src: _mytrand2.default, style: { width: '100%' }, alt: 'Pacman' })
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	// import picture_mypicture from '../image/mypicture.jpg'
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "page1.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _lamp = __webpack_require__(279);
+
+	var _lamp2 = _interopRequireDefault(_lamp);
+
+	var _mylogo = __webpack_require__(280);
+
+	var _mylogo2 = _interopRequireDefault(_mylogo);
+
+	var _rulerPen = __webpack_require__(281);
+
+	var _rulerPen2 = _interopRequireDefault(_rulerPen);
+
+	var _phone = __webpack_require__(282);
+
+	var _phone2 = _interopRequireDefault(_phone);
+
+	var _rocket = __webpack_require__(283);
+
+	var _rocket2 = _interopRequireDefault(_rocket);
+
+	var _terminal = __webpack_require__(284);
+
+	var _terminal2 = _interopRequireDefault(_terminal);
+
+	var _graph = __webpack_require__(285);
+
+	var _graph2 = _interopRequireDefault(_graph);
+
+	var _js = __webpack_require__(286);
+
+	var _js2 = _interopRequireDefault(_js);
+
+	var _reactHexagon = __webpack_require__(287);
+
+	var _reactHexagon2 = _interopRequireDefault(_reactHexagon);
+
+	var _angularIcon = __webpack_require__(288);
+
+	var _angularIcon2 = _interopRequireDefault(_angularIcon);
+
+	var _jQurery = __webpack_require__(289);
+
+	var _jQurery2 = _interopRequireDefault(_jQurery);
+
+	var _HTML = __webpack_require__(290);
+
+	var _HTML2 = _interopRequireDefault(_HTML);
+
+	var _CSS = __webpack_require__(291);
+
+	var _CSS2 = _interopRequireDefault(_CSS);
+
+	var _webpack = __webpack_require__(292);
+
+	var _webpack2 = _interopRequireDefault(_webpack);
+
+	var _nodejsIcon = __webpack_require__(293);
+
+	var _nodejsIcon2 = _interopRequireDefault(_nodejsIcon);
+
+	var _graphql = __webpack_require__(294);
+
+	var _graphql2 = _interopRequireDefault(_graphql);
+
+	var _electron = __webpack_require__(295);
+
+	var _electron2 = _interopRequireDefault(_electron);
+
+	var _nativescript = __webpack_require__(296);
+
+	var _nativescript2 = _interopRequireDefault(_nativescript);
+
+	var _mytrand = __webpack_require__(297);
+
+	var _mytrand2 = _interopRequireDefault(_mytrand);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'cv',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'headermainblock' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'wrapper' },
+	          _react2.default.createElement(
+	            'h2',
+	            { style: { 'margin-top': 134 } },
+	            'Front-end Developer JavaScript Full-Staker'
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            '(React.js, Angular.js, NodeJS, ES6, HTML5, CSS3)'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Implement a modular and scalable web application in JavaScript',
+	            _react2.default.createElement('br', null),
+	            'Front-end DevOps mindset and experience with building of big single page applications.',
+	            _react2.default.createElement('br', null),
+	            'Self-motivation, evolving and improving the tools in use,',
+	            _react2.default.createElement('br', null),
+	            ' researching and implementing new UI technologies, and exploring future trends'
+	          ),
+	          _react2.default.createElement('img', { src: _lamp2.default, style: { borderRadius: 10, float: 'right' }, alt: 'Pacman' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'headermainblockbtnholder animation-g' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'headermainblockbtn' },
+	              'Video Resume'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'headermainblockbtn' },
+	              'Printable CV'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'blockbox' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'wrapper' },
+	          _react2.default.createElement(
+	            'section',
+	            { className: 'features' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _lamp2.default, alt: 'Cloud' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Middleware '
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Create modern web apps, sites, and APIs using HTTP or real-time apps using MEAN stack.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Familiar with MEAN stack (MongoDB, Express, Angular.JS, Node.JS) and GraphQL'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _rulerPen2.default, alt: 'Rocket' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'UI/UX'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Design and use popular UI libraries such as Bootstrap, Foundation, google material design , Material-UI and Semantic-UI to build semantic and responsive web pages'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _phone2.default, alt: 'Lock' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Quality code'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Postman, Fiddler or other in-browser developer tools to debug cross-browser/platform issues and solutions ,tests and code review'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _rocket2.default, alt: 'Graph' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Expressive'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Work with Electron , Nativescript, PhantomJS,  and Use D3.js, highchart, amchart, kendu-UI, in all modern framework'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _terminal2.default, alt: 'Terminal' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Extensible'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'working with build processes and using tools like Webpack, Grunt or Gulp and package managers such as NPM or Bower'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement('img', { src: _graph2.default, alt: 'Pacman' }),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Middleware '
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Create modern web apps, sites, and APIs using HTTP or real-time apps using MEAN stack.',
+	                  _react2.default.createElement('br', null),
+	                  'Familiar with MEAN stack (MongoDB, Express, Angular.JS, Node.JS) and GraphQL'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'blockboxinercolor1' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'wrapper' },
+	            _react2.default.createElement(
+	              'section',
+	              { className: 'features' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-12' },
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'more about my skills'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Aspiration to constantly improve yourself and learn new technologies and concepts'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'In writing high-performance, reusable code and using source control systems(g.e Git, TFS).'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Knowledge on design and consumption of REST-based APIs'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'I’m trying good English communication level'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Knowledge of German is elementary, but I will stay to complete it'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'I have at least 2+ years of experience in frontend development'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'I\' m trying an effective communicator, love working in a team, pay a lot of attention to detail and love to learn new things'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'blockboxinercolor2' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'wrapper' },
+	            _react2.default.createElement(
+	              'section',
+	              { className: 'features' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-4' },
+	                  _react2.default.createElement('img', { src: _js2.default, style: { width: 134 }, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'JavaScript'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _reactHexagon2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'React'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _angularIcon2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Angular'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _jQurery2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    ' jQuery'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _HTML2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'HTML5'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _CSS2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'CSS3'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _webpack2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Webpack'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _nodejsIcon2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'node.js'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _graphql2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'GraphQL'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _electron2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Electron'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-2 col-sm-6' },
+	                  _react2.default.createElement('img', { src: _nativescript2.default, alt: 'Pacman' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Nativescript'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'blockboxinercolor3' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'wrapper' },
+	            _react2.default.createElement(
+	              'section',
+	              { className: 'features' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                  'article',
+	                  { className: 'col-md-12' },
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Experience and Education'
+	                  ),
+	                  _react2.default.createElement('img', { src: _mytrand2.default, style: { width: '100%' }, alt: 'Pacman' })
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	// import picture_mypicture from '../image/mypicture.jpg'
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "cv.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _NavLink = __webpack_require__(240);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
+	var _lamp = __webpack_require__(279);
+
+	var _lamp2 = _interopRequireDefault(_lamp);
+
+	var _mylogo = __webpack_require__(280);
+
+	var _mylogo2 = _interopRequireDefault(_mylogo);
+
+	var _rulerPen = __webpack_require__(281);
+
+	var _rulerPen2 = _interopRequireDefault(_rulerPen);
+
+	var _phone = __webpack_require__(282);
+
+	var _phone2 = _interopRequireDefault(_phone);
+
+	var _rocket = __webpack_require__(283);
+
+	var _rocket2 = _interopRequireDefault(_rocket);
+
+	var _terminal = __webpack_require__(284);
+
+	var _terminal2 = _interopRequireDefault(_terminal);
+
+	var _graph = __webpack_require__(285);
+
+	var _graph2 = _interopRequireDefault(_graph);
+
+	var _js = __webpack_require__(286);
+
+	var _js2 = _interopRequireDefault(_js);
+
+	var _reactHexagon = __webpack_require__(287);
+
+	var _reactHexagon2 = _interopRequireDefault(_reactHexagon);
+
+	var _angularIcon = __webpack_require__(288);
+
+	var _angularIcon2 = _interopRequireDefault(_angularIcon);
+
+	var _jQurery = __webpack_require__(289);
+
+	var _jQurery2 = _interopRequireDefault(_jQurery);
+
+	var _HTML = __webpack_require__(290);
+
+	var _HTML2 = _interopRequireDefault(_HTML);
+
+	var _CSS = __webpack_require__(291);
+
+	var _CSS2 = _interopRequireDefault(_CSS);
+
+	var _webpack = __webpack_require__(292);
+
+	var _webpack2 = _interopRequireDefault(_webpack);
+
+	var _nodejsIcon = __webpack_require__(293);
+
+	var _nodejsIcon2 = _interopRequireDefault(_nodejsIcon);
+
+	var _graphql = __webpack_require__(294);
+
+	var _graphql2 = _interopRequireDefault(_graphql);
+
+	var _electron = __webpack_require__(295);
+
+	var _electron2 = _interopRequireDefault(_electron);
+
+	var _nativescript = __webpack_require__(296);
+
+	var _nativescript2 = _interopRequireDefault(_nativescript);
+
+	var _mytrand = __webpack_require__(297);
+
+	var _mytrand2 = _interopRequireDefault(_mytrand);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	//import $ from 'jquery'
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'notfound',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'headermainblock', style: { position: 'absolute', left: '0', right: '0', height: '100%' } },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'wrapper' },
+	          _react2.default.createElement(
+	            'h2',
+	            { style: { 'margin-top': 134 } },
+	            'Not found'
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            '404'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Sorry, This page is not found'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'headermainblockbtnholder animation-g' },
+	            _react2.default.createElement(
+	              _NavLink2.default,
+	              { to: '/index' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'headermainblockbtn' },
+	                'home'
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	// import picture_mypicture from '../image/mypicture.jpg'
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\M.Chorakchi\\Desktop\\my git\\chorakchi.github.io\\chorakchi react\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "notfound.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 302 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 301 */
+/* 303 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*eslint-disable no-unused-vars*/
