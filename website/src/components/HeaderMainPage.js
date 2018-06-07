@@ -47,8 +47,9 @@ position: relative;
 top: 22px;
 `;
 
-const Btn = styled.div`
+const Btn = styled.a`
 color: black;
+text-decoration: none;
 background-color: yellow;
 margin: 10px;
 font-weight: bold;
@@ -63,7 +64,6 @@ cursor: pointer;
     background-color: rgba(255,255,255,0.7);
 }
 `;
-
 
 class HeaderMainPage extends React.Component {
     render() {
@@ -84,7 +84,7 @@ class HeaderMainPage extends React.Component {
                             Self-motivation, evolving and improving the tools in use.
                              researching and implementing new UI technologies, and exploring future trends. <Quot>"</Quot>
                         </Content>
-                        <Btn>Download CV .pdf</Btn>
+                        <Btn href="./CV-Chorakchi.pdf">Download CV .pdf</Btn>
                     </ContainerTitle>
                 </ContainerHeaderPage>
             </React.Fragment>
