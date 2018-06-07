@@ -11,7 +11,6 @@ align-items: center;
 `;
 
 const ContainerTitle = styled.div`
-position: relative;
 `;
 
 const Title = styled.div`
@@ -36,8 +35,16 @@ width: -moz-fit-content;
 const Content = styled.div`
 font-size: 20px;
 color: black;
-width: 50%
-padding-left: 21%
+width: 50%;
+padding-left: 21%;
+`;
+
+const Quot = styled.span`
+font-size: 60px;
+line-height: 10px;
+color: rgba(230,230,0,0.9);
+position: relative;
+top: 22px;
 `;
 
 
@@ -47,18 +54,18 @@ class HeaderMainPage extends React.Component {
             <React.Fragment>
                 <ContainerHeaderPage>
                     <ContainerTitle>
-                        <Title>JAVASCRIPT FULL-STAKER</Title>
+                        <Title style={{fontSize:37.5 }}>JAVASCRIPT FULL-STAKER</Title>
                         <Title style={{ fontWeight: 'bold' }}>FRONT-END DEVELOPER</Title>
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
                         <Title2>MOHAMMAD</Title2>
                         <Title2>CHORAKCHI</Title2>
                         <br />
                         <Content>
-                            Implement modular and scalable web application in JavaScript.
+                            <Quot>"</Quot> Implement modular and scalable web application in JavaScript.
                             Front-end DevOps, mindset and experience building big single page applications.
                             Self-motivation, evolving and improving the tools in use.
-                             researching and implementing new UI technologies, and exploring future trends.
+                             researching and implementing new UI technologies, and exploring future trends. <Quot>"</Quot>
                         </Content>
                     </ContainerTitle>
                 </ContainerHeaderPage>

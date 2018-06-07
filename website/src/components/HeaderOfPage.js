@@ -12,7 +12,7 @@ overflow: visible;
 const InerHeader = styled.div`
 position: relative;
 height: 100px;
-background-color: rgba(255,255,0,0.8);
+background-color: rgba(255,255,0,0.9);
 `;
 
 const ContainerHeader = styled.div`
