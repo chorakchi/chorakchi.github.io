@@ -96,7 +96,7 @@ class Footer extends React.Component {
                 {/* https://kickcity.io/ */}
                     <div className="styles__kc-wrap___1WfJ4">
    <Description>
-      Chorakchi is&nbsp;a&nbsp;decentraIconzed event platform and marketing protocol which is&nbsp;using the Blockchain technology to&nbsp;reward their users for promoting events and buying tickets.
+   Implement modular and scalable web application in JavaScript. Front-end DevOps, mindset and experience building big single page applications. Self-motivation, evolving and improving the tools in use. researching and implementing new UI technologies, and exploring future trends.
    </Description>
    <TradeMark>©&nbsp;2018&nbsp;</TradeMark>
 </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import BackgroundPic from "./../asset/image/background1.jpg"
+import BackgroundPic from "./../asset/image/background3.jpg"
 import styled from 'styled-components'
 
 const ContainerHeaderPage = styled.div`
@@ -47,6 +47,23 @@ position: relative;
 top: 22px;
 `;
 
+const Btn = styled.div`
+color: black;
+background-color: yellow;
+margin: 10px;
+font-weight: bold;
+padding: 10px 30px;
+display: flex;
+margin: 10px 21%;
+border: 5px solid yellow;
+width: -moz-fit-content;
+float:right;
+cursor: pointer;
+&:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+`;
+
 
 class HeaderMainPage extends React.Component {
     render() {
@@ -54,7 +71,7 @@ class HeaderMainPage extends React.Component {
             <React.Fragment>
                 <ContainerHeaderPage>
                     <ContainerTitle>
-                        <Title style={{fontSize:37.5 }}>JAVASCRIPT FULL-STAKER</Title>
+                        <Title style={{fontSize:36 }}>JAVASCRIPT FULL-STACKER</Title>
                         <Title style={{ fontWeight: 'bold' }}>FRONT-END DEVELOPER</Title>
                         <br/>
                         <br/>
@@ -67,6 +84,7 @@ class HeaderMainPage extends React.Component {
                             Self-motivation, evolving and improving the tools in use.
                              researching and implementing new UI technologies, and exploring future trends. <Quot>"</Quot>
                         </Content>
+                        <Btn>Download CV .pdf</Btn>
                     </ContainerTitle>
                 </ContainerHeaderPage>
             </React.Fragment>

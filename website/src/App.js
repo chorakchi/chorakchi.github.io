@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import HeaderOfPage from './components/HeaderOfPage'
 import HeaderMainPage from './components/HeaderMainPage'
 import ContentHomePage from './components/ContentHomePage'
+import Expreience from './components/Expreience'
 import './App.css';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <HeaderOfPage/>
         <HeaderMainPage/>
         <ContentHomePage/>
+        <Expreience/>
         <Footer/>
       </div>
     );
