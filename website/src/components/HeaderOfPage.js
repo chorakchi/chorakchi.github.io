@@ -44,11 +44,15 @@ margin: 5px;
 padding: 5px 15px;
 cursor: pointer;
 height: 31px;
-
 transition: background .2s;
 &:hover{
 background-color: #fff;
 }
+`;
+
+const Link = styled.a`
+text-decoration: none;
+color: black;
 `;
 
 
@@ -60,11 +64,11 @@ class HeaderOfPage extends React.Component {
                 <ContainerHeader>
                     <Logo src={LogoSVG}/>
                     <ContaineLink>
-                        <ItemLink>Contact</ItemLink>
+                        <ItemLink ><Link href="email:m.chorakchi@gmail.com"  target="_blank" >Contact</Link></ItemLink>
                         <ItemLink>Portfolio</ItemLink>
-                        <ItemLink>Github</ItemLink>
-                        <ItemLink>Blog</ItemLink>
-                        <ItemLink>Home</ItemLink>
+                        <ItemLink><Link href="https://github.com/chorakchi"  target="_blank" >Github</Link></ItemLink>
+                        <ItemLink><Link href="./blog">Blog</Link></ItemLink>
+                        <ItemLink><Link href="https://chorakchi.github.io/">Home</Link></ItemLink>
                         </ContaineLink>
                     </ContainerHeader>
                 </InerHeader>

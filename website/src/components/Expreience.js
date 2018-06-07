@@ -128,7 +128,7 @@ class Expreience extends React.Component {
                     <TitleOfCard>Hero Holding</TitleOfCard>
                    </SummerPartCard>
                     <ContentOfCard>
-                    Pinus startup project(Live sports score, Sports news) <br/> HTML, CSS, JS, Angular
+                    Pinus startup project(Live sports score, Sports news) <br/>• HTML, CSS, JS, Angular
                     </ContentOfCard>
                 </Card>
                 <Card>
@@ -140,7 +140,7 @@ class Expreience extends React.Component {
                     <TitleOfCard>Freelance</TitleOfCard>
                    </SummerPartCard>
                     <ContentOfCard>
-                    Design - Multimedia - web <br/>•Photoshop, corelDraw, Indesign <br/>•HTML, CSS
+                    Design - Multimedia - web <br/>• Photoshop, corelDraw, Indesign <br/>• HTML, CSS
 
                     </ContentOfCard>
                 </Card>
