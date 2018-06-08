@@ -1,10 +1,15 @@
 {
   "main.css": "static/css/main.3572b71f.css",
   "main.css.map": "static/css/main.3572b71f.css.map",
-  "main.js": "static/js/main.2dd0554e.js",
-  "main.js.map": "static/js/main.2dd0554e.js.map",
-  "static\\media\\background3.jpg": "static/media/background3.29648df5.jpg",
+  "main.js": "static/js/main.601077fc.js",
+  "main.js.map": "static/js/main.601077fc.js.map",
+  "static\\media\\background1.jpg": "static/media/background1.7f39ef4a.jpg",
+  "static\\media\\css-logo.svg": "static/media/css-logo.2f7b3bf1.svg",
+  "static\\media\\html-logo.svg": "static/media/html-logo.3f7d10df.svg",
   "static\\media\\js-logo.svg": "static/media/js-logo.14f102e6.svg",
   "static\\media\\logo.svg": "static/media/logo.8981be67.svg",
-  "static\\media\\react-logo.svg": "static/media/react-logo.433dd0f9.svg"
+  "static\\media\\nodjs-logo.svg": "static/media/nodjs-logo.b337a2fb.svg",
+  "static\\media\\npm-logo.svg": "static/media/npm-logo.b337a2fb.svg",
+  "static\\media\\react-logo.svg": "static/media/react-logo.433dd0f9.svg",
+  "static\\media\\webpack-logo.svg": "static/media/webpack-logo.1501d041.svg"
 }
