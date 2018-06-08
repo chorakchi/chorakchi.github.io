@@ -2,6 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import ReactLogo from './../asset/icon/react-logo.svg'
 import JsLogo from './../asset/icon/js-logo.svg'
+import NodjsLogo from './../asset/icon/nodjs-logo.svg'
+import CssLogo from './../asset/icon/css-logo.svg'
+import HtmlLogo from './../asset/icon/html-logo.svg'
+import WebpackLogo from './../asset/icon/webpack-logo.svg'
+import NpmLogo from './../asset/icon/npm-logo.svg'
 
 const Container = styled.div`
 background-color: rgba(220,220,220,1);
@@ -20,11 +25,13 @@ margin: 0;
 `;
 
 const Card  = styled.div`
-max-width: 600px;
-border: 1px solid black;
-background-color: rgba(255,255,255,0.1);
+width: 45%;
+background-color: rgba(255, 255, 255, 0.54);
 padding: 10px;
-margin: 10px;
+margin: 1%;
+@media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const TitleOfCard = styled.div`
@@ -39,20 +46,34 @@ flex-direction:  row;
 `;
 
 const Icon = styled.img`
-align-self: flex-end;
-width:50px;
+width: 50px;
 padding: 5px;
-margin: 5px;
+align-self: flex-end;
+margin-left: auto;
+-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
 `;
 
 const Tag = styled.div`
 display: inline;
 width: -moz-fit-content;
 background: rgb(200,200,200);
-color: black;
+color: rgba(0,0,0,0.8);
 border-radius: 0px;
-padding:10px;
+padding:10px 15px;
 margin: 10px;
+font-size: 20px;
+display:flex;
+align-items: center;
+`;
+
+const TagIcon = styled.img`
+height:30px;
+width:30px;
+margin: 0 10px 0 0;
+
+-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
 `;
 
 const Content = styled.div`
@@ -124,17 +145,18 @@ class ContentHomePage extends React.Component {
                     <br/>
                     LoopBack, Meteor, Fraphcool,
                     <br/>
-                    <Icon src={JsLogo}/>
+                    <Icon src={NodjsLogo}/>
                     </ContentOfCard>
                 </Card>
             </Container>
             <Container>
-                <Tag>HTML</Tag>
                 <Tag>CSS</Tag>
+                <Tag> HTML</Tag>
+                <Tag>Webpack</Tag>
+                <Tag> NPM</Tag>
                 <Tag>SVG</Tag>
                 <Tag>SASS</Tag>
                 <Tag>NPM</Tag>
-                <Tag>Webpack</Tag>
                 <Tag>Styled-Components</Tag>
                 <Tag>Angular 1 / 2~6</Tag>
                 <Tag>Electron.jS</Tag>

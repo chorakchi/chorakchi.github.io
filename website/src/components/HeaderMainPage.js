@@ -1,12 +1,16 @@
 import React from 'react'
-import BackgroundPic from "./../asset/image/background3.jpg"
+import BackgroundPic from "./../asset/image/background1.jpg"
 import styled from 'styled-components'
 
 const ContainerHeaderPage = styled.div`
 width: 100%;
-height: ${window.innerHeight - 200 + 'px'}; 
+min-height: ${window.innerHeight - 400 + 'px'}; 
 background-image: url(${BackgroundPic});
+background-attachment: fixed;
+background-size: cover;
+background-position: bottom;
 display: flex;
+padding-top: 180px;
 align-items: center;
 `;
 

@@ -1,5 +1,5 @@
 import React from "react"
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import LogoSVG from './../asset/icon/logo.svg'
 
 const Header = styled.div`
@@ -11,8 +11,13 @@ overflow: visible;
 
 const InerHeader = styled.div`
 position: relative;
+transition: all 0.5s ease;
 height: 100px;
-background-color: rgba(255,255,0,0.9);
+background-color: rgba(255,255,0,0.8);
+${props => props.scrolled && css`
+height: 70px;
+background-color: rgba(255,255,0,0.99);
+`}
 `;
 
 const ContainerHeader = styled.div`
@@ -37,6 +42,7 @@ margin-left: auto;
 `;
 
 const ItemLink = styled.li`
+font-weight: bold;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -48,6 +54,14 @@ transition: background .2s;
 &:hover{
 background-color: #fff;
 }
+
+${props => props.primary && css`
+    background: rgba(255,255,255,1);
+    color: white;
+    &:hover{
+background-color: rgba(255,255,255,0.8);
+}
+  `}
 `;
 
 const Link = styled.a`
@@ -56,11 +70,28 @@ color: black;
 `;
 
 
+
 class HeaderOfPage extends React.Component {
+    state = {
+        scrolled: false
+    }
+    componentDidMount() {
+        window.addEventListener('scroll', ()  => {
+            if(window.pageYOffset != 0){
+                this.setState({scrolled : true})
+            } else {
+                this.setState({scrolled : false})
+            }
+        });
+    }
+
     render(){
+        let style = { transform: 'translateY(0px)' };
+
+    
         return (
             <Header>
-            <InerHeader>
+            <InerHeader scrolled = {this.state.scrolled}>
                 <ContainerHeader>
                     <Logo src={LogoSVG}/>
                     <ContaineLink>
@@ -68,7 +99,7 @@ class HeaderOfPage extends React.Component {
                         <ItemLink>Portfolio</ItemLink>
                         <ItemLink><Link href="https://github.com/chorakchi"  target="_blank" >Github</Link></ItemLink>
                         <ItemLink><Link href="./blog">Blog</Link></ItemLink>
-                        <ItemLink><Link href="https://chorakchi.github.io/">Home</Link></ItemLink>
+                        <ItemLink primary><Link href="https://chorakchi.github.io/">Home</Link></ItemLink>
                         </ContaineLink>
                     </ContainerHeader>
                 </InerHeader>
