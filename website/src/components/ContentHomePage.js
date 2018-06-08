@@ -50,8 +50,6 @@ width: 50px;
 padding: 5px;
 align-self: flex-end;
 margin-left: auto;
--webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
 `;
 
 const Tag = styled.div`
@@ -62,7 +60,7 @@ color: rgba(0,0,0,0.8);
 border-radius: 0px;
 padding:10px 15px;
 margin: 10px;
-font-size: 20px;
+font-size: 14px;
 display:flex;
 align-items: center;
 `;

@@ -1,5 +1,5 @@
 import React from 'react'
-import BackgroundPic from "./../asset/image/background1.jpg"
+import BackgroundPic from "./../asset/image/background9.jpg"
 import styled from 'styled-components'
 
 const ContainerHeaderPage = styled.div`
