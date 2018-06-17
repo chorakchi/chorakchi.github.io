@@ -3,10 +3,6 @@ import styled from 'styled-components'
 import ReactLogo from './../asset/icon/react-logo.svg'
 import JsLogo from './../asset/icon/js-logo.svg'
 import NodjsLogo from './../asset/icon/nodjs-logo.svg'
-import CssLogo from './../asset/icon/css-logo.svg'
-import HtmlLogo from './../asset/icon/html-logo.svg'
-import WebpackLogo from './../asset/icon/webpack-logo.svg'
-import NpmLogo from './../asset/icon/npm-logo.svg'
 
 const Container = styled.div`
 background-color: rgba(220,220,220,1);
