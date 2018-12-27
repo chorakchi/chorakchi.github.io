@@ -1,52 +1,44 @@
 import React from 'react'
 import {
     Countiner,
-    MainBlock,
-    Sidebar,
-    BlockContent,
-    TitleSidebar,
-    ListItem,
-    Divider,
-    Bold,
-    Content,
-    Image
+    Background,
+    TopLogoCountiner,
+    TopLogo,
+    BarcodeCountiner,
+    Barcode,
+    Path1,
+    Path2,
+    MainLogo,
+    Header,
+    ItemHeader
 } from './Styled'
 import picture from './../../../asset/image/hamburg-main.jpg'
+import logo from './../../../asset/image/logo.svg'
+import barcode from './../../../asset/image/barcode.svg'
+import path1 from './../../../asset/image/path-1.svg'
+import path2 from './../../../asset/image/path-2.svg'
+import mainLogo from './../../../asset/image/block-logo.svg'
 class Home extends React.Component {
     render() {
         return <div>
             <Countiner>
-                <MainBlock>
-                    <Sidebar>
-                        <TitleSidebar>
-                            PORTFOLIO
-                         </TitleSidebar>
-
-                         <ListItem>SKILS</ListItem>
-                         <ListItem>WORKS</ListItem>
-                         <ListItem>EXPERIENCES</ListItem>
-                         <Divider/>
-                         <ListItem>CONTACT</ListItem>
-                         <ListItem>BLOG</ListItem>
-                         <ListItem>GALLERE</ListItem>
-                    </Sidebar>
-                    <BlockContent>
-                    <TitleSidebar color="rgba(0,0,0,0.3)" size= "big">
-                            SKILS
-                         </TitleSidebar>
-                         <Content>
-                         <Bold>ReactJS, Redux, RxJS</Bold>
-                             <br/>
-                         React-Router, Jest(TDD, BDD method), Enzym.js HOC, Error Boundaries, Styled Component, container- presentatinal method , ServerSide Rendering, PWA, React-Fiber, PReact, ReactVR, storybook and addons 
-                         </Content>
-                         <Content>
-                         <Bold>JavaScript, ECMAscript, ES5,6~8, Babel</Bold>
-                             <br/>
-                             JSS, JSX, flow.js, TypeScript, ESLint(Airbanb config ...) Functianal, Stateless, Async and Reactive programing
-                             <Image src={picture}/>
-                         </Content>
-                         </BlockContent>
-                </MainBlock>
+            <Background bgImage = {picture}/>
+            <TopLogoCountiner>
+                <TopLogo src={logo}/>
+            </TopLogoCountiner>
+            <BarcodeCountiner>
+                <Barcode src={barcode}/>
+            </BarcodeCountiner>
+            <Header>
+                <ItemHeader>Home</ItemHeader>
+                <ItemHeader onClick={()=> this.props.onChangeRoute("/home/Portfolio", {parentFilter: true})}>Portfolio</ItemHeader>
+                <ItemHeader>Blog</ItemHeader>
+                <ItemHeader>Github</ItemHeader>
+                <ItemHeader>Contact</ItemHeader>
+            </Header>
+            <Path1 src={path1}/>
+            <Path2 src={path2}/>
+            <MainLogo src={mainLogo}/>
             </Countiner>
         </div>
     }

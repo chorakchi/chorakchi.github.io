@@ -6,98 +6,96 @@ top: 0;
 bottom: 0;
 right: 0;
 left: 0;
-background-color: rgb(250, 247, 236);
+background-color: withe;
+background-size: cover;
 `;
 
-const MainBlock = styled.div`
-position: absolute;
-display:flex;
-background: rgb(243, 201, 55);
-top:10%;
-bottom: 10%;
-right:5%;
-left:5%;
-border-radius:8px;
-overflow: hidden;
-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-`;
-
-const Sidebar = styled.div`
-background-color: rgb(48, 48, 48);
-height: 100%;
-`;
-
-const TitleSidebar = styled.div`
-font-size:${props => props.size == "big" ? "60px" : props.size == "ultra-big" ? "80px" : "37px"};
-padding: 20px 70px;
-padding-top: 100px;
-color: ${props => props.color ? props.color : "rgb(243, 201, 55)" };
-
-font-weight: bold;
-font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-`;
-const Divider = styled.div`
-margin: 10px 30px;
-border-top: 1px solid rgba(255,255,255, 0.1);
-`;
-
-const ListItem = styled.div`
-font-size:20px;
-padding: 20px 70px;
-color: rgb(243, 201, 55);
-font-weight: 600;
-transition: all 0.1s ease-in-out;
-cursor: pointer;
-border-left: 5px solid rgba(122, 181, 239, 0);
-&:hover{
-    background-color: rgba(122, 181, 239, 0.2);
-    border-left: 5px solid rgba(122, 181, 239, 0.5);
-}
-font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-`;
-
-const BlockContent = styled.div`
+const Background = styled.div`
 position: relative;
-flex:1;
-
-`;
-const Bold = styled.span`
-font-weight: 700;
-`;
-
-const Content = styled.div`
-font-size:20px;
-margin:70px;
-line-height: 35px;
-width:600px;
-color: rgba(0,0,0,0.7);
+height: 100%;
+width: 100%;
+background-image:${props => props.bgImage ?  "url("+props.bgImage+")" : "none" };
+background-size: cover;
+opacity: 0.1;
 `;
 
-const Image = styled.img`
-position:absolute;
-bottom: 100px;
-right: 120px;
-width:500px;
-height: 500px;
-/* filter: grayscale(100%); */
-filter: sepia(1);
-opacity:0.9;
-border-right: 5px solid rgb(255, 100, 0);
-border-bottom: 5px solid rgb(255, 100, 0);
-box-shadow: 0 14px 48px rgba(0,0,0,0.25), 0 10px 100px rgba(0,0,0,0.22);
+const TopLogoCountiner = styled.div`
+background-color: #ffe60f;
+position:fixed;
+top:0;
+left:180px;
+padding: 50px 35px 131px 35px;
+`;
+
+const TopLogo = styled.img`
+width: 100px;
+`;
+
+const BarcodeCountiner = styled.div`
+
+position:fixed;
+top:0;
+left:0px;
+padding: 47px 35px 47px;
+ `;
+
+const Barcode = styled.img`
+width: 85px;
+`;
+
+const Header = styled.div`
+position: fixed;
+left: 340px;
+top:0;
+padding-left: 30px;
+padding-top: 85px;
+display: flex;
+`;
+
+const ItemHeader = styled.div`
+color: #2B2E34;
+font-size: 23px;
+padding: 15px;
+font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+border-top-right-radius: 30px;
+cursor: pointer;
+&:hover{
+    background-color: #ffe60f;
+}
+
+`;
+
+const Path1 = styled.img`
+position:fixed;
+left: 0;
+top: 255px;
+width:210px;                          
+`;
+
+const Path2 = styled.img`
+position:fixed;
+right: 0;
+bottom: 10px;
+width:172px;
+`;
+
+const MainLogo = styled.img`
+position:fixed;
+top: 30%;
+right: 20%;
 `;
 
 
 export {
     Countiner,
-    MainBlock,
-    Sidebar,
-    BlockContent,
-    TitleSidebar,
-    ListItem,
-    Divider,
-    Bold,
-    Content,
-    Image
+    Background,
+    TopLogoCountiner,
+    TopLogo,
+    BarcodeCountiner,
+    Barcode,
+    Path1,
+    Path2,
+    MainLogo,
+    Header,
+    ItemHeader
 }
