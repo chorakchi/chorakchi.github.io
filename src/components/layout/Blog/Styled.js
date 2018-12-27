@@ -44,10 +44,7 @@ width: 85px;
 `;
 
 const Header = styled.div`
-position: fixed;
-left: 340px;
-top:0;
-padding-left: 30px;
+
 padding-top: 85px;
 display: flex;
 `;
@@ -77,8 +74,28 @@ width:172px;
 
 const MainLogo = styled.img`
 position:fixed;
-top: 30%;
-right: 20%;
+top: 100px;
+right: 30px;
+width:300px;
+`;
+
+const ContentCountiner = styled.div`
+position: fixed;
+left: 340px;
+right: 340px;
+top:0;
+bottom: 0px;
+padding: 30px;
+overFLow: auto;
+`;
+
+const TitlePost = styled.div`
+padding: 100px 364px 30px 65px;
+
+`;
+const ContentPost = styled.div`
+background-color: #f8f8f8;
+padding: 41px;
 `;
 
 
@@ -93,5 +110,8 @@ export {
     Path2,
     MainLogo,
     Header,
-    ItemHeader
+    ItemHeader,
+    ContentCountiner,
+    TitlePost,
+    ContentPost
 }

@@ -18,10 +18,12 @@ ${props => props.show && css`
 @keyframes showPopupCountainerStyledAnimaet {
   from {
     opacity:0;
-  }
-  to {
+    backdrop-filter: none;
+}
+to {
     opacity:1;
-  }
+    backdrop-filter: blur(5px) contrast(.8);
+}
 }
 animation: showPopupCountainerStyledAnimaet 300ms ease ;
 animation-fill-mode: forwards;
@@ -29,11 +31,13 @@ animation-fill-mode: forwards;
 ${props => props.show == false && css`
 
 @keyframes hidePopupCountainerStyledAnimaet {
-  from {
-    opacity:1;
-  }
-  to {
-    opacity:0;
+    from {
+        opacity:1;
+        backdrop-filter: blur(5px) contrast(.8);
+    }
+    to {
+        opacity:0;
+        backdrop-filter: none;
   }
 }
 animation: hidePopupCountainerStyledAnimaet 300ms ease ;

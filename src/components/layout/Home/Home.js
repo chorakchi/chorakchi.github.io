@@ -11,13 +11,14 @@ import {
     MainLogo,
     Header,
     ItemHeader
-} from './Styled'
-import picture from './../../../asset/image/hamburg-main.jpg'
-import logo from './../../../asset/image/logo.svg'
-import barcode from './../../../asset/image/barcode.svg'
-import path1 from './../../../asset/image/path-1.svg'
-import path2 from './../../../asset/image/path-2.svg'
-import mainLogo from './../../../asset/image/block-logo.svg'
+} from './Styled';
+import {Typography } from "./../../common";
+import picture from './../../../asset/image/hamburg-main.jpg';
+import logo from './../../../asset/image/logo.svg';
+import barcode from './../../../asset/image/barcode.svg';
+import path1 from './../../../asset/image/path-1.svg';
+import path2 from './../../../asset/image/path-2.svg';
+import mainLogo from './../../../asset/image/block-logo.svg';
 class Home extends React.Component {
     render() {
         return <div>
@@ -30,11 +31,11 @@ class Home extends React.Component {
                 <Barcode src={barcode}/>
             </BarcodeCountiner>
             <Header>
-                <ItemHeader>Home</ItemHeader>
-                <ItemHeader onClick={()=> this.props.onChangeRoute("/home/Portfolio", {parentFilter: true})}>Portfolio</ItemHeader>
-                <ItemHeader>Blog</ItemHeader>
-                <ItemHeader>Github</ItemHeader>
-                <ItemHeader>Contact</ItemHeader>
+                <ItemHeader><Typography variant="h5" >Home</Typography></ItemHeader>
+                <ItemHeader onClick={()=> this.props.onChangeRoute("/home/Portfolio", {parentFilter: true})}><Typography variant="h5">Portfolio</Typography></ItemHeader>
+                <ItemHeader><Typography variant="h5" >Blog</Typography></ItemHeader>
+                <ItemHeader><Typography variant="h5" >Github</Typography></ItemHeader>
+                <ItemHeader><Typography variant="h5" >Contact</Typography></ItemHeader>
             </Header>
             <Path1 src={path1}/>
             <Path2 src={path2}/>
