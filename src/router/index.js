@@ -36,6 +36,7 @@ class Routers extends React.Component {
                         {/* </Animation> */}
                         <Route path="/home/Portfolio" component={() => <Portfolio onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
                         <Route path="/blog" component={() => <Blog onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
+                        <Route path="/renova" component={() => <Blog onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
                     </React.Fragment>
                 </Router>
             </React.Fragment>
