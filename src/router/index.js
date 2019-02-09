@@ -6,6 +6,7 @@ import {
 import Home from "./../countiner/HomePage"
 import Portfolio from "./../countiner/PortfolioPage"
 import Blog from "./../countiner/BlogPage"
+import RepoPage from "./../countiner/RepoPage"
 import { Animation } from "./../components/common"
 
 const RedirectTo = (link) => (
@@ -36,7 +37,7 @@ class Routers extends React.Component {
                         {/* </Animation> */}
                         <Route path="/home/Portfolio" component={() => <Portfolio onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
                         <Route path="/blog" component={() => <Blog onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
-                        <Route path="/renova" component={() => <Blog onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
+                        <Route path="/repo" component={() => <RepoPage onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
                     </React.Fragment>
                 </Router>
             </React.Fragment>
