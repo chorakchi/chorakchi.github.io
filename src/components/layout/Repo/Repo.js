@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes  from "prop-types"
 import {
     Countiner,
     Header,
@@ -16,92 +17,68 @@ import {
     Text,
     Column,
     Row
-
 } from './Styled';
 import { Typography, Icon } from "./../../common";
 
-const data = {
-    titlePost: "repo",
-    contentPost: 'The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).The withStateHandlers higher-order component is very simple - it takes the initial state, and an object containing the state handlers. Each of the state handlers will return new state when called.Step 2. Extract form validation logic.Now it’s time to extract the form validation logic. We’ll be using withProps higher-order component from recompose. It allows adding any arbitrary props to an existing component.We’ll use withProps to add the emailError, passwordError, and confirmPasswordError props, which will contain errors if any of our form fields are invalid.One should also note that the validation logic for every one of the form fields is kept in a separate file (for better separation of concerns).'
-}
 class Repo extends React.Component {
     render() {
+        const {data } = this.props
         return (
             <Countiner>
+                {
+                data ? 
+                <React.Fragment>
                 <Nav>
-                    <ItemNav><Icon iconId="renova" width="32px" color="#ffffff99" style={{ padding: '11px', width: '8px' }}/></ItemNav>
-                    <ItemNav style={{fontSize: '33px'}}>Renova</ItemNav>
+                    <ItemNav><Icon iconId={data.iconId} width="32px" color="#ffffff99" style={{ padding: '11px', width: '8px' }} /></ItemNav>
+                    <ItemNav style={{ fontSize: '33px' }}>{data.name}</ItemNav>
                     <ItemNav flex={1}></ItemNav>
-                    <ItemNav onCLick={() => { }} >Home</ItemNav>
-                    <ItemNav onCLick={() => { }}>Demo</ItemNav>
-                    <ItemNav onCLick={() => { }}>Docs</ItemNav>
-                    <ItemNav onCLick={() => { }}>Github</ItemNav>
-                    <ItemNav version >v 0.1.1</ItemNav>
+                    {data.navlink.map(item => <ItemNav
+                        onCLick={() => { }}
+                    >{item.label}</ItemNav>)}
+                    <ItemNav version color={data.color.premium}>v {data.version}</ItemNav>
                 </Nav>
-                <Header>
+                <Header color={data.color.secondary}>
                     <LogoCountiner>
                         <LogoHeader>
-                            <Icon width='120px' iconId="renova" color="#ff8dff"/>
+                            <Icon width='120px' iconId={data.iconId} color={data.color.premium} />
                         </LogoHeader >
-                        <NameHeader>Renova</NameHeader>
+                        <NameHeader>{data.name}</NameHeader>
                         <DescriptionHeader>
-                            Charts & Graphs for Web Applications built on React components
-                    </DescriptionHeader>
+                            {data.description}
+                        </DescriptionHeader>
                         <BTNsHeader>
-                            <Button shadow bgColor="#ff8dff" color="#672f61" width="230px" >GETSTARTED</Button>
+                            <Button shadow bgColor={data.color.premium} color={data.color.secondary} width="230px" >GETSTARTED</Button>
                             <Button bgColor="#ffffff22" color="#ffffff" width="140px" >Demo</Button>
                         </BTNsHeader>
                     </LogoCountiner>
                 </Header>
                 <ContentCountiner>
                     <Row>
+                        {data.contents.map(item =>
                         <Column>
-                        <BlockContent>
-                            <Title>Installation</Title>
-                            <Text>
-                                Rechart source files via npm. We take care of injecting the CSS needed. 
-                                <br/>
-                                <br/>
-                                $ npm install rechart or use a CDN.
-                        </Text>
-                        </BlockContent>
+                            <BlockContent>
+                                <Title color={data.color.secondary}>{item.title}</Title>
+                                <Text>{item.text}</Text>
+                            </BlockContent>
                         </Column>
-                        <Column>
-                        <BlockContent>
-                            <Title>Usage</Title>
-                            <Text>
-                                Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.
-                                <br/>
-                                <br/>
-                                Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.
-                                <br/>
-                                <br/>
-                                Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.
-                                <br/>
-                                Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.
-                                <br/>
-                                <br/>
-                                <br/>
-                                Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.
-                                <br/>
-                                Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.
-                        </Text>
-                                <br/>
-                        </BlockContent>
-                        </Column>
-                        <Column>
-                        <BlockContent>
-                            <Title>Themes</Title>
-                            <Text>
-                                Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.
-                        </Text>
-                        </BlockContent>
-                        </Column>
+                            )}
                     </Row>
                 </ContentCountiner>
+                </React.Fragment>
+: null    }
 
             </Countiner>
-        )
+            )
     }
 }
+
+Repo.propsTypes = {
+    data: PropTypes.object
+}
+Repo.defaultProps = {
+    data: {}
+} = {
+    data: {}
+}
+
 export { Repo }

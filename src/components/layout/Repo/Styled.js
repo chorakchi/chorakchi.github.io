@@ -22,7 +22,7 @@ const NavLogo = styled.img`
 const Header = styled.div`
   width: 100%;
 height: 700px;
-background-color: #672f61;
+background: ${props => props.color ? props.color : '#666'};
 display: flex;
 align-items:center;
 justify-content: center;
@@ -40,7 +40,7 @@ padding: 0 20px;
 letter-spacing: normal;
 text-align: left;
 cursor: ${props => props.onCLick ? 'pointer' : 'default' };
-color: ${props => props.version ? '#ff8dff' : "#ffffff99"};
+color: ${props => props.version ? props.color : "#ffffff99"};
 &:hover{
     
     background-color: ${props => props.onCLick ? '#ffffff11' : 'none' };
@@ -106,7 +106,7 @@ font-stretch: normal;
 line-height: 1.32;
 letter-spacing: normal;
 text-align: left;
-color: #672f61;
+color: ${props => props.color ? props.color : "#666"};
 padding: 20px;
 padding: 20px;
 `;

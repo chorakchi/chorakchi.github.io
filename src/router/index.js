@@ -13,6 +13,15 @@ const RedirectTo = (link) => (
     <Redirect to={link} />
 )
 
+const ChildRepo = ({ match }) => (
+    <div>
+      <RepoPage 
+      repoName= {match.params.repoName}
+      pageName=  {match.params.pageName}
+      />
+    </div>
+  );
+
 class Routers extends React.Component {
     state = {
         blurFilter: false,
@@ -37,7 +46,7 @@ class Routers extends React.Component {
                         {/* </Animation> */}
                         <Route path="/home/Portfolio" component={() => <Portfolio onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
                         <Route path="/blog" component={() => <Blog onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
-                        <Route path="/repo" component={() => <RepoPage onChangeRoute={(...data) => this.handllerChangeRoute(...data)}/>} />
+                        <Route path="/repo/:repoName/:pageName" component={ChildRepo } />
                     </React.Fragment>
                 </Router>
             </React.Fragment>
