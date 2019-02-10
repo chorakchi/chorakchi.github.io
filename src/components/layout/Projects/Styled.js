@@ -80,7 +80,7 @@ flex-wrap: wrap ;
 overflow: auto;
 position: absolute;
 bottom: 0 ;
-top: 190px;
+top: 200px;
 
 `;
 

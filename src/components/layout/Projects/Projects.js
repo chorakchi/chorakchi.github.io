@@ -38,7 +38,7 @@ class Projects extends React.Component {
                          <ListItem>CONTACT</ListItem>
                     </Sidebar>
                     <BlockContent>
-                    <TitleSidebar color="rgba(0,0,0,0.3)" size= "big">
+                    <TitleSidebar color="rgb(243, 201, 55)" size= "big">
                     OPEN SOURCE PROJECTS
                          </TitleSidebar>
                          <CountinerContent>
