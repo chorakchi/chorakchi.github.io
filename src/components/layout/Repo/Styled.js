@@ -74,6 +74,7 @@ font-weight: bold;
 display:flex;
 align-items:center;
 justify-content:center;
+border: 1px solid #fff2;
 color: ${ props => props.color ? props.color : '#bfbfbf'};
 cursor: pointer;
 &:hover{
