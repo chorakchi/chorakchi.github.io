@@ -13,7 +13,7 @@ import {
     CloseBTN
 } from './Styled'
 
-import {PopUp } from "./../../common"
+import {PopUp, Icon } from "./../../common"
 import picture from './../../../asset/image/hamburg-main.jpg'
 class Portfolio extends React.Component {
     state={
@@ -58,7 +58,7 @@ class Portfolio extends React.Component {
                     setTimeout(() => {
                         this.props.onChangeRoute("/home", {parentFilter: false})
                     }, 500);
-                }}>X</CloseBTN>
+                }}><Icon iconId="close" size="L" color="#000"/></CloseBTN>
             </PopUp>
         </div>
     }

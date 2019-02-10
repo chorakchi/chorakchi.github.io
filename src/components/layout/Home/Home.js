@@ -32,9 +32,9 @@ class Home extends React.Component {
             </BarcodeCountiner>
             <Header>
                 <ItemHeader><Typography variant="h5" >Home</Typography></ItemHeader>
-                <ItemHeader onClick={()=> this.props.onChangeRoute("/home/Portfolio", {parentFilter: true})}><Typography variant="h5">Portfolio</Typography></ItemHeader>
-                <ItemHeader><Typography variant="h5" >Blog</Typography></ItemHeader>
-                <ItemHeader><Typography variant="h5" >Github</Typography></ItemHeader>
+                <ItemHeader onClick={()=> this.props.onChangeRoute("/home/Portfolio")}><Typography variant="h5">Portfolio</Typography></ItemHeader>
+                <ItemHeader onClick={()=> this.props.onChangeRoute("/blog")}><Typography variant="h5" >Blog</Typography></ItemHeader>
+                <ItemHeader onClick={()=> this.props.onChangeRoute("/home/projects")}><Typography variant="h5" >Projects</Typography></ItemHeader>
                 <ItemHeader><Typography variant="h5" >Contact</Typography></ItemHeader>
             </Header>
             <Path1 src={path1}/>
