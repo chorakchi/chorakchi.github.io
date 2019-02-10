@@ -3,7 +3,8 @@
 	"description": "Charts & Graphs for Web Applications built on React components",
 	"color": {
 		"premium": "#8DF3FF",
-		"secondary": "#835A8E"
+		"secondary": "#835A8E",
+		"gradient": "linear-gradient(90deg, rgb(101, 220, 214) 0%, rgb(166, 0, 78) 100%)"
 	},
 	"iconId": "rechart",
 	"version": "0.1.1",

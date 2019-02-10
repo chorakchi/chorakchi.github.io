@@ -2,8 +2,9 @@
 	"name": "Resun",
 	"description": "Charts & Graphs for Web Applications built on React components",
 	"color": {
-		"premium": "#FFAA00",
-		"secondary": "#825D05"
+		"premium": "#F7BB81",
+		"secondary": "#825D05",
+		"gradient": "linear-gradient(90deg, rgba(247,85,131,1) 0%, rgba(247,189,129,1) 100%)"
 	},
 	"iconId": "resun",
 	"version": "0.1.1",

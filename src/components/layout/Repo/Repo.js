@@ -37,7 +37,7 @@ class Repo extends React.Component {
                     >{item.label}</ItemNav>)}
                     <ItemNav version color={data.color.premium}>v {data.version}</ItemNav>
                 </Nav>
-                <Header color={data.color.secondary}>
+                <Header color={data.color.gradient}>
                     <LogoCountiner>
                         <LogoHeader>
                             <Icon width='120px' iconId={data.iconId} color={data.color.premium} />
