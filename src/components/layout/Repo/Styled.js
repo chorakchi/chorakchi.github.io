@@ -21,7 +21,7 @@ const NavLogo = styled.img`
 
 const Header = styled.div`
   width: 100%;
-height: 787px;
+height: 700px;
 background-color: #672f61;
 display: flex;
 align-items:center;
@@ -40,7 +40,7 @@ padding: 0 20px;
 letter-spacing: normal;
 text-align: left;
 cursor: ${props => props.onCLick ? 'pointer' : 'default' };
-color: ${props => props.version ? '#ff8dff' : "rgba(255, 255, 255, 0.61)"};
+color: ${props => props.version ? '#ff8dff' : "#ffffff99"};
 &:hover{
     
     background-color: ${props => props.onCLick ? '#ffffff11' : 'none' };
@@ -49,7 +49,7 @@ color: ${props => props.version ? '#ff8dff' : "rgba(255, 255, 255, 0.61)"};
 
 const DescriptionHeader = styled.div`
 font-family: Roboto, SegoeUI, Arial, Helvetica, sans-serif;
-font-size: 24px;
+font-size: 22px;
 font-weight: normal;
 font-style: normal;
 font-stretch: normal;
@@ -82,9 +82,8 @@ opacity: 0.9;
 `;
 
 const NameHeader = styled.div`
-height: 121px;
 font-family: Roboto, SegoeUI, Arial, Helvetica, sans-serif;
-font-size: 91px;
+font-size: 75px;
 font-weight: normal;
 font-style: normal;
 font-stretch: normal;
@@ -95,11 +94,7 @@ color: #bfbfbf;
 `;
 
 const LogoHeader = styled.div`
-background-color: #ff8dff;
-width:116px;
-height:116px;
-margin:5px;
-border-radius: 80px;
+height:176px;
 `;
 
 const Title = styled.div`

@@ -18,13 +18,7 @@ import {
     Row
 
 } from './Styled';
-import { Typography } from "./../../common";
-import picture from './../../../asset/image/hamburg-main.jpg';
-import logo from './../../../asset/image/logo.svg';
-import barcode from './../../../asset/image/barcode.svg';
-import path1 from './../../../asset/image/path-1.svg';
-import path2 from './../../../asset/image/path-2.svg';
-import mainLogo from './../../../asset/image/block-logo.svg';
+import { Typography, Icon } from "./../../common";
 
 const data = {
     titlePost: "repo",
@@ -35,8 +29,8 @@ class Repo extends React.Component {
         return (
             <Countiner>
                 <Nav>
-                    <ItemNav>R</ItemNav>
-                    <ItemNav>Renova</ItemNav>
+                    <ItemNav><Icon iconId="renova" width="32px" color="#ffffff99" style={{ padding: '11px', width: '8px' }}/></ItemNav>
+                    <ItemNav style={{fontSize: '33px'}}>Renova</ItemNav>
                     <ItemNav flex={1}></ItemNav>
                     <ItemNav onCLick={() => { }} >Home</ItemNav>
                     <ItemNav onCLick={() => { }}>Demo</ItemNav>
@@ -46,7 +40,9 @@ class Repo extends React.Component {
                 </Nav>
                 <Header>
                     <LogoCountiner>
-                        <LogoHeader />
+                        <LogoHeader>
+                            <Icon width='120px' iconId="renova" color="#ff8dff"/>
+                        </LogoHeader >
                         <NameHeader>Renova</NameHeader>
                         <DescriptionHeader>
                             Charts & Graphs for Web Applications built on React components
