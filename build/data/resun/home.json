@@ -1,0 +1,44 @@
+{
+	"name": "Resun",
+	"description": "Charts & Graphs for Web Applications built on React components",
+	"color": {
+		"premium": "#F8D1AA",
+		"secondary": "#F75683",
+		"gradient": "linear-gradient(90deg, rgba(247,85,131,1) 0%, rgba(247,189,129,1) 100%)"
+	},
+	"iconId": "resun",
+	"version": "0.1.1",
+	"navlink": [{
+			"label": "Home",
+			"link": "./"
+		},
+		{
+			"label": "Demo",
+			"link": "./demo"
+		},
+		{
+			"label": "Docs",
+			"link": "./docs"
+		},
+		{
+			"label": "Github",
+			"link": "./Github"
+		}
+	],
+	"contents": [{
+			"title": "Installation",
+			"type": "",
+			"text": " Rechart source files via npm. We take care of injecting the CSS needed. \n $ npm install rechart or use a CDN."
+		},
+		{
+			"title": "Usage",
+			"type": "",
+			"text": "Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.  Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.  Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN. Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN.   Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN. Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN."
+		},
+		{
+			"title": "Themes",
+			"type": "",
+			"text": "Rechart source files via npm. We take care of injecting the CSS needed. $ npm install rechart or use a CDN."
+		}
+	]
+}

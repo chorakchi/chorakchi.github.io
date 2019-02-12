@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/logo.dd366dee.svg"
   },
   {
-    "revision": "5c72e8ec673127e3454c",
-    "url": "/static/css/main.19369ee0.chunk.css"
+    "revision": "10e8907f3847164f2dd7",
+    "url": "/static/css/main.7215ebad.chunk.css"
   },
   {
-    "revision": "eae0503e77774a9030dd",
-    "url": "/static/js/1.eae0503e.chunk.js"
+    "revision": "3ab5bf8498634c122122",
+    "url": "/static/js/1.3ab5bf84.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/hamburg-main.9e8fca1d.jpg"
   },
   {
-    "revision": "5c72e8ec673127e3454c",
-    "url": "/static/js/main.5c72e8ec.chunk.js"
+    "revision": "10e8907f3847164f2dd7",
+    "url": "/static/js/main.10e8907f.chunk.js"
   },
   {
     "revision": "43024157f060480a6ef7bf7b998def1d",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/static/media/barcode.fa7fe350.svg"
   },
   {
-    "revision": "ce9e89608e8ec1100f1d19ac227caa49",
+    "revision": "cfe407f621dc78c19d3a2de7ecd35602",
     "url": "/index.html"
   }
 ];
