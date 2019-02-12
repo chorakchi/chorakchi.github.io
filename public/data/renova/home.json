@@ -28,7 +28,7 @@
 	"contents": [{
 			"title": "Installation",
 			"type": "",
-			"text": " Rechart source files via npm. We take care of injecting the CSS needed. \n $ npm install rechart or use a CDN."
+			"text": " Rechart source files via npm. We take care of injecting the CSS needed. \n\n ```shell \n $ npm install rechart or use a CDN. \n```"
 		},
 		{
 			"title": "Usage",

@@ -19,6 +19,7 @@ import {
     Row
 } from './Styled';
 import { Typography, Icon } from "./../../common";
+import Markdown from "react-markdown"
 
 class Repo extends React.Component {
     render() {
@@ -58,7 +59,8 @@ class Repo extends React.Component {
                         <Column>
                             <BlockContent>
                                 <Title color={data.color.secondary}>{item.title}</Title>
-                                <Text>{item.text}</Text>
+                                {/* <Text>{item.text}</Text> */}
+                                <Markdown source={item.text} escapeHtml={false} />
                             </BlockContent>
                         </Column>
                             )}
