@@ -37,3 +37,13 @@ code {
 .card-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
+
+
+code{
+  background: linear-gradient(to right,#fce4ed,#ffe8cc);
+  box-decoration-break: clone;
+  word-wrap: break-word;
+padding: .1rem .3rem .2rem;
+border-radius: .2rem;
+border-left: 5px solid #adadad;
+}
