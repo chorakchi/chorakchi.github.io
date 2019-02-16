@@ -7,12 +7,31 @@ import Blog from "./../countiner/BlogPage"
 import RepoPage from "./../countiner/RepoPage"
 import { withRouter } from "react-router-dom";
 
-const ChildRepo = ({ match }) => (
+const ChildRepo = ({ match, ...props }) => (
     <div>
       <RepoPage 
       repoName= {match.params.repoName}
       pageName=  {match.params.pageName}
-      onChangeRoute={ link => this.props.history.push(link)}
+      {...props}
+      onChangeRoute={ link => props.history.push(link)}
+      />
+    </div>
+  );
+const PostChild = ({ match, ...props }) => (
+    <div>
+      <Blog
+      post= {match.params.post}
+      {...props}
+      onChangeRoute={ link => props.history.push(link)}
+      />
+    </div>
+  );
+const PortfolioProps = ({ match, ...props }) => (
+    <div>
+      <Portfolio
+      child= {match.params.child}
+      {...props}
+      onChangeRoute={ link => props.history.push(link)}
       />
     </div>
   );
@@ -26,10 +45,11 @@ class RouteChild extends React.Component {
                     <React.Fragment>
                         <Route path="/home" component={() => <Home {...pageProp} />} />
                         <Route exact path="/" component={() => <Home {...pageProp} />} />
-                        <Route path="/:parent/portfolio" component={() => <Portfolio {...pageProp}/>} />
+                        <Route path="/:parent/portfolio/:child" component={PortfolioProps} />
                         <Route path="/:parent/projects" component={() => <Projects {...pageProp}/>} />
                         <Route path="/projects" component={() => <Portfolio {...pageProp} />} />
-                        <Route path="/blog" component={() => <Blog {...pageProp}/>} />
+                        <Route exact path="/blog" component={PostChild } />
+                        <Route path="/blog/:post" component={PostChild } />
                         <Route path="/repo/:repoName/:pageName" component={ChildRepo } />
                     </React.Fragment>
         )

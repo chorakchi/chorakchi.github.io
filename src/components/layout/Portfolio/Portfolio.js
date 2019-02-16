@@ -1,27 +1,26 @@
 import React from 'react'
 import {
-    Countiner,
     MainBlock,
     Sidebar,
     BlockContent,
     TitleSidebar,
     ListItem,
     Divider,
-    Bold,
-    Content,
-    Image,
     CloseBTN
 } from './Styled'
 
 import {PopUp, Icon } from "./../../common"
-import picture from './../../../asset/image/hamburg-main.jpg'
+import Skils from './Skils';
+import Contact from './Contact';
+import Experiences from './Experiences';
+import Education from './Education';
 class Portfolio extends React.Component {
     state={
         show: true
     }
     render() {
         return <div>
-            <PopUp show={this.state.show} width="90%" height= "80%" >
+            <PopUp show={this.state.show} width="95%" height= "90%" >
                 <MainBlock>
                     <Sidebar>
                         <TitleSidebar>
@@ -31,26 +30,15 @@ class Portfolio extends React.Component {
                          <ListItem>SKILS</ListItem>
                          <ListItem>WORKS</ListItem>
                          <ListItem>EXPERIENCES</ListItem>
+                         <ListItem>EDUCATION</ListItem>
                          <Divider/>
                          <ListItem>CONTACT</ListItem>
-                         <ListItem>BLOG</ListItem>
-                         <ListItem>GALLERE</ListItem>
                     </Sidebar>
                     <BlockContent>
-                    <TitleSidebar color="rgba(0,0,0,0.3)" size= "big">
-                            SKILS
-                         </TitleSidebar>
-                         <Content>
-                         <Bold>ReactJS, Redux, RxJS</Bold>
-                             <br/>
-                         React-Router, Jest(TDD, BDD method), Enzym.js HOC, Error Boundaries, Styled Component, container- presentatinal method , ServerSide Rendering, PWA, React-Fiber, PReact, ReactVR, storybook and addons 
-                         </Content>
-                         <Content>
-                         <Bold>JavaScript, ECMAscript, ES5,6~8, Babel</Bold>
-                             <br/>
-                             JSS, JSX, flow.js, TypeScript, ESLint(Airbanb config ...) Functianal, Stateless, Async and Reactive programing
-                             <Image src={picture}/>
-                         </Content>
+                    <Education/>
+                        <Experiences/>
+                    <Skils/>
+                    <Contact/>
                          </BlockContent>
                 </MainBlock>
                 <CloseBTN onClick={()=>{

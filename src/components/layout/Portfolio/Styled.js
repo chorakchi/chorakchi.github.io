@@ -93,6 +93,8 @@ const CloseBTN = styled.div`
 position:absolute;
 right:0;
 top:0;
+padding: 20px;
+cursor: pointer;
 `;
 
 
