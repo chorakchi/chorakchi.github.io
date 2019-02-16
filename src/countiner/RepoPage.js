@@ -11,7 +11,6 @@ class RepoPage extends React.Component {
 
     render(){
         const {publicDataGet } = this.props
-        console.log(this.props)
         return(
             <React.Fragment>
                 <Repo onChangeRoute = {(...data) => this.props.onChangeRoute(...data)} data = { publicDataGet.items || null}/>

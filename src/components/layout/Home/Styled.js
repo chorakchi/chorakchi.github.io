@@ -25,6 +25,7 @@ position:fixed;
 top:0;
 left:180px;
 padding: 50px 35px 131px 35px;
+background: linear-gradient(0deg, rgb(221, 208, 106) 0%, rgb(255, 230, 15) 100%);
 `;
 
 const TopLogo = styled.img`
@@ -43,23 +44,13 @@ const Barcode = styled.img`
 width: 85px;
 `;
 
-const Header = styled.div`
+const NavWrapper = styled.div`
 position: fixed;
 left: 340px;
-top:0;
+top:30px;
 padding-left: 30px;
-padding-top: 85px;
-display: flex;
 `;
 
-const ItemHeader = styled.div`
-padding: 15px;
-border-top-right-radius: 20px;
-cursor: pointer;
-&:hover{
-    background-color: #ffe60f;
-}
-`;
 
 const Path1 = styled.img`
 position:fixed;
@@ -92,6 +83,5 @@ export {
     Path1,
     Path2,
     MainLogo,
-    Header,
-    ItemHeader
+    NavWrapper
 }

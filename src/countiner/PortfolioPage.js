@@ -6,7 +6,7 @@ class PortfolioPage extends React.Component {
     render(){
         return(
             <React.Fragment>
-                <Portfolio onChangeRoute = {(...data) => this.props.onChangeRoute(...data)}/>
+                <Portfolio child={this.props.child} onChangeRoute = {(...data) => this.props.onChangeRoute(...data)}/>
             </React.Fragment>
         )
     }

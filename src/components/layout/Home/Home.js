@@ -9,10 +9,9 @@ import {
     Path1,
     Path2,
     MainLogo,
-    Header,
-    ItemHeader
+    NavWrapper
 } from './Styled';
-import {Typography } from "./../../common";
+import {Nav } from "./../../common";
 import picture from './../../../asset/image/hamburg-main.jpg';
 import logo from './../../../asset/image/logo.svg';
 import barcode from './../../../asset/image/barcode.svg';
@@ -30,13 +29,9 @@ class Home extends React.Component {
             <BarcodeCountiner>
                 <Barcode src={barcode}/>
             </BarcodeCountiner>
-            <Header>
-                <ItemHeader><Typography variant="h5" >Home</Typography></ItemHeader>
-                <ItemHeader onClick={()=> this.props.onChangeRoute("/home/Portfolio")}><Typography variant="h5">Portfolio</Typography></ItemHeader>
-                <ItemHeader onClick={()=> this.props.onChangeRoute("/blog")}><Typography variant="h5" >Blog</Typography></ItemHeader>
-                <ItemHeader onClick={()=> this.props.onChangeRoute("/home/projects")}><Typography variant="h5" >Projects</Typography></ItemHeader>
-                <ItemHeader><Typography variant="h5" >Contact</Typography></ItemHeader>
-            </Header>
+            <NavWrapper>
+            <Nav onChangeRoute={ data=> this.props.onChangeRoute(data)}/>
+            </NavWrapper>
             <Path1 src={path1}/>
             <Path2 src={path2}/>
             <MainLogo src={mainLogo}/>
