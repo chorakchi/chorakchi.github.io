@@ -15,7 +15,7 @@
         "iconId": "rechart",
         "description": "Charts & Graphs for Web Applications built on React components",
         "color": {
-            "premium": "#5ADAE9;",
+            "premium": "#8DF3FF",
             "secondary": "#835A8E"
         }
     },
@@ -55,7 +55,7 @@
         "iconId": "remoon",
         "description": "Charts & Graphs for Web Applications built on React components",
         "color": {
-            "premium": "#BDBDBD",
+            "premium": "#00B6FD",
             "secondary": "#275C71"
         }
     },
