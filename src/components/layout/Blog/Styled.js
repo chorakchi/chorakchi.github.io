@@ -25,6 +25,7 @@ position:fixed;
 top:0;
 left:180px;
 padding: 50px 35px 131px 35px;
+background: linear-gradient(0deg, rgb(221, 208, 106) 0%, rgb(255, 230, 15) 100%);
 `;
 
 const TopLogo = styled.img`
@@ -41,21 +42,6 @@ padding: 47px 35px 47px;
 
 const Barcode = styled.img`
 width: 85px;
-`;
-
-const Header = styled.div`
-
-padding-top: 85px;
-display: flex;
-`;
-
-const ItemHeader = styled.div`
-padding: 15px;
-border-top-right-radius: 20px;
-cursor: pointer;
-&:hover{
-    background-color: #ffe60f;
-}
 `;
 
 const Path1 = styled.img`
@@ -86,17 +72,37 @@ right:0;
 top:0;
 bottom: 0px;
 padding: 30px;
-padding-right: 340px;
+padding-right: 20%;
 overFLow: auto;
 `;
 
 const TitlePost = styled.div`
 padding: 100px 364px 30px 65px;
-
 `;
+
 const ContentPost = styled.div`
-background-color: #f8f8f8;
-padding: 41px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: #a2a2a21a;
+padding: 24px;
+&>h1{
+    padding: 100px 364px 30px 15px;
+    background: white;
+    font-size: 40px;
+    font-weight: lighter;
+    margin: -24px;
+    margin-bottom: 24px;
+};
+`;
+
+const ItemList = styled.div`
+padding: 20px;
+margin:19px;
+cursor: pointer;
+background: linear-gradient(0deg, rgba(218, 218, 218, 0.4) 0%, rgb(210, 210, 210) 100%);
+border-radius: 8px;
+&:hover{
+    background: #dfd166aa;
+}
 `;
 
 
@@ -110,9 +116,8 @@ export {
     Path1,
     Path2,
     MainLogo,
-    Header,
-    ItemHeader,
     ContentCountiner,
     TitlePost,
-    ContentPost
+    ContentPost,
+    ItemList
 }

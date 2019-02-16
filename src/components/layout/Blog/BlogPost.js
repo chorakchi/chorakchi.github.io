@@ -7,8 +7,7 @@ import {
     Path2,
     MainLogo,
     ContentCountiner,
-    ContentPost,
-    ItemList
+    ContentPost
 } from './Styled';
 import marked from "marked";
 import Markdown from "react-markdown"
@@ -19,10 +18,8 @@ import barcode from './../../../asset/image/barcode.svg';
 import path1 from './../../../asset/image/path-1.svg';
 import path2 from './../../../asset/image/path-2.svg';
 import mainLogo from './../../../asset/image/block-logo.svg';
-import post from './post1.md'
-import { Title } from '../Projects/Styled';
 
-class Blog extends React.Component {
+class BlogPost extends React.Component {
     state={
         post: ""
     }
@@ -37,8 +34,8 @@ class Blog extends React.Component {
                 <ContentCountiner>
                     <Nav  onChangeRoute={ data=> this.props.onChangeRoute(data)}/>
                     <ContentPost>
-                        <h1>Posts:</h1>
-                        {this.props.data.map(items => <ItemList onClick={ data=> this.props.onChangeRoute('blog/'+items.path)}>{items.title}</ItemList>)}
+                        <Markdown source={this.props.data} escapeHtml={false} />
+                        {/* <Typography variant="body">{data.contentPost}</Typography> */}
                     </ContentPost>
                 </ContentCountiner>
                 <MainLogo src={mainLogo} />
@@ -47,4 +44,4 @@ class Blog extends React.Component {
         </div>
     }
 }
-export { Blog }
+export default BlogPost 
