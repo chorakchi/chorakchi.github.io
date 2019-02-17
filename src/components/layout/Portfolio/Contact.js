@@ -26,6 +26,15 @@ class Contact extends React.Component {
                 <Content>
                     <Bold>Skype: (live:m.chorakchi)</Bold>
                     <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </Content>
             </BlockContent>
         </React.Fragment>

@@ -61,6 +61,7 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 const BlockContent = styled.div`
 position: relative;
 flex:1;
+overflow:auto;
 
 `;
 const Bold = styled.span`

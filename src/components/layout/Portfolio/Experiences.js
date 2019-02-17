@@ -17,18 +17,43 @@ class Experiences extends React.Component {
         return <React.Fragment>
             <BlockContent>
                 <TitleSidebar color="rgba(0,0,0,0.3)" size="big">
-                EXPERIENCES
+                    EXPERIENCES
                          </TitleSidebar>
                 <Content>
-                    <Bold>ReactJS, Redux, RxJS</Bold>
+                    <Bold>Front-end Developer</Bold>
                     <br />
-                    React-ddons
+                    Jun 2018 to Present
+                    <br />
+                    at Convose Startup in Berlin Remotly
                          </Content>
                 <Content>
-                    <Bold>JavaScript, ECMAscript, ES5,6~8, Babel</Bold>
+                    <Bold>Front-end Developer</Bold>
                     <br />
-                    JSS, 
-                </Content>
+                    Apr 2016 to Present
+                    <br />
+                    at Mofid Securities and Mofid Entekhab in Tehran
+                         </Content>
+                <Content>
+                    <Bold>Java & Web Design</Bold>
+                    <br />
+                    2015 - 2016
+                    <br />
+                    IEEE, Tehran University
+                         </Content>
+                <Content>
+                    <Bold>Front-end Developer</Bold>
+                    <br />
+                    2015 - 2016
+                    <br />
+                    Hero Holding
+                         </Content>
+                <Content>
+                    <Bold>Web Designer</Bold>
+                    <br />
+                    2015 - 2016
+                    <br />
+                    Freelance
+                         </Content>
             </BlockContent>
         </React.Fragment>
     }

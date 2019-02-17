@@ -8,7 +8,6 @@ import {
 } from './Styled'
 
 import { PopUp, Icon } from "./../../common"
-import picture from './../../../asset/image/hamburg-main.jpg'
 class Education extends React.Component {
     state = {
         show: true
@@ -17,17 +16,28 @@ class Education extends React.Component {
         return <React.Fragment>
             <BlockContent>
                 <TitleSidebar color="rgba(0,0,0,0.3)" size="big">
-                EDUCATION
+                    EDUCATION
                          </TitleSidebar>
                 <Content>
-                    <Bold>ReactJS, Redux, RxJS</Bold>
+                    <Bold>  Bachelor's degree</Bold>
                     <br />
-                    React-ddons
+                    Computer software engineering
+                    <br />
+                    Azad arak university  2009 - 2012
                          </Content>
                 <Content>
-                    <Bold>JavaScript, ECMAscript, ES5,6~8, Babel</Bold>
+                    <Bold>FreeCodeCamp</Bold>
                     <br />
-                    JSS, 
+                    Full Stack Developer Certificate
+                    <br />
+                    2017 - in study
+                </Content>
+                <Content>
+                    <Bold>LANGUAGE</Bold>
+                    <br />
+                    English -  efficiently for work and communicate fluently about technical topics
+                    <br />
+                    Germany - in study
                 </Content>
             </BlockContent>
         </React.Fragment>

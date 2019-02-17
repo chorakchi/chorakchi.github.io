@@ -16,9 +16,17 @@ class Skils extends React.Component {
     render() {
         return <React.Fragment>
             <BlockContent>
-                <TitleSidebar color="rgba(0,0,0,0.3)" size="big">
-                    SKILS
-                         </TitleSidebar>
+                <TitleSidebar color="rgba(0,0,0,0.3)" size="big">SKILS</TitleSidebar>
+                <Content>
+                    <Bold>FRONT-END DEVELOPER</Bold>
+                    
+                    <br /> 
+                    Implement modular and scalable web application in JavaScript.
+Front-end DevOps, mindset and experience building big single page applications.
+Self-motivation, evolving and improving the tools in use.
+<br/>
+researching and implementing new UI technologies, and exploring future trends.
+                         </Content>
                 <Content>
                     <Bold>ReactJS, Redux, RxJS</Bold>
                     <br />

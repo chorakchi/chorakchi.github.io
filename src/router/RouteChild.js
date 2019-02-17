@@ -46,6 +46,7 @@ class RouteChild extends React.Component {
                         <Route path="/home" component={() => <Home {...pageProp} />} />
                         <Route exact path="/" component={() => <Home {...pageProp} />} />
                         <Route path="/:parent/portfolio/:child" component={PortfolioProps} />
+                        <Route exact path="/:parent/portfolio/" component={PortfolioProps} />
                         <Route path="/:parent/projects" component={() => <Projects {...pageProp}/>} />
                         <Route path="/projects" component={() => <Portfolio {...pageProp} />} />
                         <Route exact path="/blog" component={PostChild } />

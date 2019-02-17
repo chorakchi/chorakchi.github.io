@@ -9,44 +9,43 @@ import {
     CloseBTN
 } from './Styled'
 
-import {PopUp, Icon } from "./../../common"
+import { PopUp, Icon } from "./../../common"
 import Skils from './Skils';
 import Contact from './Contact';
 import Experiences from './Experiences';
 import Education from './Education';
 class Portfolio extends React.Component {
-    state={
+    state = {
         show: true
     }
     render() {
         return <div>
-            <PopUp show={this.state.show} width="95%" height= "90%" >
+            <PopUp show={this.state.show} width="95%" height="90%" >
                 <MainBlock>
                     <Sidebar>
                         <TitleSidebar>
                             PORTFOLIO
                          </TitleSidebar>
-
-                         <ListItem>SKILS</ListItem>
-                         <ListItem>WORKS</ListItem>
-                         <ListItem>EXPERIENCES</ListItem>
-                         <ListItem>EDUCATION</ListItem>
-                         <Divider/>
-                         <ListItem>CONTACT</ListItem>
+                        <ListItem>SKILS</ListItem>
+                        <ListItem>Projects</ListItem>
+                        <ListItem>EXPERIENCES</ListItem>
+                        <ListItem>EDUCATION</ListItem>
+                        <Divider />
+                        <ListItem>CONTACT</ListItem>
                     </Sidebar>
                     <BlockContent>
-                    <Education/>
-                        <Experiences/>
-                    <Skils/>
-                    <Contact/>
-                         </BlockContent>
+                        <Skils />
+                        <Experiences />
+                        <Education />
+                        <Contact />
+                    </BlockContent>
                 </MainBlock>
-                <CloseBTN onClick={()=>{
-                    this.setState({show: false})
+                <CloseBTN onClick={() => {
+                    this.setState({ show: false })
                     setTimeout(() => {
-                        this.props.onChangeRoute("/home", {parentFilter: false})
+                        this.props.onChangeRoute("/home", { parentFilter: false })
                     }, 500);
-                }}><Icon iconId="close" size="L" color="#000"/></CloseBTN>
+                }}><Icon iconId="close" size="L" color="#000" /></CloseBTN>
             </PopUp>
         </div>
     }
