@@ -1,9 +1,10 @@
 {
 	"name": "Restar",
 	"description": "Charts & Graphs for Web Applications built on React components",
-	"color": {
+	"colors": {
 		"premium": "#F7FF00",
-		"secondary": "#676A0D"
+		"secondary": "#676A0D",
+		"titleColor": "#fff"
 	},
 	"iconId": "restar",
 	"version": "0.1.1",

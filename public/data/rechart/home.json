@@ -1,10 +1,11 @@
 {
 	"name": "Rechart",
 	"description": "Charts & Graphs for Web Applications built on React components",
-	"color": {
+	"colors": {
 		"premium": "#8DF3FF",
 		"secondary": "#835A8E",
-		"gradient": "linear-gradient(90deg, rgb(101, 220, 214) 0%, rgb(166, 0, 78) 100%)"
+		"gradient": "linear-gradient(90deg, rgb(101, 220, 214) 0%, rgb(166, 0, 78) 100%)",
+		"titleColor": "#fff"
 	},
 	"iconId": "rechart",
 	"version": "0.1.1",

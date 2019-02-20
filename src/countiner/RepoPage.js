@@ -1,5 +1,6 @@
 import React from "react"
-import Repo from "./../components/layout/Repo"
+import RepoHome from "./../components/layout/RepoHome"
+import RepoDoc from "./../components/layout/RepoDoc"
 import {fetchPublicDataGet } from './../redux/actions'
 import {connect} from 'react-redux'
 
@@ -13,7 +14,14 @@ class RepoPage extends React.Component {
         const {publicDataGet } = this.props
         return(
             <React.Fragment>
-                <Repo onChangeRoute = {(...data) => this.props.onChangeRoute(...data)} data = { publicDataGet.items || null}/>
+                {
+                    this.props.pageName == 'home' ? 
+                    <RepoHome onChangeRoute = {(...data) => this.props.onChangeRoute(...data)} data = { publicDataGet.items || null}/>
+                    : this.props.pageName == 'doc' ? 
+                    <RepoDoc onChangeRoute = {(...data) => this.props.onChangeRoute(...data)} data = { publicDataGet.items || null}/>
+                    :
+                    null
+                }
             </React.Fragment>
         )
     }

@@ -1,9 +1,10 @@
 {
 	"name": "Retrader",
 	"description": "Charts & Graphs for Web Applications built on React components",
-	"color": {
+	"colors": {
 		"premium": "#C13237",
-		"secondary": "#1F1863"
+		"secondary": "#1F1863",
+		"titleColor": "#fff"
 	},
 	"iconId": "retrader",
 	"version": "0.1.1",

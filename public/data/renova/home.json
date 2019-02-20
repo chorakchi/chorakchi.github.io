@@ -1,10 +1,11 @@
 {
 	"name": "Renova",
 	"description": "Charts & Graphs for Web Applications built on React components",
-	"color": {
+	"colors": {
 		"premium": "#ff8dbb",
 		"secondary": "#672f61",
-		"gradient": "linear-gradient(90deg, rgb(102, 35, 119) 0%, rgb(168, 41, 115) 38%, rgb(239, 80, 100) 73%)"
+		"gradient": "linear-gradient(90deg, rgb(102, 35, 119) 0%, rgb(168, 41, 115) 38%, rgb(239, 80, 100) 73%)",
+		"titleColor": "#fff"
 	},
 	"iconId": "renova",
 	"version": "0.1.1",

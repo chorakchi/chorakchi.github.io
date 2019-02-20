@@ -1,9 +1,10 @@
 {
 	"name": "remofid",
 	"description": "Charts & Graphs for Web Applications built on React components",
-	"color": {
+	"colors": {
 		"premium": "#00AAA6",
-		"secondary": "#0A4443"
+		"secondary": "#0A4443",
+		"titleColor": "#fff"
 	},
 	"iconId": "mofid",
 	"version": "0.1.1",

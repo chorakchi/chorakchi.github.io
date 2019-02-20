@@ -1,10 +1,11 @@
 {
 	"name": "Rehome",
 	"description": "Charts & Graphs for Web Applications built on React components",
-	"color": {
+	"colors": {
 		"premium": "#fff",
 		"secondary": "#ef4969",
-		"gradient": "linear-gradient(90deg, rgba(239,69,102,1) 0%, rgba(246,154,159,1) 27%, rgba(245,205,174,1) 53%, rgba(203,203,169,1) 75%, rgba(131,174,155,1) 100%); "
+		"gradient": "linear-gradient(90deg, rgba(239,69,102,1) 0%, rgba(246,154,159,1) 27%, rgba(245,205,174,1) 53%, rgba(203,203,169,1) 75%, rgba(131,174,155,1) 100%); ",
+		"titleColor": "#fff"
 	},
 	"iconId": "rehome",
 	"version": "0.1.1",

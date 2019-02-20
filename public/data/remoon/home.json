@@ -1,9 +1,10 @@
 {
 	"name": "Remoon",
 	"description": "Charts & Graphs for Web Applications built on React components",
-	"color": {
+	"colors": {
 		"premium": "#00B6FD",
-		"secondary": "#275C71"
+		"secondary": "#275C71",
+		"titleColor": "#fff"
 	},
 	"iconId": "remoon",
 	"version": "0.1.1",

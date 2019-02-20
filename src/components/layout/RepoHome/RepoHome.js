@@ -14,14 +14,13 @@ import {
     ContentCountiner,
     BlockContent,
     Title,
-    Text,
     Column,
     Row
 } from './Styled';
 import { Typography, Icon } from "./../../common";
 import Markdown from "react-markdown"
 
-class Repo extends React.Component {
+class RepoHome extends React.Component {
     render() {
         const {data } = this.props
         return (
@@ -36,19 +35,19 @@ class Repo extends React.Component {
                     {data.navlink.map(item => <ItemNav
                         onCLick={() => { }}
                     >{item.label}</ItemNav>)}
-                    <ItemNav version color={data.color.premium}>v {data.version}</ItemNav>
+                    <ItemNav version color={data.colors.premium}>v {data.version}</ItemNav>
                 </Nav>
-                <Header color={data.color.gradient}>
+                <Header color={data.colors.gradient}>
                     <LogoCountiner>
                         <LogoHeader>
-                            <Icon width='120px' iconId={data.iconId} color={data.color.premium} />
+                            <Icon width='120px' iconId={data.iconId} color={data.colors.premium} />
                         </LogoHeader >
-                        <NameHeader>{data.name}</NameHeader>
+                        <NameHeader color={data.colors.titleColor}>{data.name}</NameHeader>
                         <DescriptionHeader>
                             {data.description}
                         </DescriptionHeader>
                         <BTNsHeader>
-                            <Button shadow bgColor={data.color.premium} color={data.color.secondary} width="230px" >GETSTARTED</Button>
+                            <Button shadow bgColor={data.colors.premium} color={data.colors.secondary} width="230px" >GETSTARTED</Button>
                             <Button bgColor="#ffffff22" color="#ffffff" width="140px" >Demo</Button>
                         </BTNsHeader>
                     </LogoCountiner>
@@ -58,7 +57,7 @@ class Repo extends React.Component {
                         {data.contents.map(item =>
                         <Column>
                             <BlockContent>
-                                <Title color={data.color.secondary}>{item.title}</Title>
+                                <Title color={data.colors.secondary}>{item.title}</Title>
                                 {/* <Text>{item.text}</Text> */}
                                 <Markdown source={item.text} escapeHtml={false} />
                             </BlockContent>
@@ -74,13 +73,11 @@ class Repo extends React.Component {
     }
 }
 
-Repo.propsTypes = {
+RepoHome.propsTypes = {
     data: PropTypes.object
 }
-Repo.defaultProps = {
+RepoHome.defaultProps = {
     data: {}
-} = {
-    data: {}
-}
+} 
 
-export { Repo }
+export { RepoHome }
