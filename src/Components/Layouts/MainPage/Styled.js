@@ -36,11 +36,19 @@ display: flex;
 margin: 30px 0;
 `;
 
+const FooterBlockStyeld = styled.div`
+width: 241.6px;
+  height: 503.6px;
+  opacity: 0.85;
+  background-color: #ffe60f;
+`;
+
 export {
     Countiner,
     WrapperTopBlock,
     BlockquoteStyled,
     WrapperMidBlock,
     CoutStyled,
-    WrapperRowOfButtomStyled
+    WrapperRowOfButtomStyled,
+    FooterBlockStyeld
 }
