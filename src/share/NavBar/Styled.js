@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const CountinerStyled = styled.div`
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 `;
 
 const LogoCountinerStyled = styled.div`
@@ -14,9 +14,9 @@ const LogoCountinerStyled = styled.div`
 `;
 
 const NavItemCountinerStyled = styled.div`
-padding-top: 104px;
-display: flex;
-flex-direction: row;
+  padding-top: 104px;
+  display: flex;
+  flex-direction: row;
 `;
 
 const NavItemStyled = styled.div`
@@ -25,12 +25,18 @@ const NavItemStyled = styled.div`
   line-height: 1.2;
   text-align: left;
   color: #2b2e34;
-  padding-left: 25px;
+  margin-left: 25px;
+  height: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: #ffe60f;
+  }
 `;
 
 export {
-    CountinerStyled,
-    LogoCountinerStyled,
-    NavItemStyled,
-    NavItemCountinerStyled
-}
+  CountinerStyled,
+  LogoCountinerStyled,
+  NavItemStyled,
+  NavItemCountinerStyled,
+};
