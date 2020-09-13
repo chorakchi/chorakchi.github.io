@@ -6,9 +6,9 @@ const BorderedButtonStyle = styled.div`
   border: solid 1px #b2b2b200;
   background-color: #ffffff;
   color: red;
-  margin: 6px;
-  width: 58px;
-  height: 58px;
+  margin: 0px;
+  width: 50px;
+  height: 50px;
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
@@ -51,8 +51,7 @@ const CountinerStyled = styled.div`
     margin-left: 0px;
   }
   &:hover ${PrimaryButtonStyled} {
-    background: #ffffff66;
-    /* border: 3px solid #00000088; */
+    background: #ffffff;
   }
   &:hover ${BorderedButtonStyle} {
     background: #ffe60f;

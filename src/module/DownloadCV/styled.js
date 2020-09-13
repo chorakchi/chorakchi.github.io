@@ -27,7 +27,9 @@ export const SmallBox = styled.div`
 `;
 export const CountinerStyled = styled.div`
   position: relative;
-  width: 360.2px;
-  height: 706.8px;
+  max-width: 400px;
+  min-width: 300px;
+  width: 100%;
+  height: 650px;
   margin: 10px;
 `;

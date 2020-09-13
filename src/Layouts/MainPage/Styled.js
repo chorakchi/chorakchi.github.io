@@ -43,3 +43,6 @@ export const FooterBlockStyeld = styled.div`
 export const InlineBlock = styled.div`
   display: flex;
 `;
+export const EndBlockStyled = styled.div`
+  display: flex;
+`;

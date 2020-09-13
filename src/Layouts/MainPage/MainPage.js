@@ -8,13 +8,17 @@ import {
   WrapperMidBlock,
   WrapperRowOfButtomStyled,
   InlineBlock,
+  EndBlockStyled,
 } from "./Styled";
 import { TopBlock } from "./TopBlock";
 import myPicture from "./shape/myPicture1.svg";
+import graphicShape1 from "./shape/graphicShape1.svg";
 import { Cout } from "./shape/Cout";
 import { Path1 } from "./shape/Path1";
 import { Path2 } from "./shape/Path2";
+import { Path3 } from "./shape/Path3";
 import { DownloadCV } from "../../module/DownloadCV/DownloadCV";
+import { ContactBlockFooter } from "../../module/ContactBlockFooter/ContactBlockFooter";
 // import { Github, Linkedin, Xing } from "./SocialIcon";
 const { Github, Linkedin, Xing } = Icons;
 const MainPage = () => (
@@ -81,6 +85,24 @@ const MainPage = () => (
         <Path2 style={{ marginBottom: 110 }} />
       </BlockquoteStyled>
     </WrapperMidBlock>
+    <EndBlockStyled>
+      <div
+        style={{
+          marginTop: 100,
+          display: "flex",
+          flexDirection: "column",
+          flex: 1,
+        }}
+      >
+        <img
+          width={355}
+          src={graphicShape1}
+          style={{ paddingLeft: 110, marginBottom: 100 }}
+        />
+        <Path3 style={{ marginBottom: 110 }} />
+      </div>
+      <ContactBlockFooter />
+    </EndBlockStyled>
   </Countiner>
 );
 
