@@ -15,6 +15,9 @@ export const DownloadCV = ({ ...props }) => {
           bottom: 170,
           right: 0,
         }}
+        onClick={(event) => {
+          window.open("https://chorakchi.netlify.app/CV-Chorakchi.pdf");
+        }}
       >
         Download CV
       </Buttom>
