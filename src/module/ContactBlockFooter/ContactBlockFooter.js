@@ -5,6 +5,7 @@ import {
   SolidBox,
   ContactStyled,
   QRcodeStyled,
+  VCARDTextStyled,
 } from "./styled";
 
 export const ContactBlockFooter = ({ ...props }) => {
@@ -21,6 +22,7 @@ export const ContactBlockFooter = ({ ...props }) => {
           left: 30,
         }}
       />
+      <VCARDTextStyled>VCARD</VCARDTextStyled>
       <QRcodeStyled width={205} src={props.qrcode} />
       <ContactStyled>
         m.chorakchi@gmail.com <br />

@@ -28,5 +28,10 @@ export const ContactStyled = styled.div`
 export const QRcodeStyled = styled.img`
   position: absolute;
   left: 60px;
-  bottom: -10px;
+  bottom: -0px;
+`;
+export const VCARDTextStyled = styled.div`
+  position: absolute;
+  left: 60px;
+  bottom: 210px;
 `;
