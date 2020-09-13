@@ -8,12 +8,12 @@ import {
 
 export const Buttom = ({ children, ...props }) => {
   return props.primary ? (
-    <CountinerStyled style={props.style}>
+    <CountinerStyled style={props.style} {...props}>
       <ColoredBoxStyled />
       <PrimaryButtonStyled>{children}</PrimaryButtonStyled>
     </CountinerStyled>
   ) : (
-    <CountinerStyled>
+    <CountinerStyled style={props.style} {...props}>
       <BorderedButtonStyle>{children}</BorderedButtonStyle>
     </CountinerStyled>
   );

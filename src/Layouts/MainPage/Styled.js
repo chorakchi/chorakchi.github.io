@@ -7,6 +7,7 @@ export const Countiner = styled.div`
 
 export const WrapperTopBlock = styled.div`
   padding-left: 200px;
+  flex: 1;
 `;
 export const BlockquoteStyled = styled.div`
   font-family: Helvetica, Arial, sans-serif;

@@ -15,8 +15,20 @@ export const NavBar = () => {
       </LogoCountinerStyled>
       <NavItemCountinerStyled>
         <NavItemStyled>Home</NavItemStyled>
-        <NavItemStyled>Portfolio</NavItemStyled>
-        <NavItemStyled>Github</NavItemStyled>
+        <NavItemStyled
+          onClick={(event) => {
+            window.open("https://www.linkedin.com/in/chorakchi/");
+          }}
+        >
+          Portfolio
+        </NavItemStyled>
+        <NavItemStyled
+          onClick={(event) => {
+            window.open("https://github.com/chorakchi");
+          }}
+        >
+          Github
+        </NavItemStyled>
         <NavItemStyled>Contact</NavItemStyled>
       </NavItemCountinerStyled>
     </CountinerStyled>

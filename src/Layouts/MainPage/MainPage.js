@@ -1,5 +1,6 @@
 import React from "react";
 import { NavBar, Buttom, Icons } from "../../share";
+import { Link } from "react-router-dom";
 import {
   Countiner,
   WrapperTopBlock,
@@ -23,19 +24,31 @@ const MainPage = () => (
       <WrapperTopBlock>
         <TopBlock />
         <WrapperRowOfButtomStyled>
-          <Buttom>
+          <Buttom
+            onClick={(event) => {
+              window.open("https://www.linkedin.com/in/chorakchi/");
+            }}
+          >
             <Linkedin />
           </Buttom>
-          <Buttom>
+          <Buttom
+            onClick={(event) => {
+              window.open("https://www.xing.com/profile/mohammad_chorakchi/cv");
+            }}
+          >
             <Xing />
           </Buttom>
-          <Buttom>
+          <Buttom
+            onClick={(event) => {
+              window.open("https://github.com/chorakchi");
+            }}
+          >
             <Github />
           </Buttom>
         </WrapperRowOfButtomStyled>
         <Path1 style={{ marginBottom: 110 }} />
       </WrapperTopBlock>
-      <DownloadCV />
+      <DownloadCV style={{ marginTop: -100 }} />
     </InlineBlock>
     <WrapperMidBlock>
       <img width={355} src={myPicture} style={{ paddingRight: 110 }} />

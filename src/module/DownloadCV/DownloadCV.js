@@ -2,9 +2,9 @@ import React from "react";
 import { Buttom, Logo } from "../../share";
 import { CountinerStyled, SolidBox, LinedBox, SmallBox } from "./styled";
 
-export const DownloadCV = () => {
+export const DownloadCV = ({ ...props }) => {
   return (
-    <CountinerStyled>
+    <CountinerStyled style={props.style}>
       <SolidBox />
       <SmallBox />
       <LinedBox />
