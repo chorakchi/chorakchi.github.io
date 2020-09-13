@@ -26,7 +26,7 @@ export const ContactBlockFooter = ({ ...props }) => {
       <QRcodeStyled width={205} src={props.qrcode} />
       <ContactStyled>
         m.chorakchi@gmail.com <br />
-        +98-903-123-77-30 <br />
+        +49 176 8845 0038 <br />
         chorakchi.netlify.com <br />
         Live:m.chorakchi
       </ContactStyled>
