@@ -9,10 +9,12 @@ import {
   WrapperRowOfButtomStyled,
   InlineBlock,
   EndBlockStyled,
+  WrapperFooterShapeStyled,
 } from "./Styled";
 import { TopBlock } from "./TopBlock";
 import myPicture from "./shape/myPicture1.svg";
 import graphicShape1 from "./shape/graphicShape1.svg";
+import qrcodeContact from "./shape/qrcodeContact.svg";
 import { Cout } from "./shape/Cout";
 import { Path1 } from "./shape/Path1";
 import { Path2 } from "./shape/Path2";
@@ -86,22 +88,11 @@ const MainPage = () => (
       </BlockquoteStyled>
     </WrapperMidBlock>
     <EndBlockStyled>
-      <div
-        style={{
-          marginTop: 100,
-          display: "flex",
-          flexDirection: "column",
-          flex: 1,
-        }}
-      >
-        <img
-          width={355}
-          src={graphicShape1}
-          style={{ paddingLeft: 110, marginBottom: 100 }}
-        />
+      <WrapperFooterShapeStyled>
+        <img width={511} src={graphicShape1} style={{ marginBottom: 100 }} />
         <Path3 style={{ marginBottom: 110 }} />
-      </div>
-      <ContactBlockFooter />
+      </WrapperFooterShapeStyled>
+      <ContactBlockFooter qrcode={qrcodeContact} />
     </EndBlockStyled>
   </Countiner>
 );

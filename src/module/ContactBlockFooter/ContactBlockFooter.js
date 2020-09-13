@@ -1,6 +1,11 @@
 import React from "react";
 import { Buttom, Logo } from "../../share";
-import { CountinerStyled, SolidBox, ContactStyled } from "./styled";
+import {
+  CountinerStyled,
+  SolidBox,
+  ContactStyled,
+  QRcodeStyled,
+} from "./styled";
 
 export const ContactBlockFooter = ({ ...props }) => {
   return (
@@ -16,6 +21,7 @@ export const ContactBlockFooter = ({ ...props }) => {
           left: 30,
         }}
       />
+      <QRcodeStyled width={205} src={props.qrcode} />
       <ContactStyled>
         m.chorakchi@gmail.com <br />
         +98-903-123-77-30 <br />

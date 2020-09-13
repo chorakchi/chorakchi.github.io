@@ -44,5 +44,12 @@ export const InlineBlock = styled.div`
   display: flex;
 `;
 export const EndBlockStyled = styled.div`
+  padding-top: 200px;
   display: flex;
+`;
+export const WrapperFooterShapeStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 110px;
+  flex: 1;
 `;

@@ -14,7 +14,7 @@ export const CountinerStyled = styled.div`
   min-width: 240px;
   width: 100%;
   height: 535px;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 100px;
 `;
 export const ContactStyled = styled.div`
@@ -24,4 +24,9 @@ export const ContactStyled = styled.div`
   left: -210px;
   bottom: 0px;
   text-align: right;
+`;
+export const QRcodeStyled = styled.img`
+  position: absolute;
+  left: 60px;
+  bottom: -10px;
 `;
