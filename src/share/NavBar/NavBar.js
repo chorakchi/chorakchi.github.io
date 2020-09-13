@@ -7,7 +7,7 @@ import {
   NavItemCountinerStyled,
 } from "./Styled";
 
-export const NavBar = () => {
+export const NavBar = ({ ...props }) => {
   return (
     <CountinerStyled>
       <LogoCountinerStyled>
@@ -16,20 +16,20 @@ export const NavBar = () => {
       <NavItemCountinerStyled>
         <NavItemStyled>Home</NavItemStyled>
         <NavItemStyled
-          onClick={(event) => {
+          onClick={() => {
             window.open("https://www.linkedin.com/in/chorakchi/");
           }}
         >
           Portfolio
         </NavItemStyled>
         <NavItemStyled
-          onClick={(event) => {
+          onClick={() => {
             window.open("https://github.com/chorakchi");
           }}
         >
           Github
         </NavItemStyled>
-        <NavItemStyled>Contact</NavItemStyled>
+        <NavItemStyled onClick={props.showContact}>Contact</NavItemStyled>
       </NavItemCountinerStyled>
     </CountinerStyled>
   );

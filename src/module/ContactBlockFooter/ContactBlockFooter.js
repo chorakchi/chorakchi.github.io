@@ -1,5 +1,5 @@
 import React from "react";
-import { Buttom, Logo } from "../../share";
+import { Logo } from "../../share";
 import {
   CountinerStyled,
   SolidBox,
@@ -15,7 +15,7 @@ export const ContactBlockFooter = ({ ...props }) => {
 
       <Logo
         color="black"
-        withTypography
+        variety="withTypography"
         style={{
           position: "absolute",
           top: 30,

@@ -19,7 +19,6 @@ export const Cout = ({ ...props }) => {
           fill="#ffe60f"
           id="coutBig"
           d="M49.629-228.293L31.55-184.159H8.862v-92.877h40.767zm57.782 0l-18.079 44.134H66.645v-92.877h40.767z"
-          class="cls-1"
           transform="rotate(.05 -317454.05 -10201.082)"
         />
       </svg>

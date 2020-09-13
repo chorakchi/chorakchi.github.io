@@ -23,7 +23,7 @@ export const DownloadCV = ({ ...props }) => {
       </Buttom>
       <Logo
         color="black"
-        withTypography
+        variety="withTypography"
         style={{
           position: "absolute",
           bottom: 40,

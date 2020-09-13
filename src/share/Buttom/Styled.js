@@ -5,8 +5,8 @@ const BorderedButtonStyle = styled.div`
   flex-direction: row;
   border: solid 1px #b2b2b200;
   background-color: #ffffff;
-  color: red;
   margin: 0px;
+  padding: 0;
   width: 50px;
   height: 50px;
   justify-content: center;
