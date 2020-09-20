@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar, Buttom } from "../../share";
+import { NavBar } from "../../share";
 import {
   Countiner,
   TabStyled,
@@ -70,8 +70,8 @@ export const PortfolioPage = () => {
       <TabStyled>
         <TabNavigator>
           <TabNavigatorItem active>EXPERIENCE</TabNavigatorItem>
-          <TabNavigatorItem>PROJECTS</TabNavigatorItem>
-          <TabNavigatorItem>SKILLS</TabNavigatorItem>
+          {/* <TabNavigatorItem>PROJECTS</TabNavigatorItem> */}
+          {/* <TabNavigatorItem>SKILLS</TabNavigatorItem> */}
         </TabNavigator>
         <TabContent>
           <Experience data={data.tabs[0].content} />

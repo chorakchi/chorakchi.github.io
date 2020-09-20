@@ -4,10 +4,11 @@ import { Card } from "./../../share";
 export const Experience = ({ ...props }) => {
   return (
     <div>
-      {props.data.card.map((item) => (
+      {props.data.card.map((item, index) => (
         <Card
           title={item.title}
           context={item.date}
+          key={index}
           footer={
             <React.Fragment>
               {item.company}

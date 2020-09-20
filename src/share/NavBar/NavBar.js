@@ -6,6 +6,7 @@ import {
   NavItemStyled,
   NavItemCountinerStyled,
 } from "./Styled";
+import { navigatePortfolio } from "./../../navigator/NavigationService";
 
 export const NavBar = ({ ...props }) => {
   return (
@@ -17,7 +18,7 @@ export const NavBar = ({ ...props }) => {
         <NavItemStyled>Home</NavItemStyled>
         <NavItemStyled
           onClick={() => {
-            window.open("https://www.linkedin.com/in/chorakchi/");
+            navigatePortfolio();
           }}
         >
           Portfolio
