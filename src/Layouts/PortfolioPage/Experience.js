@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "./../../share";
+import { Card } from "./../../shared";
 
 export const Experience = ({ ...props }) => {
   return (

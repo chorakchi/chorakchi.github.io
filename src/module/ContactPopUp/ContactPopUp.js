@@ -1,5 +1,5 @@
 import React from "react";
-import { Buttom, Logo, Icons } from "../../share";
+import { Buttom, Logo, Icons } from "../../shared";
 import {
   CountinerStyled,
   PopupStyled,

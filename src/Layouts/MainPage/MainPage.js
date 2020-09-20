@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { NavBar, Buttom, Icons } from "../../share";
+import { NavBar, Buttom, Icons, PageCountiner } from "../../shared";
 import {
   Countiner,
   WrapperTopBlock,
   BlockquoteStyled,
   WrapperMidBlock,
   WrapperRowOfButtomStyled,
-  InlineBlock,
+  BlockStyled,
   EndBlockStyled,
   WrapperFooterShapeStyled,
 } from "./Styled";
@@ -21,15 +21,14 @@ import { Path3 } from "./shape/Path3";
 import { DownloadCV } from "../../module/DownloadCV/DownloadCV";
 import { ContactBlockFooter } from "../../module/ContactBlockFooter/ContactBlockFooter";
 import { ContactPopUp } from "../../module/ContactPopUp/ContactPopUp";
-// import { Github, Linkedin, Xing } from "./SocialIcon";
 const { Github, Linkedin, Xing } = Icons;
 const MainPage = () => {
   const [showContact, setShowContact] = useState(false);
 
   return (
-    <Countiner>
+    <PageCountiner>
       <NavBar showContact={() => setShowContact(true)} />
-      <InlineBlock>
+      <BlockStyled>
         <WrapperTopBlock>
           <TopBlock />
           <WrapperRowOfButtomStyled>
@@ -60,7 +59,7 @@ const MainPage = () => {
           <Path1 style={{ marginBottom: 110 }} />
         </WrapperTopBlock>
         <DownloadCV style={{ marginTop: -100 }} />
-      </InlineBlock>
+      </BlockStyled>
       <WrapperMidBlock>
         <img
           alt="Picture1"
@@ -115,7 +114,7 @@ const MainPage = () => {
         show={showContact}
         onClose={() => setShowContact(false)}
       />
-    </Countiner>
+    </PageCountiner>
   );
 };
 

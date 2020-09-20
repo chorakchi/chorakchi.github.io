@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { screens } from "./../../shared";
 
 export const LinedBox = styled.div`
   border: solid 1px #acacac;

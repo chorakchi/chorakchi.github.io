@@ -1,5 +1,5 @@
 import React from "react";
-import { Buttom, Logo } from "../../share";
+import { Buttom, Logo } from "../../shared";
 import { CountinerStyled, SolidBox, LinedBox, SmallBox } from "./styled";
 
 export const DownloadCV = ({ ...props }) => {

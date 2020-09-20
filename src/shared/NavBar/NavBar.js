@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "../../share";
+import { Logo } from "../../shared";
 import {
   CountinerStyled,
   LogoCountinerStyled,

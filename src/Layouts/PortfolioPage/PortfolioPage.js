@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar } from "../../share";
+import { NavBar } from "../../shared";
 import {
   Countiner,
   TabStyled,

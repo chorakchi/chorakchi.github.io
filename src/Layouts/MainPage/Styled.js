@@ -1,12 +1,18 @@
 import styled from "styled-components";
-
-export const Countiner = styled.div`
-  background: #fefeef;
-  padding: 0 70px;
-`;
+import { screens } from "./../../shared";
 
 export const WrapperTopBlock = styled.div`
-  padding-left: 200px;
+  @media (min-width: ${screens.sm}) {
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  @media (min-width: ${screens.lg}) {
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  @media (min-width: ${screens.xl}) {
+    padding-left: 200px;
+  }
   flex: 1;
 `;
 export const BlockquoteStyled = styled.div`
@@ -16,6 +22,7 @@ export const BlockquoteStyled = styled.div`
   text-align: left;
   color: #4e4e4e;
   position: relative;
+  white-space: pre;
 `;
 
 export const WrapperMidBlock = styled.div`
@@ -40,8 +47,14 @@ export const FooterBlockStyeld = styled.div`
   background-color: #ffe60f;
 `;
 
-export const InlineBlock = styled.div`
+export const BlockStyled = styled.div`
   display: flex;
+  @media (min-width: ${screens.lg}) {
+    flex-direction: column;
+  }
+  @media (min-width: ${screens.lg}) {
+    flex-direction: row;
+  }
 `;
 export const EndBlockStyled = styled.div`
   padding-top: 200px;
