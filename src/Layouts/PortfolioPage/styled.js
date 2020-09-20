@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Countiner = styled.div`
-  padding: 0 170px;
+  padding: 0 70px;
 `;
 export const TitleStyle = styled.div`
   position: relative;

@@ -6,7 +6,10 @@ import {
   NavItemStyled,
   NavItemCountinerStyled,
 } from "./Styled";
-import { navigatePortfolio } from "./../../navigator/NavigationService";
+import {
+  navigatePortfolio,
+  navigateHome,
+} from "./../../navigator/NavigationService";
 
 export const NavBar = ({ ...props }) => {
   return (
@@ -15,7 +18,13 @@ export const NavBar = ({ ...props }) => {
         <Logo />
       </LogoCountinerStyled>
       <NavItemCountinerStyled>
-        <NavItemStyled>Home</NavItemStyled>
+        <NavItemStyled
+          onClick={() => {
+            navigateHome();
+          }}
+        >
+          Home
+        </NavItemStyled>
         <NavItemStyled
           onClick={() => {
             navigatePortfolio();
