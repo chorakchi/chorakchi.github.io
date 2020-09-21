@@ -70,7 +70,7 @@ export const TopBlock = () => {
           transform="translate(383 607)"
         >
           <tspan x="0" y="0">
-            I Am Web Developer
+            I am a Web Developer
           </tspan>
         </text>
       </g>

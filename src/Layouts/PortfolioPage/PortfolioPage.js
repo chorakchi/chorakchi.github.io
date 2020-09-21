@@ -1,7 +1,6 @@
 import React from "react";
-import { NavBar } from "../../shared";
+import { NavBar, PageCountiner } from "../../shared";
 import {
-  Countiner,
   TabStyled,
   TabContent,
   TabNavigator,
@@ -64,7 +63,7 @@ const data = {
 
 export const PortfolioPage = () => {
   return (
-    <Countiner>
+    <PageCountiner>
       <NavBar />
       <TitleStyle>PORTFOLIO</TitleStyle>
       <TabStyled>
@@ -77,6 +76,6 @@ export const PortfolioPage = () => {
           <Experience data={data.tabs[0].content} />
         </TabContent>
       </TabStyled>
-    </Countiner>
+    </PageCountiner>
   );
 };

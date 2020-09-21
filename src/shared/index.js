@@ -5,4 +5,29 @@ import { Icons } from "./Icons";
 import { screens } from "./const";
 import { PageCountiner } from "./Layout";
 import { Card } from "./Card";
-export { Logo, NavBar, Buttom, Icons, Card, screens, PageCountiner };
+import {
+  Cinema,
+  Desktop,
+  DesktopUp,
+  Lap,
+  LapDown,
+  LapUp,
+  Palm,
+} from "./Responsive";
+
+export {
+  Logo,
+  NavBar,
+  Buttom,
+  Icons,
+  Card,
+  screens,
+  PageCountiner,
+  Cinema,
+  Desktop,
+  DesktopUp,
+  Lap,
+  LapDown,
+  LapUp,
+  Palm,
+};
