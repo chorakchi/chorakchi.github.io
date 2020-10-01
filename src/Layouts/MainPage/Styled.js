@@ -49,12 +49,12 @@ export const FooterBlockStyeld = styled.div`
 
 export const BlockStyled = styled.div`
   display: flex;
-  @media (min-width: ${screens.lg}) {
+  /* @media (min-width: ${screens.lg}) {
     flex-direction: column;
   }
   @media (min-width: ${screens.lg}) {
     flex-direction: row;
-  }
+  } */
 `;
 export const EndBlockStyled = styled.div`
   padding-top: 200px;
