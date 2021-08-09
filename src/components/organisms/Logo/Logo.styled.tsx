@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
-import { SectionProps } from "./Logo.interface";
+import { LogoProps } from "./Logo.interface";
 
-export const LogoStyled = styled.div<SectionProps>`
+export const LogoStyled = styled.div<LogoProps>`
   .firstName {
     font-weight: lighter;
     margin-bottom: -8px;

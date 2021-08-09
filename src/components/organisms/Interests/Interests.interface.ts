@@ -1,13 +1,11 @@
-import { cssProp } from "styled-components";
 import { HTMLAttributes } from "react";
 
-export interface LogoProps extends CSSProp, HTMLAttributes<HTMLElement> {
-  firstName: string;
-  lastName: string;
-  role: string;
-  socialNetwork: Array<{
-    label: string;
-    icon: string;
-    link: string;
-  }>;
+type Interest = {
+label?: string;
+icon?: string;
+};
+export interface InterestsProps extends HTMLAttributes<HTMLElement> {
+  items?: Array<Interest>;
+  heading?: string;
+  label?: string;
 }

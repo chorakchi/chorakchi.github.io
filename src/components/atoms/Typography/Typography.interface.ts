@@ -1,4 +1,3 @@
-import {CSSProp} from 'styled-components'
 import { HTMLAttributes } from 'react';
 
 export type variant =
@@ -26,7 +25,7 @@ export type componentEnum =
   | "h6";
 export type align = "inherit" | "left" | "center" | "right" | "justify";
 
-export interface TypographyProps extends CSSProp,HTMLAttributes<HTMLElement> {
+export interface TypographyProps extends HTMLAttributes<HTMLElement> {
   /**
    * Set the text-align on the component.
    */
@@ -53,4 +52,6 @@ export interface TypographyProps extends CSSProp,HTMLAttributes<HTMLElement> {
    * The component used for the root node. Either a string to use a HTML element or a component.
    */
   component?: componentEnum;
+  as?: any;
+  href?: string;
 }

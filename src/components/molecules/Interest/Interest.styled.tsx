@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
-import { NumberLabelProps } from "./Interest.interface";
+import { InterestProps } from "./Interest.interface";
 
-export const InterestStyled = styled.div<NumberLabelProps>`
+export const InterestStyled = styled.div<InterestProps>`
   position: relative;
   width: fit-content;
   display: flex;

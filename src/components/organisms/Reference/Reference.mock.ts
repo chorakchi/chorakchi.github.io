@@ -9,7 +9,7 @@ export const mockData = {
     },
     {
       role: "HR at Akelius GmbH",
-      name: "MR. Mohammad Chorakchi",
+      name: "Tobias Krüger",
       phone: "+ 49 162 6265042",
       email: "tobias.krueger@akelius.de",
     },

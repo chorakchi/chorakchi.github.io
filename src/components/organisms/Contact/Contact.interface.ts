@@ -1,13 +1,8 @@
-import { cssProp } from "styled-components";
 import { HTMLAttributes } from "react";
 
-export interface ContactProps extends CSSProp, HTMLAttributes<HTMLElement> {
-  firstName: string;
-  lastName: string;
-  role: string;
-  socialNetwork: Array<{
-    label: string;
-    icon: string;
-    link: string;
-  }>;
+export interface ContactProps extends HTMLAttributes<HTMLElement> {
+  phone?: string;
+  email?: string;
+  heading?: string;
+  label?: string;
 }

@@ -1,7 +1,7 @@
 import { InterestStyled, IconContainerStyled } from "./Interest.styled";
 import { InterestProps } from "./Interest.interface";
 import { Typography } from "../..";
-export const Interest: React.FC<InterestProps> = ({ label, ...props }) => {
+export const Interest: React.FC<InterestProps> = ({ label,icon,heading, ...props }) => {
   return (
     <InterestStyled {...props}>
         <IconContainerStyled>

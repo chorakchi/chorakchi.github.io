@@ -2,10 +2,10 @@ import { LogoStyled } from "./Logo.styled";
 import { LogoProps } from "./Logo.interface";
 import { Typography } from "../..";
 export const Logo: React.FC<LogoProps> = ({
-  firstName,
-  lastName,
-  role,
-  socialNetwork,
+  firstName="",
+  lastName="",
+  role="",
+  socialNetwork=[],
   ...props
 }) => {
   return (
@@ -19,8 +19,9 @@ export const Logo: React.FC<LogoProps> = ({
       <Typography className="role" variant="headline_xs">
         {role.toUpperCase()}
       </Typography>
-      {socialNetwork.map((item) => (
+      {socialNetwork.map((item, i) => (
         <Typography
+        key={`sn-${i}`}
           className="socialNetwork"
           variant="caption"
           as="a"

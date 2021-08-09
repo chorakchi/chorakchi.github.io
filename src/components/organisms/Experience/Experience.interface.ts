@@ -1,13 +1,14 @@
-import { cssProp } from "styled-components";
 import { HTMLAttributes } from "react";
 
-export interface ExperienceProps extends CSSProp, HTMLAttributes<HTMLElement> {
-  firstName: string;
-  lastName: string;
+type Experience = {
+  endDate?: string;
+  startDate: string;
+  companyName: string;
   role: string;
-  socialNetwork: Array<{
-    label: string;
-    icon: string;
-    link: string;
-  }>;
+  description: string;
+};
+export interface ExperienceProps extends HTMLAttributes<HTMLElement> {
+  items?: Array<Experience>;
+  heading?: string;
+  label?: string;
 }

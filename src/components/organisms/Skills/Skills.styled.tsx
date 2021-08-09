@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 
-import { SectionProps } from "./Skills.interface";
+import { SkillsProps } from "./Skills.interface";
 
 
-export const SkillsStyled = styled.div<SectionProps>`
+export const SkillsStyled = styled.div<SkillsProps>`
 display: flex;
 .numberLabel{
   margin-top: 40px;

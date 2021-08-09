@@ -1,7 +1,7 @@
 import { NumberLabelStyled } from "./NumberLabel.styled";
-import { SectionProps } from "./NumberLabel.interface";
+import { NumberLabelProps } from "./NumberLabel.interface";
 import { Typography } from "../..";
-export const NumberLabel: React.FC<SectionProps> = ({ children, ...props }) => {
+export const NumberLabel: React.FC<NumberLabelProps> = ({ children, ...props }) => {
   return (
     <NumberLabelStyled {...props}>
       <svg

@@ -4,7 +4,7 @@ import { Section } from "../../molecules";
 import { Typography } from "../..";
 import { NumberLabel } from "../../molecules/NumberLabel/NumberLabel";
 export const Experience: React.FC<ExperienceProps> = ({
-  items,
+  items=[],
   heading,
   label,
   ...props
@@ -13,8 +13,8 @@ export const Experience: React.FC<ExperienceProps> = ({
     <ExperienceStyled {...props}>
       <NumberLabel className="numberLabel">{label}</NumberLabel>
       <Section heading={heading}>
-        {items.map((item) => (
-          <PositionStyled>
+        {items.map((item, i) => (
+          <PositionStyled  key={`position-${i}`}>
           <Typography className="socialNetwork" bold variant="body">
             {item.startDate}-{item.endDate || 'Present'}
           </Typography>

@@ -2,7 +2,7 @@ import { SectionStyled } from "./Section.styled";
 import { SectionProps } from "./Section.interface";
 import { Typography } from "../../../../src/components";
 export const Section: React.FC<SectionProps> = ({
-  heading,
+  heading ="",
   children,
   icon,
   ...props

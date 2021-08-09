@@ -4,7 +4,7 @@ import { TypographyProps } from "./Typography.interface";
 export const TypographyStyled = styled.div<TypographyProps>`
   font-weight: ${({ bold }) => (bold ? "bold" : "unset")};
   color: ${({ theme, color }) =>
-    theme.color[color] ||
+    color && theme.color[color] ||
     (color ? color : (theme.color && theme.color.primary_dark) || "black")};
   ${({ variant, theme }) => {
     switch (variant) {

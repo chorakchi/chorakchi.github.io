@@ -1,8 +1,7 @@
-import {cssProp} from 'styled-components'
 import { HTMLAttributes } from 'react';
 
-export interface SectionProps extends CSSProp,HTMLAttributes<HTMLElement> {
-heading: string;
-icon: any;
+export interface SectionProps extends HTMLAttributes<HTMLElement> {
+heading?: string;
+icon?: any;
 
 }

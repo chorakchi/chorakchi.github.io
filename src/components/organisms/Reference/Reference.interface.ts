@@ -1,13 +1,13 @@
-import { cssProp } from "styled-components";
 import { HTMLAttributes } from "react";
 
-export interface ReferenceProps extends CSSProp, HTMLAttributes<HTMLElement> {
-  firstName: string;
-  lastName: string;
-  role: string;
-  socialNetwork: Array<{
-    label: string;
-    icon: string;
-    link: string;
-  }>;
+type Reference = {
+  role?: string;
+  name: string;
+  phone: string;
+  email: string;
+};
+export interface ReferenceProps extends HTMLAttributes<HTMLElement> {
+  items?: Array<Reference>;
+  heading?: string;
+  label?: string;
 }

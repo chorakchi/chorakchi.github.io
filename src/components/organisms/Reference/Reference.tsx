@@ -4,7 +4,7 @@ import { Section } from "../../molecules";
 import { Typography } from "../..";
 import { NumberLabel } from "../../molecules/NumberLabel/NumberLabel";
 export const Reference: React.FC<ReferenceProps> = ({
-  items,
+  items=[],
   heading,
   label,
   ...props
@@ -13,8 +13,8 @@ export const Reference: React.FC<ReferenceProps> = ({
     <ReferenceStyled {...props}>
       {label && <NumberLabel className="numberLabel">{label}</NumberLabel>}
       <Section heading={heading}>
-        {items.map((item) => (
-          <PositionStyled>
+        {items.map((item, i) => (
+          <PositionStyled  key={`refrence-${i}`}>
             <Typography className="socialNetwork" variant="body">
               {item.role}
             </Typography>

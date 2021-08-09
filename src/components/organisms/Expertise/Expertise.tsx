@@ -4,7 +4,7 @@ import { Section } from "../../molecules";
 import { Typography } from "../..";
 import { NumberLabel } from "../../molecules/NumberLabel/NumberLabel";
 export const Expertise: React.FC<ExpertiseProps> = ({
-  items,
+  items=[],
   heading,
   label,
   ...props
@@ -13,8 +13,8 @@ export const Expertise: React.FC<ExpertiseProps> = ({
     <ExpertiseStyled {...props}>
       {label && <NumberLabel className="numberLabel">{label}</NumberLabel>}
       <Section heading={heading}>
-        {items.map((item) => (
-          <Typography as="li" className="socialNetwork" variant="body">
+        {items.map((item : string, i) => (
+          <Typography  key={`expertise-${i}`} as="li" className="socialNetwork" variant="body">
             {item}
           </Typography>
         ))}

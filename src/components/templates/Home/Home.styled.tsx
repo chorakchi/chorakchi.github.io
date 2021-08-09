@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
-import { ResumeProps } from "./Resume.interface";
+import { HomeProps } from "./Home.interface";
 
-export const ResumeStyled = styled.div<ResumeProps>`
+export const ResumeStyled = styled.div<HomeProps>`
   background-color: white;
   width: 100%;
   min-height: 100%;

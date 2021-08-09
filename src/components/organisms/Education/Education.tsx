@@ -3,8 +3,8 @@ import { EducationProps } from "./Education.interface";
 import { Section } from "../../molecules";
 import { Typography } from "../..";
 import { NumberLabel } from "../../molecules/NumberLabel/NumberLabel";
-export const Education: React.FC<ExperienceProps> = ({
-  items,
+export const Education: React.FC<EducationProps> = ({
+  items=[],
   heading,
   label,
   ...props
@@ -13,8 +13,8 @@ export const Education: React.FC<ExperienceProps> = ({
     <EducationStyled {...props}>
       <NumberLabel className="numberLabel">{label}</NumberLabel>
       <Section heading={heading}>
-        {items.map((item) => (
-          <PositionStyled>
+        {items.map((item, i) => (
+          <PositionStyled  key={`edu-${i}`}>
           <Typography className="socialNetwork" bold variant="body">
             {item.startDate}-{item.endDate || 'Present'}
           </Typography>
