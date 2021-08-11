@@ -4,10 +4,10 @@ export const mockData = {
   items: [
     {
       startDate: "2020",
-      companyName: "Akelius GmbH",
+      companyName: "All About Cake GmbH",
       role: "Front-end Developer",
       description:
-        "Susendisse vitae enim vel turpis dictum lictet at leo Quisque luct lacinia elit",
+        "UI/Web Development of backen.de production with React/Nextjs",
     },
     {
       startDate: "2019",
@@ -15,15 +15,15 @@ export const mockData = {
       companyName: "Akelius GmbH",
       role: "Front-end Developer",
       description:
-        "Susendisse vitae enim vel turpis dictum lictet at leo Quisque luct lacinia elit",
+        "Implementing the new features in smart building app. development in React and React-native (ios, android)",
     },
     {
       startDate: "2016",
       endDate: "2019",
-      companyName: "Akelius GmbH",
+      companyName: "Mofid Securities",
       role: "Front-end Developer",
       description:
-        "Susendisse vitae enim vel turpis dictum lictet at leo Quisque luct lacinia elit",
+        "Resolving issues, Implementing new features, Code refactoring",
     },
   ],
 };

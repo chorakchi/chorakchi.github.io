@@ -1,5 +1,6 @@
 export const mockData = {
   heading: "Expertise",
+  icon :"comments_chat",
   items: [
     "Technical architect for agile development",
     "Atomic Component/Modular Development",

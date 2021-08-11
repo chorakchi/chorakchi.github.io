@@ -3,6 +3,7 @@ import { TypographyProps } from "./Typography.interface";
 
 export const TypographyStyled = styled.div<TypographyProps>`
   font-weight: ${({ bold }) => (bold ? "bold" : "unset")};
+  line-height: 125% !important;
   color: ${({ theme, color }) =>
     color && theme.color[color] ||
     (color ? color : (theme.color && theme.color.primary_dark) || "black")};
