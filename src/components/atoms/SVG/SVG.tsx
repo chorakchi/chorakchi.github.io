@@ -6,8 +6,6 @@ const iconsFolder = '/assets/icons/';
 export const SVG: React.FC<SVGProps> = ({
     name,
     src,
-    size,
-    className,
     ...props
 }) => {
     // TODO/Fix: passing a link through this doesn't work. eg. try - https://svgshare.com/i/5vv.svg

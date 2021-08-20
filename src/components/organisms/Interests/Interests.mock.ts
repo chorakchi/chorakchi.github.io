@@ -1,33 +1,30 @@
 export const mockData = {
-  heading: "Interests",
-  items: [
-    {
-      label: "Music",
-      icon: "star",
-    },
-    {
-      label: "Skating",
-      icon: "star",
-    },
-    {
-      label: "Cycling",
-      icon: "star",
-    },
-    {
-      label: "Game",
-      icon: "star",
-    },
-    {
-      label: "Fitness",
-      icon: "star",
-    },
-    {
-      label: "Photo",
-      icon: "star",
-    },
-    {
-      label: "Tennis",
-      icon: "star",
-    },
-  ],
+    heading: 'Interests',
+    items: [
+        {
+            label: 'Game',
+            icon: 'game',
+        },
+        {
+            label: 'Skating',
+            icon: 'linerSkating',
+        },
+
+        {
+            label: 'Fitness',
+            icon: 'fitness',
+        },
+        {
+            label: 'Cycling',
+            icon: 'cycling',
+        },
+        {
+            label: 'Photo',
+            icon: 'photo',
+        },
+        {
+            label: 'Tennis',
+            icon: 'tennis',
+        },
+    ],
 };

@@ -1,6 +1,6 @@
 import { LogoStyled } from "./Logo.styled";
 import { LogoProps } from "./Logo.interface";
-import { Typography } from "../..";
+import { Typography, SVG } from "../..";
 export const Logo: React.FC<LogoProps> = ({
   firstName="",
   lastName="",
@@ -27,6 +27,7 @@ export const Logo: React.FC<LogoProps> = ({
           as="a"
           href={item.link}
         >
+          <SVG className="socialNetworkIcon" name={item.icon} size='xSmall'/>
           {item.label}
         </Typography>
       ))}

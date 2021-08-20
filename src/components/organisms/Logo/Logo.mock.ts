@@ -1,4 +1,5 @@
-export const mockData = {
+import { LogoProps } from "./Logo.interface";
+export const mockData : LogoProps = {
   firstName: "Mohammad",
   lastName: "Chorakchi",
   role: "front-end Developer",

@@ -1,12 +1,13 @@
 import React from 'react';
+import { HTMLAttributes } from 'react';
+
 import { IconName } from './IconName.type';
 
-export type Size = 'xs' | 'sm' | 'base' | 'md' | 'lg' | 'auto';
+export type Size = 'xSmall' | 'small' | 'medium' | 'large' | 'xLarge' | 'auto' ;
 
 // TS NOTE: Unfortunately because of the 3rd party tool we are using (react-svg) which adds 2 'div's/'span's around the svg we render we cannot use the SVGElement here as we should have.
 interface SVGIconProps extends React.SVGAttributes<HTMLDivElement> {
-    // This isn't needed to be defined here explicitly, but storybook wont show this option if its not.
-    className?: string;
+
     /**
      * The name of SVG placed in icon folder.
      * don't set the value to name and src at the same time,
@@ -31,8 +32,6 @@ interface SVGIconProps extends React.SVGAttributes<HTMLDivElement> {
 }
 
 interface SVGSourceProps extends React.SVGAttributes<HTMLDivElement> {
-    // This isn't needed to be defined here explicitly, but storybook wont show this option if its not.
-    className?: string;
     /**
      * The name of SVG placed in icon folder.
      * don't set the value to name and src at the same time,

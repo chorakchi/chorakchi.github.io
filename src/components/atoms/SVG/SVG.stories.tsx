@@ -43,8 +43,8 @@ const SVGSource: Story<any> = (args) => <SVG {...args} />;
 
 const IconList: Story<any> = (args) => (
     <React.Fragment>
-        {IconsList.map((pItem) => (
-            <React.Fragment>
+        {IconsList.map((pItem, i) => (
+            <div key={'block' + i}>
                 <small className="stories-icon-text-cat">
                     {_.lowerCase(pItem.category)}
                 </small>
@@ -62,7 +62,7 @@ const IconList: Story<any> = (args) => (
                         </div>
                     ))}
                 </div>
-            </React.Fragment>
+            </div>
         ))}
     </React.Fragment>
 );

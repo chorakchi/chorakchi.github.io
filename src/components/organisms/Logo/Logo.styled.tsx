@@ -9,7 +9,10 @@ export const LogoStyled = styled.div<LogoProps>`
   .lastName {
   }
   .socialNetwork {
-    margin: 10px;
+    margin-right: 10px;
+  }
+  .socialNetworkIcon {
+    margin-right: 2px;
   }
   .role {
     background-color: black;
