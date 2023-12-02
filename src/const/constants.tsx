@@ -1,1 +1,0 @@
-export const baseURL = typeof location !== 'undefined' ? location.protocol + '//' +  location.host : ''
