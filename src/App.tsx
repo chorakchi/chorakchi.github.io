@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          test for auto deplyment
         </a>
       </header>
     </div>
