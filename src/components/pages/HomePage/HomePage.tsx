@@ -31,7 +31,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <Typography weight="thin" variant='h2'>Innovative JavaScript enthusiast crafting immersive, user-centered web experiences</Typography>
                 <Typography variant='h2'>Driven by a love for pushing boundaries in web development, I thrive on creating memorable online journeys that fuse innovation and user delight</Typography>
                 <Typography>Exploring the ever-shifting landscape of web development, I find joy in sculpting digital adventures that marry creativity and seamless functionality</Typography>
-                <Button>Contact me</Button>
+                <Button>Get in touch</Button>
             </Box>
             <Footer
                 variant='text'
