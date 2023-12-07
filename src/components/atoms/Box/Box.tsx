@@ -14,3 +14,4 @@ export const withBox = <P extends object>(
   };
   return WithBox;
 };
+

@@ -1,46 +1,39 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { StoryObj, Meta } from '@storybook/react';
 import _ from 'lodash';
-// @ts-ignore
-import readme from './README.md';
+import ReadmeContent from './README.md';
 import { PALETTE_ENUMS } from './palette.interface';
 import { palette } from './palette';
-export default {
-    title: 'Palette',
+import { PaletteComp } from './PaletteComp';
+
+const meta = {
+    title: 'ColorSystem',
+    component: PaletteComp,
     parameters: {
         backgrounds: {
             default: 'light',
         },
         docs: {
             description: {
-                // component: readme,
+                component: ReadmeContent,
             },
         },
     },
-} as Meta;
+    // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
+    tags: ['autodocs'],
+    // More on argTypes: https://storybook.js.org/docs/api/argtypes
+    argTypes: {
+    }
+  } satisfies Meta<typeof PaletteComp>;
+  
 
-const Template2: Story<any> = (args) => (
-    <div className="stories-colors-block">
-        {Object.values(PALETTE_ENUMS).map((key: any) =>
-            typeof key !== 'number' ? (
-                <div className="stories-icon-text">
-                    <div
-                        className="stories-colors-item"
-                        key={key}
-                        style={{ background: palette[key] }}
-                    >
-                        <small className="stories-colors-text">{key}</small>
-                        <small className="stories-colors-text">
-                            {palette[key]}
-                        </small>
-                        <div {...args} icon={key} />
-                    </div>
-                </div>
-            ) : (
-                ''
-            )
-        )}
-    </div>
-);
+export default meta;
+type Story = StoryObj<typeof Object>;
 
-export const Palette_ = Template2.bind({});
+
+export const Large: Story = {
+    args: {
+    },
+  };
+
+

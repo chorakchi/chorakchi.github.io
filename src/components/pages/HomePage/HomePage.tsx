@@ -27,7 +27,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     ]
                     } />
             </Box>
-            <Box mb={28} flex={1} md={{ padding: "0px 20%" }} xs={{ padding: "0px 10%" }} fd="column" d="flex" gap={8} sx={{ justifyContent: "center" }} >
+            <Box mb={20} flex={1} md={{ padding: "0px 80px" }} xs={{ padding: "0px 10%" }} fd="column" d="flex" gap={8} sx={{ justifyContent: "end" }} >
                 <Typography weight="thin" variant='h2'>Innovative JavaScript enthusiast crafting immersive, user-centered web experiences</Typography>
                 <Typography variant='h2'>Driven by a love for pushing boundaries in web development, I thrive on creating memorable online journeys that fuse innovation and user delight</Typography>
                 <Typography>Exploring the ever-shifting landscape of web development, I find joy in sculpting digital adventures that marry creativity and seamless functionality</Typography>
