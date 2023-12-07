@@ -1,4 +1,5 @@
-export interface HomePageProps {
-    name: string;
-    age: number;
+import { HTMLAttributes } from "react";
+
+export interface HomePageProps
+    extends HTMLAttributes<HTMLElement> {
 }
