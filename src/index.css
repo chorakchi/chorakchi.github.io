@@ -17,6 +17,7 @@ code {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -24,4 +25,8 @@ code {
 
 .fade-in {
   animation: fadeIn 0.5s forwards;
+}
+
+a {
+  text-decoration: none;
 }

@@ -22,30 +22,9 @@ const getThemeData = (styles: any, props: any) => {
   return styles;
 };
 
-export const Box1Styled = styled.div<BoxProps & BoxCustomsProps>(
-  ({ sx = {}, xs = {}, sm = {}, md = {}, lg = {}, xl = {}, ...props }) => {
-    return {
-      ...getThemeData(sx, props),
-      '@media (min-width: 0px)': {
-        ...getThemeData(xs, props),
-      },
-      '@media (min-width: 576px)': {
-        ...getThemeData(sm, props),
-      },
-      '@media (min-width: 768px)': {
-        ...getThemeData(md, props),
-      },
-      '@media (min-width: 992px)': {
-        ...getThemeData(lg, props),
-      },
-      '@media (min-width: 1200px)': {
-        ...getThemeData(xl, props),
-      },
-    };
-  }
-);
 
-export const BoxStyled = styled(Box1Styled)<BoxProps>`
+
+export const Box1Styled = styled.div<BoxProps>`
     /* Margins */
     ${({ m, theme }) =>
         m != null &&
@@ -185,5 +164,30 @@ export const BoxStyled = styled(Box1Styled)<BoxProps>`
             }
         `}
 `;
+
+export const BoxStyled = styled(Box1Styled)<BoxProps & BoxCustomsProps>(
+    ({ sx = {}, xs = {}, sm = {}, md = {}, lg = {}, xl = {}, ...props }) => {
+      return {
+        ...getThemeData(sx, props),
+        '@media (min-width: 0px)': {
+          ...getThemeData(xs, props),
+        },
+        '@media (min-width: 576px)': {
+          ...getThemeData(sm, props),
+        },
+        '@media (min-width: 768px)': {
+          ...getThemeData(md, props),
+        },
+        '@media (min-width: 992px)': {
+          ...getThemeData(lg, props),
+        },
+        '@media (min-width: 1200px)': {
+          ...getThemeData(xl, props),
+        },
+      };
+    }
+  );
+
+Box1Styled.defaultProps = defaultTheme;
 
 BoxStyled.defaultProps = defaultTheme;

@@ -22,14 +22,15 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
             }}
             >
                 <Box flex={1} d='flex'>
-                    <Logo />
+                    <Logo  w={20}/>
                 </Box>
                 <Navigator
                     size="small"
                     withShadow
                     items={[
                         { label: "Home", value: "/" },
-                        { label: "Portfolio", value: "/portfolio" }
+                        { label: "Portfolio", value: "/portfolio" },
+                        { label: "Blog", value: "/blog" }
                     ]
                     } />
             </Box>
